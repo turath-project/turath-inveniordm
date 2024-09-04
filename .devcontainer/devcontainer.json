@@ -1,23 +1,17 @@
 {
-  "name": "InvenioRDM Development Container",
-  "dockerComposeFile": [
-    "../docker-compose.yml"
-  ],
-  "service": "app",
-  "workspaceFolder": "/workspace",
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "name": "InvenioRDM DevContainer",
+  "dockerFile": "../Dockerfile",
+  "context": "..",
+  "runServices": ["web-ui", "web-api", "db", "cache", "mq", "search"],
+  "service": "web-api",
+  "workspaceFolder": "/app",
   "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash",
-    "python.pythonPath": "/usr/local/bin/python"
+    "terminal.integrated.shell.linux": "/bin/bash"
   },
   "extensions": [
     "ms-python.python",
-    "ms-python.vscode-pylance",
-    "ms-azuretools.vscode-docker"
+    "ms-python.vscode-pylance"
   ],
-  "postCreateCommand": "pipenv install --deploy --system",
-  "forwardPorts": [
-    5000, 6379, 5432, 15672, 9200, 5601, 9000, 9001
-  ],
-  "remoteUser": "vscode"
+  "postCreateCommand": "pipenv install --dev",
+  "remoteUser": "root"
 }
