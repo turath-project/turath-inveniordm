@@ -1,17 +1,27 @@
 {
-  "name": "InvenioRDM DevContainer",
-  "dockerFile": "../Dockerfile",
-  "context": "..",
-  "runServices": ["web-ui", "web-api", "db", "cache", "mq", "search"],
-  "service": "web-api",
-  "workspaceFolder": "/app",
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
+  "name": "My Dev Container",
+  "dockerComposeFile": "../docker-compose.full.yml",
+  "service": "web-ui",
+  "workspaceFolder": "/workspace",
   "extensions": [
     "ms-python.python",
-    "ms-python.vscode-pylance"
+    "ms-azuretools.vscode-docker"
   ],
-  "postCreateCommand": "pipenv install --dev",
-  "remoteUser": "root"
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "/bin/bash"
+  },
+  "runServices": [
+    "cache",
+    "db",
+    "mq",
+    "search",
+    "opensearch-dashboards",
+    "pgadmin",
+    "s3",
+    "frontend",
+    "web-ui",
+    "web-api",
+    "worker"
+  ],
+  "shutdownAction": "stopCompose"
 }
