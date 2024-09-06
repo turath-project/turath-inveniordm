@@ -9,10 +9,10 @@ check-manifest = ">=0.25"
 [packages]
 invenio-app-rdm = {extras = ["opensearch2", "s3"], version = "~=12.0.0"}
 turath-inveniordm = {editable = true, path="./site"}
-
 uwsgi = ">=2.0"
 uwsgitop = ">=0.11"
 uwsgi-tools = ">=1.1.1"
+celery = "*"
 
 [requires]
 python_version = "3.9"

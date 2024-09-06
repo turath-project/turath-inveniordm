@@ -13,9 +13,14 @@ FROM registry.cern.ch/inveniosoftware/almalinux:1
 COPY site ./site
 COPY Pipfile Pipfile.lock ./
 RUN pipenv install --deploy --system
+RUN pip install debugpy
+RUN pip install celery
 
 WORKDIR /app
 
+ENV INVENIO_INSTANCE_PATH /opt/invenio/var/instance
+
+COPY ./docker/uwsgi/ ${INVENIO_INSTANCE_PATH}
 COPY ./docker/uwsgi/ ${INVENIO_INSTANCE_PATH}
 COPY ./invenio.cfg ${INVENIO_INSTANCE_PATH}
 COPY ./templates/ ${INVENIO_INSTANCE_PATH}/templates/
@@ -29,4 +34,4 @@ RUN cp -r ./static/. ${INVENIO_INSTANCE_PATH}/static/ && \
     invenio webpack buildall
 
 
-ENTRYPOINT [ "bash", "-c"]
+CMD ["python", "-m", "debugpy", "--listen", "0.0.0.0:5678", "--wait-for-client", "invenio", "run", "--host", "0.0.0.0", "--port", "5000"]

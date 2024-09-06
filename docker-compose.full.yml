@@ -55,7 +55,7 @@ services:
     extends:
       file: docker-services.yml
       service: app
-    command: ["uwsgi /opt/invenio/var/instance/uwsgi_ui.ini"]
+    command: ["uwsgi", "/opt/invenio/var/instance/uwsgi_ui.ini"]
     image: turath-inveniordm:latest
     ports:
       - "5000"
@@ -68,7 +68,7 @@ services:
     extends:
       file: docker-services.yml
       service: app
-    command: ["uwsgi /opt/invenio/var/instance/uwsgi_rest.ini"]
+    command: ["uwsgi", "/opt/invenio/var/instance/uwsgi_rest.ini"]
     image: turath-inveniordm:latest
     ports:
       - "5000"
@@ -80,7 +80,7 @@ services:
     extends:
       file: docker-services.yml
       service: app
-    command: ["celery -A invenio_app.celery worker --beat --loglevel=INFO"]
+    command: "celery -A invenio_app.celery worker --beat --loglevel=INFO"
     image: turath-inveniordm:latest
     depends_on:
       search:
@@ -93,6 +93,7 @@ services:
         condition: service_started
     volumes:
       - .:/workspace
+
 volumes:
   static_data:
   data:

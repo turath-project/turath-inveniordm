@@ -10,18 +10,6 @@
   "settings": {
     "terminal.integrated.defaultProfile.linux": "/bin/bash"
   },
-  "runServices": [
-    "cache",
-    "db",
-    "mq",
-    "search",
-    "opensearch-dashboards",
-    "pgadmin",
-    "s3",
-    "frontend",
-    "web-ui",
-    "web-api",
-    "worker"
-  ],
+  "postCreateCommand": "invenio-cli containers start --lock --build --setup -f ../docker-compose.full.yml",
   "shutdownAction": "stopCompose"
 }
