@@ -12,6 +12,7 @@ FROM registry.cern.ch/inveniosoftware/almalinux:1
 
 COPY site ./site
 COPY Pipfile Pipfile.lock ./
+RUN pip install invenio-cli
 RUN pipenv install --deploy --system
 RUN pip install debugpy
 RUN pip install celery

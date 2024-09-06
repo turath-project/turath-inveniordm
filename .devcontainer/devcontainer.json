@@ -1,5 +1,8 @@
 {
   "name": "My Dev Container",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
   "dockerComposeFile": "../docker-compose.full.yml",
   "service": "web-ui",
   "workspaceFolder": "/workspace",
