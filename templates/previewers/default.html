@@ -1,0 +1,14 @@
+{% extends "invenio_previewer/base.html" %}
+
+{% block previewer_body %}
+  <div id="app"></div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    window.previewerFile = {{ file | tojson }};
+    window.previewerRecord = {{ record | tojson }};
+  </script>
+  <script src="{{ url_for('static', filename='dist/app.bundle.js') }}"></script>
+{% endblock %}
