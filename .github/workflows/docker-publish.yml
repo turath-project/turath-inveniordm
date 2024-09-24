@@ -55,3 +55,23 @@ jobs:
         labels: ${{ steps.meta.outputs.labels }}
         cache-from: type=gha
         cache-to: type=gha,mode=max
+
+    - name: Extract Docker metadata
+      id: meta-frontend
+      uses: docker/metadata-action@v5.5.1
+      with:
+        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-frontend
+          
+    - name: Build and push Frontend Docker image
+      uses: docker/build-push-action@v6.7.0
+      with:
+        context: ./docker/nginx/production
+        file: ./docker/nginx/production/Dockerfile
+        push: ${{ github.event_name != 'pull_request' }}
+        tags: ${{ steps.meta-frontend.outputs.tags }}
+        labels: ${{ steps.meta-frontend.outputs.labels }}
+        build-args: |
+          BASE_IMAGE=${{ steps.meta.outputs.tags }}
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+  

@@ -53,32 +53,17 @@ services:
     extends:
       file: docker-services.yml
       service: frontend
-    volumes:
-      - static_data:/opt/invenio/var/instance/static
     depends_on:
       - web-ui
-      - web-api
     ports:
       - "80:80"
       - "443:443"
-  # UI Application
+  # Application
   web-ui:
     extends:
       file: docker-services.yml
       service: app
-    command: ["uwsgi /opt/invenio/var/instance/uwsgi_ui.ini"]
-    image: turath-inveniordm:latest
-    ports:
-      - "5000"
-    volumes:
-      - static_data:/opt/invenio/var/instance/static
-
-  # API Rest Application
-  web-api:
-    extends:
-      file: docker-services.yml
-      service: app
-    command: ["uwsgi /opt/invenio/var/instance/uwsgi_rest.ini"]
+    command: ["uwsgi /opt/invenio/var/instance/uwsgi_dev.ini"]
     image: turath-inveniordm:latest
     ports:
       - "5000"

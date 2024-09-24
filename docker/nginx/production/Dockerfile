@@ -13,5 +13,3 @@ FROM nginx:latest
 COPY --from=invenio /opt/invenio/var/instance/static /opt/invenio/var/instance/static
 # Copy the Nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY test.key /etc/ssl/private/test.key
-COPY test.crt /etc/ssl/certs/test.crt
