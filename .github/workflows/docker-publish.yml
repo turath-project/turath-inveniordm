@@ -2,7 +2,7 @@ name: Build and Publish Docker Image
 
 on:
   push:
-    branches: [ "main", "mkhashoggi/issue12" ]
+    branches: [ "main" ]
     # Publish semver tags as releases.
     tags: [ 'v*' ]
   pull_request:
