@@ -1,0 +1,24 @@
+- id: collected
+  title:
+    en: Collected
+    ar: تم جمعه
+
+- id: created
+  title:
+    en: Created
+    ar: تم إنشاؤه
+
+- id: issued
+  title:
+    en: Issued
+    ar: تم إصداره
+
+- id: updated
+  title:
+    en: Updated
+    ar: تم تحديثه
+
+- id: other
+  title:
+    en: Other
+    ar: أخرى 

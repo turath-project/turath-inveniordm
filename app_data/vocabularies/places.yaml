@@ -1,0 +1,32 @@
+- id: baghdad
+  props:
+    country: Iraq
+    coordinates: "33.3152, 44.3661"
+  tags:
+    - historical
+    - capital
+  title:
+    en: Baghdad
+    ar: بغداد
+
+- id: damascus
+  props:
+    country: Syria
+    coordinates: "33.5138, 36.2765"
+  tags:
+    - historical
+    - capital
+  title:
+    en: Damascus
+    ar: دمشق
+
+- id: cairo
+  props:
+    country: Egypt
+    coordinates: "30.0444, 31.2357"
+  tags:
+    - historical
+    - capital
+  title:
+    en: Cairo
+    ar: القاهرة 

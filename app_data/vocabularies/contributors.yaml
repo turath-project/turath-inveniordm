@@ -1,0 +1,20 @@
+- id: editor1
+  props:
+    role: "Editor"
+  title:
+    en: "Muhammad Al-Yaqoubi"
+    ar: "محمد اليعقوبي"
+
+- id: translator1
+  props:
+    role: "Translator"
+  title:
+    en: "Abdul Aziz Al-Shanawi"
+    ar: "عبد العزيز الشناوي"
+
+- id: annotator1
+  props:
+    role: "Annotator"
+  title:
+    en: "Ahmad Al-Ghumari"
+    ar: "أحمد الغماري" 

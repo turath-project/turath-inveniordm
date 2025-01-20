@@ -1,0 +1,24 @@
+- id: abstract
+  title:
+    en: Abstract
+    ar: ملخص
+
+- id: methods
+  title:
+    en: Methods
+    ar: منهجية
+
+- id: table_of_contents
+  title:
+    en: Table of Contents
+    ar: فهرس المحتويات
+
+- id: technical_info
+  title:
+    en: Technical Info
+    ar: معلومات تقنية
+
+- id: other
+  title:
+    en: Other
+    ar: أخرى 

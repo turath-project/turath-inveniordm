@@ -1,0 +1,9 @@
+- id: arabic
+  title:
+    en: Arabic
+    ar: العربية
+
+- id: latin
+  title:
+    en: Latin
+    ar: اللاتينية 
