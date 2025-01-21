@@ -74,3 +74,6 @@ data/.minio.sys
 # Celery
 celerybeat-schedule
 celerybeat-schedule.db
+
+#AlA stuff
+app_data/AlA_stuff/
