@@ -1,0 +1,49 @@
+- id: contact_person
+  title:
+    en: Contact Person
+    ar: شخص للتواصل
+
+- id: data_collector
+  title:
+    en: Data Collector
+    ar: جامع البيانات
+
+- id: data_curator
+  title:
+    en: Data Curator
+    ar: منسق البيانات
+
+- id: data_manager
+  title:
+    en: Data Manager
+    ar: مدير البيانات
+
+- id: distributor
+  title:
+    en: Distributor
+    ar: موزع
+
+- id: editor
+  title:
+    en: Editor
+    ar: محرر
+
+- id: producer
+  title:
+    en: Producer
+    ar: منتج
+
+- id: rights_holder
+  title:
+    en: Rights Holder
+    ar: صاحب الحقوق
+
+- id: sponsor
+  title:
+    en: Sponsor
+    ar: راعي
+
+- id: other
+  title:
+    en: Other
+    ar: أخرى 

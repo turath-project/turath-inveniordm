@@ -1,0 +1,35 @@
+- id: ibn-sina
+  props:
+    birth_date: "980"
+    death_date: "1037"
+    era: "Golden Age"
+  tags:
+    - philosopher
+    - physician
+  title:
+    en: Ibn Sina
+    ar: ابن سينا
+
+- id: al-ghazali
+  props:
+    birth_date: "1058"
+    death_date: "1111"
+    era: "Golden Age"
+  tags:
+    - theologian
+    - philosopher
+  title:
+    en: Al-Ghazali
+    ar: الغزالي
+
+- id: ibn-rushd
+  props:
+    birth_date: "1126"
+    death_date: "1198"
+    era: "Golden Age"
+  tags:
+    - philosopher
+    - judge
+  title:
+    en: Ibn Rushd
+    ar: ابن رشد 

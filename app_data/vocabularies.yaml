@@ -1,3 +1,7 @@
+resource-types:
+  pid-type: rsty
+  data-file: vocabularies/resource_types.yaml
+  
 subjects:
   pid-type: sub
   schemes:
@@ -5,6 +9,33 @@ subjects:
       name: Fields of Science and Technology
       uri: "http://www.oecd.org/science/inno/38235147.pdf"
       data-file: vocabularies/subjects_oecd_fos.yaml
+
+# Custom vocabularies for Turath
+resourcetypes:
+  pid-type: rsct
+  data-file: vocabularies/resource_types.yaml
+
+places:
+  pid-type: plc
+  data-file: vocabularies/places.yaml
+
+relationtypes:
+  pid-type: rlt
+  data-file: vocabularies/relation_types.yaml
+
+# Uncomment and modify existing vocabularies as needed
+creators:
+  pid-type: crt
+  data-file: vocabularies/creators.yaml
+
+licenses:
+  pid-type: lic
+  data-file: vocabularies/cc_licences.csv
+
+languages:
+  pid-type: lng
+  data-file: vocabularies/languages.yaml
+
 # Minimal example vocabularies
 # can be used for quick testing, or a basis for building your own customized vocabularies.
 #names:
@@ -20,3 +51,31 @@ subjects:
 # affiliations:
 #   pid-type: aff
 #   data-file: vocabularies/affiliations_ror.yaml
+
+contributors:
+  pid-type: cnt
+  data-file: vocabularies/contributors.yaml
+
+contributor_types:
+  pid-type: cntt
+  data-file: vocabularies/contributor_types.yaml
+
+description_types:
+  pid-type: dsct
+  data-file: vocabularies/description_types.yaml
+
+date_types:
+  pid-type: datt
+  data-file: vocabularies/date_types.yaml
+
+formats:
+  pid-type: fmt
+  data-file: vocabularies/formats.yaml
+
+script_types:
+  pid-type: sct
+  data-file: vocabularies/script_types.yaml
+
+title_scripts:  # New vocabulary for alternative title script
+  pid-type: tsct
+  data-file: vocabularies/title_scripts.yaml

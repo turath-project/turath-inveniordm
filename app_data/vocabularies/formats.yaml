@@ -1,0 +1,41 @@
+- id: application_pdf
+  title:
+    en: PDF
+    ar: بي دي إف
+  props:
+    mime_type: application/pdf
+
+- id: text_plain
+  title:
+    en: Plain Text
+    ar: نص عادي
+  props:
+    mime_type: text/plain
+
+- id: image_jpeg
+  title:
+    en: JPEG Image
+    ar: صورة JPEG
+  props:
+    mime_type: image/jpeg
+
+- id: image_png
+  title:
+    en: PNG Image
+    ar: صورة PNG
+  props:
+    mime_type: image/png
+
+- id: audio_mpeg
+  title:
+    en: MP3 Audio
+    ar: صوت MP3
+  props:
+    mime_type: audio/mpeg
+
+- id: video_mp4
+  title:
+    en: MP4 Video
+    ar: فيديو MP4
+  props:
+    mime_type: video/mp4 

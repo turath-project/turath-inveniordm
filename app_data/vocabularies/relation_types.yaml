@@ -1,0 +1,26 @@
+- id: ispartof
+  props:
+    reciprocal: haspart
+  tags:
+    - structural
+  title:
+    en: Is Part Of
+    ar: جزء من
+
+- id: haspart
+  props:
+    reciprocal: ispartof
+  tags:
+    - structural
+  title:
+    en: Has Part
+    ar: يحتوي على
+
+- id: references
+  props:
+    reciprocal: isreferencedby
+  tags:
+    - reference
+  title:
+    en: References
+    ar: يشير إلى 
