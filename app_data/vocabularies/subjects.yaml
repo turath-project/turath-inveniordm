@@ -1,0 +1,134 @@
+- id: natural-sciences
+  props:
+    category: "Sciences"
+    scheme: "FOS"
+    uri: "http://www.oecd.org/science/inno/38235147.pdf?1"
+  title:
+    en: "Natural sciences"
+    ar: "العلوم الطبيعية"
+
+- id: mathematics
+  props:
+    category: "Natural Sciences"
+    scheme: "FOS"
+    uri: "http://www.oecd.org/science/inno/38235147.pdf?1.1"
+  title:
+    en: "Mathematics"
+    ar: "الرياضيات"
+
+- id: computer-science
+  props:
+    category: "Natural Sciences"
+    scheme: "FOS"
+    uri: "http://www.oecd.org/science/inno/38235147.pdf?1.2"
+  title:
+    en: "Computer and information sciences"
+    ar: "علوم الحاسوب والمعلومات"
+
+- id: islamic-philosophy
+  props:
+    category: "Philosophy"
+    period: "Classical"
+    scheme: "Local"
+  tags:
+    - philosophy
+    - islamic-studies
+  title:
+    en: "Islamic Philosophy"
+    ar: "الفلسفة الإسلامية"
+
+- id: islamic-law
+  props:
+    category: "Law"
+    period: "Classical"
+    scheme: "Local"
+  tags:
+    - fiqh
+    - sharia
+  title:
+    en: "Islamic Law"
+    ar: "الفقه الإسلامي"
+
+- id: hadith-studies
+  props:
+    category: "Religious Studies"
+    period: "Classical"
+    scheme: "Local"
+  tags:
+    - hadith
+    - islamic-studies
+  title:
+    en: "Hadith Studies"
+    ar: "علوم الحديث"
+
+- id: social-sciences
+  props:
+    category: "Sciences"
+    scheme: "FOS"
+    uri: "http://www.oecd.org/science/inno/38235147.pdf?5"
+  title:
+    en: "Social sciences"
+    ar: "العلوم الاجتماعية"
+
+- id: psychology
+  props:
+    category: "Social Sciences"
+    scheme: "FOS"
+    uri: "http://www.oecd.org/science/inno/38235147.pdf?5.1"
+  title:
+    en: "Psychology"
+    ar: "علم النفس"
+
+- id: economics
+  props:
+    category: "Social Sciences"
+    scheme: "FOS"
+    uri: "http://www.oecd.org/science/inno/38235147.pdf?5.2"
+  title:
+    en: "Economics and business"
+    ar: "الاقتصاد والأعمال"
+
+- id: humanities
+  props:
+    category: "Humanities"
+    scheme: "FOS"
+    uri: "http://www.oecd.org/science/inno/38235147.pdf?6"
+  title:
+    en: "Humanities"
+    ar: "العلوم الإنسانية"
+
+- id: history-archaeology
+  props:
+    category: "Humanities"
+    scheme: "FOS"
+    uri: "http://www.oecd.org/science/inno/38235147.pdf?6.1"
+  title:
+    en: "History and archaeology"
+    ar: "التاريخ والآثار"
+
+- id: languages-literature
+  props:
+    category: "Humanities"
+    scheme: "FOS"
+    uri: "http://www.oecd.org/science/inno/38235147.pdf?6.2"
+  title:
+    en: "Languages and literature"
+    ar: "اللغات والأدب"
+
+- id: philosophy-ethics
+  props:
+    category: "Humanities"
+    scheme: "FOS"
+    uri: "http://www.oecd.org/science/inno/38235147.pdf?6.3"
+  title:
+    en: "Philosophy, ethics and religion"
+    ar: "الفلسفة والأخلاق والدين"
+
+- id: arts
+  props:
+    category: "Humanities"
+    scheme: "FOS"
+    uri: "http://www.oecd.org/science/inno/38235147.pdf?6.4"
+  title:
+    en: "Arts (arts, history of arts, performing arts, music)"
+    ar: "الفنون (الفنون، تاريخ الفنون، فنون الأداء، الموسيقى)" 

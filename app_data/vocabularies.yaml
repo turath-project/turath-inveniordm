@@ -1,6 +1,7 @@
 resource-types:
   pid-type: rsty
   data-file: vocabularies/resource_types.yaml
+  
 subjects:
   pid-type: sub
   schemes:

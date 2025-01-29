@@ -75,5 +75,19 @@ data/.minio.sys
 celerybeat-schedule
 celerybeat-schedule.db
 
-#AlA stuff
-app_data/AlA_stuff/
+# macOS system files
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.launchd
+.apple.system
+.AppleSystemInfo
+.com.apple.system.icns
+.com.apple.system.icns.plist
+.com.apple.system.icns.plist.bak
