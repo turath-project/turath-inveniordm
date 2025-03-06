@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*$py.class
 
 # C extensions
 *.so
@@ -60,6 +61,9 @@ test.db
 
 # Environments
 .venv/
+.env
+venv/
+ENV/
 
 # Logs
 logs/
@@ -91,3 +95,18 @@ celerybeat-schedule.db
 .com.apple.system.icns
 .com.apple.system.icns.plist
 .com.apple.system.icns.plist.bak
+
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+.ionide/
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# OS specific
+ehthumbs.db
+Thumbs.db

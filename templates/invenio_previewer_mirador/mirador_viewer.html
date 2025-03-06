@@ -1,0 +1,27 @@
+{% extends "invenio_previewer_mirador/base.html" %}
+
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ css_url }}">
+  <script src="{{ js_url }}"></script>
+  <style>
+    #mirador-viewer {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+  <div id="mirador-viewer"></div>
+  <script>
+    var mirador = Mirador.viewer({
+      id: "mirador-viewer",
+      windows: [{
+        manifestId: "{{ file.data.links.content if file.data.links else file.links.content }}"
+      }]
+    });
+  </script>
+{% endblock %}

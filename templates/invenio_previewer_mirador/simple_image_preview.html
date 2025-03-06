@@ -1,0 +1,18 @@
+{% extends "invenio_previewer/base.html" %}
+
+{% block previewer_body %}
+<div class="ui basic segment">
+  shit
+</div>
+<div class="preview-image-container" style="text-align: center; margin: 20px;">
+  {% if file_uri %}
+  <img src="{{ file_uri }}" alt="Image preview" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 5px;"/>
+  {% elif file.file and file.file.uri %}
+  <img src="{{ file.file.uri }}" alt="Image preview" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 5px;"/>
+  {% else %}
+  <div class="alert alert-warning">
+    Cannot load image - URI not available
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
