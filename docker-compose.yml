@@ -44,5 +44,26 @@ services:
     extends:
       file: docker-services.yml
       service: s3
+  iipserver:
+    extends:
+      file: docker-services.yml
+      service: iipserver
+    volumes:
+      - image_tiles:/images/public
+  cantaloupe:
+    image: edirom/cantaloupe
+    platform: linux/amd64  # Important for M1/M2 Mac
+    restart: "unless-stopped"
+    ports:
+      - "8182:8182"
+    environment:
+      - CANTALOUPE_ENDPOINT_ADMIN_ENABLED=true
+      - CANTALOUPE_ENDPOINT_ADMIN_SECRET=your_secret_here
+      - CANTALOUPE_FILESYSTEM_RESOLVER_LOOKUP_STRATEGY_PATH_PREFIX=/opt/cantaloupe/images
+    volumes:
+      - ./test-images:/opt/cantaloupe/images
 volumes:
   data:
+  images:
+  image_tiles:
+

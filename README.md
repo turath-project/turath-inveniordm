@@ -73,24 +73,11 @@ This repository includes an integrated Mirador IIIF viewer for previewing compat
 
 #### Mirador Integration
 
-The Mirador previewer is integrated directly into the project (not as a separate installable package). This was accomplished by:
+The Mirador previewer is integrated directly into the project (not as a separate installable package).
 
-1. Adding the package as an editable dependency in the Pipfile:
-   ```
-   invenio-previewer-mirador = {editable = true, path="./invenio-previewer-mirador"}
-   ```
+#### Testing the IIIF Server
 
-2. The previewer automatically registers itself through entry points, making it available for previewing compatible files.
-
-3. Security settings have been configured to allow the previewer to function properly:
-   ```python
-   APP_DEFAULT_SECURE_HEADERS = {
-       'content_security_policy': {
-           'default-src': ["'self'", 'data:', "'unsafe-inline'", "'unsafe-eval'", "blob:", "unpkg.com", "*.iiif.io"],
-           # Additional security settings...
-       }
-   }
-   ```
+A Cantaloupe IIIF server has been added for image processing and delivery. For detailed testing and usage instructions, see [IIIF Server Documentation](docs/iiif-server.md).
 
 ## Project Structure
 
