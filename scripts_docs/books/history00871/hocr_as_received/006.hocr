@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>48_ history00871 تاريخ ابن عباد/hocr/006.hocr</title>
+		<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="ocr-capabilities" content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf"/>
+	</head>
+	<body>
+		<div class="ocr_page" id="page_006" title="image '48_ history00871 تاريخ ابن عباد/006.jpg'; bbox 0 0 1690 2485; ppageno 006" style="padding: 100px;">
+			<div class="ocr_carea" id="block_006_1" title="bbox 100 100 1790 2585">
+				<p class="ocr_par" id="Paragraph_0" lang="ara" title="bbox 398 202 1565 295" coordinate1="1565 202" coordinate2="398 202" coordinate3="398 295" coordinate4="1565 295" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿وهذا الكتاب يعنى بجانب من جوانب تاريخ هذه البلاد المباركة .</p>
+				<p class="ocr_par" id="Paragraph_1" lang="ara" title="bbox 182 315 1655 695" coordinate1="182 315" coordinate2="1655 315" coordinate3="1655 695" coordinate4="182 695" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿ولما في نشره من تيسير للباحثين بتوفير المصادر التاريخية الموثقة ، وربط
+للأجيال بماضي الآباء والأجداد ، فقد أمر خادم الحرمين الشريفين الملك فهد بن
+عبد العزيز - حفظه الله - بطبع هذا الكتاب ونشره بمناسبة الاحتفال بمرور مائة
+عام على تأسيس المملكة .</p>
+				<p class="ocr_par" id="Paragraph_2" lang="ara" title="bbox 195 702 1690 930" coordinate1="1690 702" coordinate2="195 702" coordinate3="200 930" coordinate4="1690 888" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿اللهم إنا نشكرك ، ونتحدث بعظيم نعمتك علينا ، وقد وعدت الشاكرين
+بالمزيد ؛ فأدمها نعمة ، واحفظها من الزوال</p>
+				<p class="ocr_par" id="Paragraph_3" lang="ara" title="bbox 322 910 1595 1035" coordinate1="1595 910" coordinate2="322 932" coordinate3="325 1035" coordinate4="1595 1035" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿وصلى الله وسلم وبارك على نبينا محمد ، وعلى آله وصحبه أجمعين .</p>
+				<p class="ocr_par" id="Paragraph_4" lang="ara" title="bbox 218 1270 1088 1728" coordinate1="1088 1270" coordinate2="218 1270" coordinate3="218 1728" coordinate4="1088 1728" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿أمير منطقة الرياض
+رئيس اللجنة العليا ورئيس اللجنة التحضيرية
+للاحتفال بمرور مائة عام على تأسيس المملكة
+سلمان بن عبد العزيز</p>
+				<p class="ocr_par" id="PageNumber_5" lang="ara" title="bbox 932 2428 992 2485" coordinate1="992 2428" coordinate2="932 2428" coordinate3="932 2485" coordinate4="992 2485" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿٦</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "access": {
+    "record": "public",
+    "files": "public"
+  },
+  "files": {
+    "enabled": true
+  },
+  "metadata": {
+    "title": "History00871",
+    "publication_date": "2025-03-15",
+    "resource_type": {
+      "id": "publication-book"
+    },
+    "creators": [
+      {
+        "person_or_org": {
+          "family_name": "Author",
+          "given_name": "Unknown",
+          "type": "personal"
+        }
+      }
+    ],
+    "description": "Book imported with IIIF support",
+    "identifiers": [
+      {
+        "identifier": "history00871",
+        "scheme": "other"
+      }
+    ]
+  },
+  "custom_fields": {
+    "turath:iiif_manifest": "http://localhost:8182/iiif/3/history00871/manifest.json"
+  }
+}

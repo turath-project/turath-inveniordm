@@ -1,0 +1,5262 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "http://localhost:8000/history00871/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "History00871 (PDF Direct)",
+  "sequences": [
+    {
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p001",
+          "@type": "sc:Canvas",
+          "label": "p. 001",
+          "width": 1009,
+          "height": 1447,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p001",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=1",
+                "@type": "dctypes:Image",
+                "width": 1009,
+                "height": 1447
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p001/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 001"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/001.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5530314415177532
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p002",
+          "@type": "sc:Canvas",
+          "label": "p. 002",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p002",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=2",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p002/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 002"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p003",
+          "@type": "sc:Canvas",
+          "label": "p. 003",
+          "width": 926,
+          "height": 1355,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p003",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=3",
+                "@type": "dctypes:Image",
+                "width": 926,
+                "height": 1355
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p003/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 003"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/003.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5530358633759446
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p004",
+          "@type": "sc:Canvas",
+          "label": "p. 004",
+          "width": 937,
+          "height": 1425,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p004",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=4",
+                "@type": "dctypes:Image",
+                "width": 937,
+                "height": 1425
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p004/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 004"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/004.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5576135912369583
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p005",
+          "@type": "sc:Canvas",
+          "label": "p. 005",
+          "width": 865,
+          "height": 1364,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p005",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=5",
+                "@type": "dctypes:Image",
+                "width": 865,
+                "height": 1364
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p005/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 005"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/005.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5508391827502768
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p006",
+          "@type": "sc:Canvas",
+          "label": "p. 006",
+          "width": 837,
+          "height": 1375,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p006",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=6",
+                "@type": "dctypes:Image",
+                "width": 837,
+                "height": 1375
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p006/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 006"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/006.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5458124995473898
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p007",
+          "@type": "sc:Canvas",
+          "label": "p. 007",
+          "width": 842,
+          "height": 1431,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p007",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=7",
+                "@type": "dctypes:Image",
+                "width": 842,
+                "height": 1431
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p007/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 007"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/007.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5665975937993278
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p008",
+          "@type": "sc:Canvas",
+          "label": "p. 008",
+          "width": 841,
+          "height": 1394,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p008",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=8",
+                "@type": "dctypes:Image",
+                "width": 841,
+                "height": 1394
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p008/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 008"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/008.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5690096417574984
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p009",
+          "@type": "sc:Canvas",
+          "label": "p. 009",
+          "width": 977,
+          "height": 1412,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p009",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=9",
+                "@type": "dctypes:Image",
+                "width": 977,
+                "height": 1412
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p009/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 009"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/009.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5642404942970689
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p010",
+          "@type": "sc:Canvas",
+          "label": "p. 010",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p010",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=10",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p010/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 010"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/100.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p011",
+          "@type": "sc:Canvas",
+          "label": "p. 011",
+          "width": 946,
+          "height": 1386,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p011",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=11",
+                "@type": "dctypes:Image",
+                "width": 946,
+                "height": 1386
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p011/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 011"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/011.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5780395572569222
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p012",
+          "@type": "sc:Canvas",
+          "label": "p. 012",
+          "width": 929,
+          "height": 1449,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p012",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=12",
+                "@type": "dctypes:Image",
+                "width": 929,
+                "height": 1449
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p012/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 012"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/012.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5541869077411207
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p013",
+          "@type": "sc:Canvas",
+          "label": "p. 013",
+          "width": 908,
+          "height": 1398,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p013",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=13",
+                "@type": "dctypes:Image",
+                "width": 908,
+                "height": 1398
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p013/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 013"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/013.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5750536906707325
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p014",
+          "@type": "sc:Canvas",
+          "label": "p. 014",
+          "width": 957,
+          "height": 1405,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p014",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=14",
+                "@type": "dctypes:Image",
+                "width": 957,
+                "height": 1405
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p014/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 014"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/014.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5674914003352702
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p015",
+          "@type": "sc:Canvas",
+          "label": "p. 015",
+          "width": 885,
+          "height": 1368,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p015",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=15",
+                "@type": "dctypes:Image",
+                "width": 885,
+                "height": 1368
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p015/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 015"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/015.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5529383232223019
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p016",
+          "@type": "sc:Canvas",
+          "label": "p. 016",
+          "width": 880,
+          "height": 1445,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p016",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=16",
+                "@type": "dctypes:Image",
+                "width": 880,
+                "height": 1445
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p016/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 016"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/016.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5762981977144811
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p017",
+          "@type": "sc:Canvas",
+          "label": "p. 017",
+          "width": 833,
+          "height": 1386,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p017",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=17",
+                "@type": "dctypes:Image",
+                "width": 833,
+                "height": 1386
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p017/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 017"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/017.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.576821003574673
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p018",
+          "@type": "sc:Canvas",
+          "label": "p. 018",
+          "width": 851,
+          "height": 1352,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p018",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=18",
+                "@type": "dctypes:Image",
+                "width": 851,
+                "height": 1352
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p018/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 018"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/018.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5556452343945188
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p019",
+          "@type": "sc:Canvas",
+          "label": "p. 019",
+          "width": 924,
+          "height": 1404,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p019",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=19",
+                "@type": "dctypes:Image",
+                "width": 924,
+                "height": 1404
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p019/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 019"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/019.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5424865259519291
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p020",
+          "@type": "sc:Canvas",
+          "label": "p. 020",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p020",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=20",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p020/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 020"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/020.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p021",
+          "@type": "sc:Canvas",
+          "label": "p. 021",
+          "width": 925,
+          "height": 1382,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p021",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=21",
+                "@type": "dctypes:Image",
+                "width": 925,
+                "height": 1382
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p021/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 021"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/021.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5693423967552397
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p022",
+          "@type": "sc:Canvas",
+          "label": "p. 022",
+          "width": 896,
+          "height": 1422,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p022",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=22",
+                "@type": "dctypes:Image",
+                "width": 896,
+                "height": 1422
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p022/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 022"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/022.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.571443034156357
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p023",
+          "@type": "sc:Canvas",
+          "label": "p. 023",
+          "width": 988,
+          "height": 1430,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p023",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=23",
+                "@type": "dctypes:Image",
+                "width": 988,
+                "height": 1430
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p023/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 023"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/023.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5604719482356729
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p024",
+          "@type": "sc:Canvas",
+          "label": "p. 024",
+          "width": 894,
+          "height": 1396,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p024",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=24",
+                "@type": "dctypes:Image",
+                "width": 894,
+                "height": 1396
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p024/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 024"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/024.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5779295822128961
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p025",
+          "@type": "sc:Canvas",
+          "label": "p. 025",
+          "width": 891,
+          "height": 1388,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p025",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=25",
+                "@type": "dctypes:Image",
+                "width": 891,
+                "height": 1388
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p025/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 025"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/025.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5619490017694305
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p026",
+          "@type": "sc:Canvas",
+          "label": "p. 026",
+          "width": 935,
+          "height": 1392,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p026",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=26",
+                "@type": "dctypes:Image",
+                "width": 935,
+                "height": 1392
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p026/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 026"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/026.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5721644827080283
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p027",
+          "@type": "sc:Canvas",
+          "label": "p. 027",
+          "width": 915,
+          "height": 1371,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p027",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=27",
+                "@type": "dctypes:Image",
+                "width": 915,
+                "height": 1371
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p027/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 027"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/027.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5435271151856977
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p028",
+          "@type": "sc:Canvas",
+          "label": "p. 028",
+          "width": 996,
+          "height": 1424,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p028",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=28",
+                "@type": "dctypes:Image",
+                "width": 996,
+                "height": 1424
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p028/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 028"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/028.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5787603920137253
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p029",
+          "@type": "sc:Canvas",
+          "label": "p. 029",
+          "width": 939,
+          "height": 1436,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p029",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=29",
+                "@type": "dctypes:Image",
+                "width": 939,
+                "height": 1436
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p029/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 029"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/029.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5435826991445051
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p030",
+          "@type": "sc:Canvas",
+          "label": "p. 030",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p030",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=30",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p030/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 030"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/030.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p031",
+          "@type": "sc:Canvas",
+          "label": "p. 031",
+          "width": 1003,
+          "height": 1385,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p031",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=31",
+                "@type": "dctypes:Image",
+                "width": 1003,
+                "height": 1385
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p031/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 031"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/031.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5782906190678253
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p032",
+          "@type": "sc:Canvas",
+          "label": "p. 032",
+          "width": 903,
+          "height": 1399,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p032",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=32",
+                "@type": "dctypes:Image",
+                "width": 903,
+                "height": 1399
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p032/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 032"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/032.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5686378990874776
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p033",
+          "@type": "sc:Canvas",
+          "label": "p. 033",
+          "width": 963,
+          "height": 1429,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p033",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=33",
+                "@type": "dctypes:Image",
+                "width": 963,
+                "height": 1429
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p033/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 033"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/033.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5512903725467063
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p034",
+          "@type": "sc:Canvas",
+          "label": "p. 034",
+          "width": 1004,
+          "height": 1373,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p034",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=34",
+                "@type": "dctypes:Image",
+                "width": 1004,
+                "height": 1373
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p034/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 034"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/034.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5672508201789925
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p035",
+          "@type": "sc:Canvas",
+          "label": "p. 035",
+          "width": 933,
+          "height": 1414,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p035",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=35",
+                "@type": "dctypes:Image",
+                "width": 933,
+                "height": 1414
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p035/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 035"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/035.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5734266796217515
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p036",
+          "@type": "sc:Canvas",
+          "label": "p. 036",
+          "width": 922,
+          "height": 1445,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p036",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=36",
+                "@type": "dctypes:Image",
+                "width": 922,
+                "height": 1445
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p036/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 036"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/036.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5419571487083176
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p037",
+          "@type": "sc:Canvas",
+          "label": "p. 037",
+          "width": 973,
+          "height": 1385,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p037",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=37",
+                "@type": "dctypes:Image",
+                "width": 973,
+                "height": 1385
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p037/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 037"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/037.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5492136826610634
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p038",
+          "@type": "sc:Canvas",
+          "label": "p. 038",
+          "width": 1005,
+          "height": 1446,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p038",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=38",
+                "@type": "dctypes:Image",
+                "width": 1005,
+                "height": 1446
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p038/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 038"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/038.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5419534490897673
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p039",
+          "@type": "sc:Canvas",
+          "label": "p. 039",
+          "width": 871,
+          "height": 1361,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p039",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=39",
+                "@type": "dctypes:Image",
+                "width": 871,
+                "height": 1361
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p039/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 039"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/039.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5793843926583896
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p040",
+          "@type": "sc:Canvas",
+          "label": "p. 040",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p040",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=40",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p040/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 040"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/040.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p041",
+          "@type": "sc:Canvas",
+          "label": "p. 041",
+          "width": 923,
+          "height": 1448,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p041",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=41",
+                "@type": "dctypes:Image",
+                "width": 923,
+                "height": 1448
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p041/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 041"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/041.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5776638470809905
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p042",
+          "@type": "sc:Canvas",
+          "label": "p. 042",
+          "width": 833,
+          "height": 1413,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p042",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=42",
+                "@type": "dctypes:Image",
+                "width": 833,
+                "height": 1413
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p042/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 042"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/042.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5658664306133744
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p043",
+          "@type": "sc:Canvas",
+          "label": "p. 043",
+          "width": 908,
+          "height": 1350,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p043",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=43",
+                "@type": "dctypes:Image",
+                "width": 908,
+                "height": 1350
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p043/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 043"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/043.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5626686815688391
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p044",
+          "@type": "sc:Canvas",
+          "label": "p. 044",
+          "width": 960,
+          "height": 1402,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p044",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=44",
+                "@type": "dctypes:Image",
+                "width": 960,
+                "height": 1402
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p044/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 044"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/044.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5562214308932123
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p045",
+          "@type": "sc:Canvas",
+          "label": "p. 045",
+          "width": 949,
+          "height": 1401,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p045",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=45",
+                "@type": "dctypes:Image",
+                "width": 949,
+                "height": 1401
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p045/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 045"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/045.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5515555897965246
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p046",
+          "@type": "sc:Canvas",
+          "label": "p. 046",
+          "width": 946,
+          "height": 1435,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p046",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=46",
+                "@type": "dctypes:Image",
+                "width": 946,
+                "height": 1435
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p046/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 046"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/046.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.576169227658354
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p047",
+          "@type": "sc:Canvas",
+          "label": "p. 047",
+          "width": 866,
+          "height": 1401,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p047",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=47",
+                "@type": "dctypes:Image",
+                "width": 866,
+                "height": 1401
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p047/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 047"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/047.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5479446988312042
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p048",
+          "@type": "sc:Canvas",
+          "label": "p. 048",
+          "width": 941,
+          "height": 1447,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p048",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=48",
+                "@type": "dctypes:Image",
+                "width": 941,
+                "height": 1447
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p048/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 048"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/048.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5562448630339294
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p049",
+          "@type": "sc:Canvas",
+          "label": "p. 049",
+          "width": 934,
+          "height": 1450,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p049",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=49",
+                "@type": "dctypes:Image",
+                "width": 934,
+                "height": 1450
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p049/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 049"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/049.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5499567211335076
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p050",
+          "@type": "sc:Canvas",
+          "label": "p. 050",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p050",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=50",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p050/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 050"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p051",
+          "@type": "sc:Canvas",
+          "label": "p. 051",
+          "width": 842,
+          "height": 1422,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p051",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=51",
+                "@type": "dctypes:Image",
+                "width": 842,
+                "height": 1422
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p051/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 051"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/051.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5781923462011885
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p052",
+          "@type": "sc:Canvas",
+          "label": "p. 052",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p052",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=52",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p052/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 052"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p053",
+          "@type": "sc:Canvas",
+          "label": "p. 053",
+          "width": 917,
+          "height": 1352,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p053",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=53",
+                "@type": "dctypes:Image",
+                "width": 917,
+                "height": 1352
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p053/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 053"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/053.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5476152315754486
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p054",
+          "@type": "sc:Canvas",
+          "label": "p. 054",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p054",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=54",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p054/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 054"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p055",
+          "@type": "sc:Canvas",
+          "label": "p. 055",
+          "width": 983,
+          "height": 1440,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p055",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=55",
+                "@type": "dctypes:Image",
+                "width": 983,
+                "height": 1440
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p055/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 055"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/055.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5519168123140114
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p056",
+          "@type": "sc:Canvas",
+          "label": "p. 056",
+          "width": 896,
+          "height": 1384,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p056",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=56",
+                "@type": "dctypes:Image",
+                "width": 896,
+                "height": 1384
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p056/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 056"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/056.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5723689663079524
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p057",
+          "@type": "sc:Canvas",
+          "label": "p. 057",
+          "width": 992,
+          "height": 1365,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p057",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=57",
+                "@type": "dctypes:Image",
+                "width": 992,
+                "height": 1365
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p057/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 057"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/057.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5571538224385624
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p058",
+          "@type": "sc:Canvas",
+          "label": "p. 058",
+          "width": 933,
+          "height": 1406,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p058",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=58",
+                "@type": "dctypes:Image",
+                "width": 933,
+                "height": 1406
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p058/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 058"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/058.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5759400439362371
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p059",
+          "@type": "sc:Canvas",
+          "label": "p. 059",
+          "width": 934,
+          "height": 1378,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p059",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=59",
+                "@type": "dctypes:Image",
+                "width": 934,
+                "height": 1378
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p059/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 059"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/059.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.553482675204977
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p060",
+          "@type": "sc:Canvas",
+          "label": "p. 060",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p060",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=60",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p060/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 060"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/060.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p061",
+          "@type": "sc:Canvas",
+          "label": "p. 061",
+          "width": 834,
+          "height": 1355,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p061",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=61",
+                "@type": "dctypes:Image",
+                "width": 834,
+                "height": 1355
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p061/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 061"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/061.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5758809287905129
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p062",
+          "@type": "sc:Canvas",
+          "label": "p. 062",
+          "width": 968,
+          "height": 1351,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p062",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=62",
+                "@type": "dctypes:Image",
+                "width": 968,
+                "height": 1351
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p062/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 062"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/062.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5473020815908393
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p063",
+          "@type": "sc:Canvas",
+          "label": "p. 063",
+          "width": 913,
+          "height": 1424,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p063",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=63",
+                "@type": "dctypes:Image",
+                "width": 913,
+                "height": 1424
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p063/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 063"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/063.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.542712354890938
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p064",
+          "@type": "sc:Canvas",
+          "label": "p. 064",
+          "width": 951,
+          "height": 1415,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p064",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=64",
+                "@type": "dctypes:Image",
+                "width": 951,
+                "height": 1415
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p064/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 064"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/064.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.565326359657113
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p065",
+          "@type": "sc:Canvas",
+          "label": "p. 065",
+          "width": 845,
+          "height": 1390,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p065",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=65",
+                "@type": "dctypes:Image",
+                "width": 845,
+                "height": 1390
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p065/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 065"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/065.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5671498173092417
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p066",
+          "@type": "sc:Canvas",
+          "label": "p. 066",
+          "width": 970,
+          "height": 1396,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p066",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=66",
+                "@type": "dctypes:Image",
+                "width": 970,
+                "height": 1396
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p066/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 066"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/066.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5784251230252112
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p067",
+          "@type": "sc:Canvas",
+          "label": "p. 067",
+          "width": 993,
+          "height": 1427,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p067",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=67",
+                "@type": "dctypes:Image",
+                "width": 993,
+                "height": 1427
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p067/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 067"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/067.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5579305307102638
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p068",
+          "@type": "sc:Canvas",
+          "label": "p. 068",
+          "width": 834,
+          "height": 1369,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p068",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=68",
+                "@type": "dctypes:Image",
+                "width": 834,
+                "height": 1369
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p068/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 068"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/068.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5519854668661578
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p069",
+          "@type": "sc:Canvas",
+          "label": "p. 069",
+          "width": 945,
+          "height": 1446,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p069",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=69",
+                "@type": "dctypes:Image",
+                "width": 945,
+                "height": 1446
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p069/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 069"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/069.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5586610314136048
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p070",
+          "@type": "sc:Canvas",
+          "label": "p. 070",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p070",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=70",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p070/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 070"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/070.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p071",
+          "@type": "sc:Canvas",
+          "label": "p. 071",
+          "width": 936,
+          "height": 1409,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p071",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=71",
+                "@type": "dctypes:Image",
+                "width": 936,
+                "height": 1409
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p071/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 071"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/071.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5528890000743968
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p072",
+          "@type": "sc:Canvas",
+          "label": "p. 072",
+          "width": 945,
+          "height": 1362,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p072",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=72",
+                "@type": "dctypes:Image",
+                "width": 945,
+                "height": 1362
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p072/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 072"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/072.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5421198048986745
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p073",
+          "@type": "sc:Canvas",
+          "label": "p. 073",
+          "width": 937,
+          "height": 1447,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p073",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=73",
+                "@type": "dctypes:Image",
+                "width": 937,
+                "height": 1447
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p073/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 073"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/073.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5561848945435564
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p074",
+          "@type": "sc:Canvas",
+          "label": "p. 074",
+          "width": 877,
+          "height": 1405,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p074",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=74",
+                "@type": "dctypes:Image",
+                "width": 877,
+                "height": 1405
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p074/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 074"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/074.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5515489037368564
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p075",
+          "@type": "sc:Canvas",
+          "label": "p. 075",
+          "width": 855,
+          "height": 1413,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p075",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=75",
+                "@type": "dctypes:Image",
+                "width": 855,
+                "height": 1413
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p075/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 075"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/075.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5401499180879223
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p076",
+          "@type": "sc:Canvas",
+          "label": "p. 076",
+          "width": 896,
+          "height": 1365,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p076",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=76",
+                "@type": "dctypes:Image",
+                "width": 896,
+                "height": 1365
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p076/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 076"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/076.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5753325402308351
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p077",
+          "@type": "sc:Canvas",
+          "label": "p. 077",
+          "width": 880,
+          "height": 1384,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p077",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=77",
+                "@type": "dctypes:Image",
+                "width": 880,
+                "height": 1384
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p077/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 077"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/077.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5729939239482713
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p078",
+          "@type": "sc:Canvas",
+          "label": "p. 078",
+          "width": 990,
+          "height": 1447,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p078",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=78",
+                "@type": "dctypes:Image",
+                "width": 990,
+                "height": 1447
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p078/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 078"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/078.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5647437474340679
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p079",
+          "@type": "sc:Canvas",
+          "label": "p. 079",
+          "width": 849,
+          "height": 1391,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p079",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=79",
+                "@type": "dctypes:Image",
+                "width": 849,
+                "height": 1391
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p079/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 079"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/079.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5751698045475269
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p080",
+          "@type": "sc:Canvas",
+          "label": "p. 080",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p080",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=80",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p080/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 080"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/080.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p081",
+          "@type": "sc:Canvas",
+          "label": "p. 081",
+          "width": 867,
+          "height": 1425,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p081",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=81",
+                "@type": "dctypes:Image",
+                "width": 867,
+                "height": 1425
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p081/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 081"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/081.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5614306046766459
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p082",
+          "@type": "sc:Canvas",
+          "label": "p. 082",
+          "width": 937,
+          "height": 1393,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p082",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=82",
+                "@type": "dctypes:Image",
+                "width": 937,
+                "height": 1393
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p082/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 082"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/082.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5474645360441648
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p083",
+          "@type": "sc:Canvas",
+          "label": "p. 083",
+          "width": 883,
+          "height": 1407,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p083",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=83",
+                "@type": "dctypes:Image",
+                "width": 883,
+                "height": 1407
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p083/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 083"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/083.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5614305786639732
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p084",
+          "@type": "sc:Canvas",
+          "label": "p. 084",
+          "width": 872,
+          "height": 1447,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p084",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=84",
+                "@type": "dctypes:Image",
+                "width": 872,
+                "height": 1447
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p084/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 084"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/084.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5780675653111443
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p085",
+          "@type": "sc:Canvas",
+          "label": "p. 085",
+          "width": 1008,
+          "height": 1362,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p085",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=85",
+                "@type": "dctypes:Image",
+                "width": 1008,
+                "height": 1362
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p085/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 085"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/085.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5575755128176269
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p086",
+          "@type": "sc:Canvas",
+          "label": "p. 086",
+          "width": 860,
+          "height": 1430,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p086",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=86",
+                "@type": "dctypes:Image",
+                "width": 860,
+                "height": 1430
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p086/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 086"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/086.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.545018853317547
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p087",
+          "@type": "sc:Canvas",
+          "label": "p. 087",
+          "width": 877,
+          "height": 1428,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p087",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=87",
+                "@type": "dctypes:Image",
+                "width": 877,
+                "height": 1428
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p087/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 087"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/087.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5474400071191727
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p088",
+          "@type": "sc:Canvas",
+          "label": "p. 088",
+          "width": 868,
+          "height": 1356,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p088",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=88",
+                "@type": "dctypes:Image",
+                "width": 868,
+                "height": 1356
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p088/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 088"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/088.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5669212788425516
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p089",
+          "@type": "sc:Canvas",
+          "label": "p. 089",
+          "width": 970,
+          "height": 1367,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p089",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=89",
+                "@type": "dctypes:Image",
+                "width": 970,
+                "height": 1367
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p089/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 089"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/089.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.542603376751572
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p090",
+          "@type": "sc:Canvas",
+          "label": "p. 090",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p090",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=90",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p090/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 090"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p091",
+          "@type": "sc:Canvas",
+          "label": "p. 091",
+          "width": 962,
+          "height": 1448,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p091",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=91",
+                "@type": "dctypes:Image",
+                "width": 962,
+                "height": 1448
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p091/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 091"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/091.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5567431179768851
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p092",
+          "@type": "sc:Canvas",
+          "label": "p. 092",
+          "width": 953,
+          "height": 1412,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p092",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=92",
+                "@type": "dctypes:Image",
+                "width": 953,
+                "height": 1412
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p092/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 092"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/092.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5755258989423592
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p093",
+          "@type": "sc:Canvas",
+          "label": "p. 093",
+          "width": 966,
+          "height": 1402,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p093",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=93",
+                "@type": "dctypes:Image",
+                "width": 966,
+                "height": 1402
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p093/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 093"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/093.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5446903362339546
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p094",
+          "@type": "sc:Canvas",
+          "label": "p. 094",
+          "width": 866,
+          "height": 1391,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p094",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=94",
+                "@type": "dctypes:Image",
+                "width": 866,
+                "height": 1391
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p094/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 094"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/094.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5654528755412623
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p095",
+          "@type": "sc:Canvas",
+          "label": "p. 095",
+          "width": 958,
+          "height": 1355,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p095",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=95",
+                "@type": "dctypes:Image",
+                "width": 958,
+                "height": 1355
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p095/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 095"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/095.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.566690377689085
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p096",
+          "@type": "sc:Canvas",
+          "label": "p. 096",
+          "width": 899,
+          "height": 1385,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p096",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=96",
+                "@type": "dctypes:Image",
+                "width": 899,
+                "height": 1385
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p096/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 096"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/096.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5444345968789897
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p097",
+          "@type": "sc:Canvas",
+          "label": "p. 097",
+          "width": 1009,
+          "height": 1443,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p097",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=97",
+                "@type": "dctypes:Image",
+                "width": 1009,
+                "height": 1443
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p097/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 097"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/097.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5420571839177469
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p098",
+          "@type": "sc:Canvas",
+          "label": "p. 098",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p098",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=98",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p098/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 098"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p099",
+          "@type": "sc:Canvas",
+          "label": "p. 099",
+          "width": 1000,
+          "height": 1434,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p099",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=99",
+                "@type": "dctypes:Image",
+                "width": 1000,
+                "height": 1434
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p099/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 099"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/099.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5420958238908775
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p100",
+          "@type": "sc:Canvas",
+          "label": "p. 100",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p100",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=100",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p100/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 100"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/100.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p101",
+          "@type": "sc:Canvas",
+          "label": "p. 101",
+          "width": 912,
+          "height": 1421,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p101",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=101",
+                "@type": "dctypes:Image",
+                "width": 912,
+                "height": 1421
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p101/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 101"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/101.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5453928682907638
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p102",
+          "@type": "sc:Canvas",
+          "label": "p. 102",
+          "width": 864,
+          "height": 1443,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p102",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=102",
+                "@type": "dctypes:Image",
+                "width": 864,
+                "height": 1443
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p102/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 102"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/102.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5609138017100579
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p103",
+          "@type": "sc:Canvas",
+          "label": "p. 103",
+          "width": 999,
+          "height": 1446,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p103",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=103",
+                "@type": "dctypes:Image",
+                "width": 999,
+                "height": 1446
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p103/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 103"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/103.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5616622325821413
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p104",
+          "@type": "sc:Canvas",
+          "label": "p. 104",
+          "width": 933,
+          "height": 1404,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p104",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=104",
+                "@type": "dctypes:Image",
+                "width": 933,
+                "height": 1404
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p104/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 104"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/104.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5667617369969101
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p105",
+          "@type": "sc:Canvas",
+          "label": "p. 105",
+          "width": 967,
+          "height": 1450,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p105",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=105",
+                "@type": "dctypes:Image",
+                "width": 967,
+                "height": 1450
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p105/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 105"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/105.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5780709420161666
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p106",
+          "@type": "sc:Canvas",
+          "label": "p. 106",
+          "width": 996,
+          "height": 1440,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p106",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=106",
+                "@type": "dctypes:Image",
+                "width": 996,
+                "height": 1440
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p106/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 106"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/106.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5530689004472062
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p107",
+          "@type": "sc:Canvas",
+          "label": "p. 107",
+          "width": 871,
+          "height": 1423,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p107",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=107",
+                "@type": "dctypes:Image",
+                "width": 871,
+                "height": 1423
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p107/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 107"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/107.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5428004925406382
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p108",
+          "@type": "sc:Canvas",
+          "label": "p. 108",
+          "width": 1009,
+          "height": 1434,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p108",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=108",
+                "@type": "dctypes:Image",
+                "width": 1009,
+                "height": 1434
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p108/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 108"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/108.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5480886793312767
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p109",
+          "@type": "sc:Canvas",
+          "label": "p. 109",
+          "width": 949,
+          "height": 1358,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p109",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=109",
+                "@type": "dctypes:Image",
+                "width": 949,
+                "height": 1358
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p109/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 109"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/109.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5578901524762057
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p110",
+          "@type": "sc:Canvas",
+          "label": "p. 110",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p110",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=110",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p110/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 110"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/110.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p111",
+          "@type": "sc:Canvas",
+          "label": "p. 111",
+          "width": 948,
+          "height": 1380,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p111",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=111",
+                "@type": "dctypes:Image",
+                "width": 948,
+                "height": 1380
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p111/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 111"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/111.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5731138650670572
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p112",
+          "@type": "sc:Canvas",
+          "label": "p. 112",
+          "width": 835,
+          "height": 1368,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p112",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=112",
+                "@type": "dctypes:Image",
+                "width": 835,
+                "height": 1368
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p112/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 112"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/112.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5670646659056904
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p113",
+          "@type": "sc:Canvas",
+          "label": "p. 113",
+          "width": 938,
+          "height": 1411,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p113",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=113",
+                "@type": "dctypes:Image",
+                "width": 938,
+                "height": 1411
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p113/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 113"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/113.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5701990102259266
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p114",
+          "@type": "sc:Canvas",
+          "label": "p. 114",
+          "width": 901,
+          "height": 1443,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p114",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=114",
+                "@type": "dctypes:Image",
+                "width": 901,
+                "height": 1443
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p114/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 114"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/114.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5712533726274932
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p115",
+          "@type": "sc:Canvas",
+          "label": "p. 115",
+          "width": 871,
+          "height": 1387,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p115",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=115",
+                "@type": "dctypes:Image",
+                "width": 871,
+                "height": 1387
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p115/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 115"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/115.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.553289171092153
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p116",
+          "@type": "sc:Canvas",
+          "label": "p. 116",
+          "width": 968,
+          "height": 1421,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p116",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=116",
+                "@type": "dctypes:Image",
+                "width": 968,
+                "height": 1421
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p116/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 116"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/116.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5403460188082241
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p117",
+          "@type": "sc:Canvas",
+          "label": "p. 117",
+          "width": 889,
+          "height": 1418,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p117",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=117",
+                "@type": "dctypes:Image",
+                "width": 889,
+                "height": 1418
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p117/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 117"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/117.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5744646518047909
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p118",
+          "@type": "sc:Canvas",
+          "label": "p. 118",
+          "width": 879,
+          "height": 1423,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p118",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=118",
+                "@type": "dctypes:Image",
+                "width": 879,
+                "height": 1423
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p118/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 118"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/118.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5724127548652281
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p119",
+          "@type": "sc:Canvas",
+          "label": "p. 119",
+          "width": 959,
+          "height": 1449,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p119",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=119",
+                "@type": "dctypes:Image",
+                "width": 959,
+                "height": 1449
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p119/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 119"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/119.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5662978380744379
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p120",
+          "@type": "sc:Canvas",
+          "label": "p. 120",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p120",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=120",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p120/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 120"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/120.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p121",
+          "@type": "sc:Canvas",
+          "label": "p. 121",
+          "width": 843,
+          "height": 1371,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p121",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=121",
+                "@type": "dctypes:Image",
+                "width": 843,
+                "height": 1371
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p121/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 121"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/121.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.550150180376961
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p122",
+          "@type": "sc:Canvas",
+          "label": "p. 122",
+          "width": 949,
+          "height": 1387,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p122",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=122",
+                "@type": "dctypes:Image",
+                "width": 949,
+                "height": 1387
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p122/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 122"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/122.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5763186579068171
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p123",
+          "@type": "sc:Canvas",
+          "label": "p. 123",
+          "width": 877,
+          "height": 1401,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p123",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=123",
+                "@type": "dctypes:Image",
+                "width": 877,
+                "height": 1401
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p123/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 123"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/123.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5776793109742516
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p124",
+          "@type": "sc:Canvas",
+          "label": "p. 124",
+          "width": 908,
+          "height": 1405,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p124",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=124",
+                "@type": "dctypes:Image",
+                "width": 908,
+                "height": 1405
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p124/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 124"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/124.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5670533339063215
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p125",
+          "@type": "sc:Canvas",
+          "label": "p. 125",
+          "width": 1004,
+          "height": 1389,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p125",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=125",
+                "@type": "dctypes:Image",
+                "width": 1004,
+                "height": 1389
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p125/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 125"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/125.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5786802527446789
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p126",
+          "@type": "sc:Canvas",
+          "label": "p. 126",
+          "width": 972,
+          "height": 1384,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p126",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=126",
+                "@type": "dctypes:Image",
+                "width": 972,
+                "height": 1384
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p126/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 126"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/126.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.574962473881631
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p127",
+          "@type": "sc:Canvas",
+          "label": "p. 127",
+          "width": 973,
+          "height": 1395,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p127",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=127",
+                "@type": "dctypes:Image",
+                "width": 973,
+                "height": 1395
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p127/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 127"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/127.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5487795756603028
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p128",
+          "@type": "sc:Canvas",
+          "label": "p. 128",
+          "width": 836,
+          "height": 1426,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p128",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=128",
+                "@type": "dctypes:Image",
+                "width": 836,
+                "height": 1426
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p128/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 128"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/128.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5566043800246778
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p129",
+          "@type": "sc:Canvas",
+          "label": "p. 129",
+          "width": 863,
+          "height": 1441,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p129",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=129",
+                "@type": "dctypes:Image",
+                "width": 863,
+                "height": 1441
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p129/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 129"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/129.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5438948683411484
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p130",
+          "@type": "sc:Canvas",
+          "label": "p. 130",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p130",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=130",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p130/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 130"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/130.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p131",
+          "@type": "sc:Canvas",
+          "label": "p. 131",
+          "width": 967,
+          "height": 1410,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p131",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=131",
+                "@type": "dctypes:Image",
+                "width": 967,
+                "height": 1410
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p131/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 131"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/131.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5782273609240424
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p132",
+          "@type": "sc:Canvas",
+          "label": "p. 132",
+          "width": 957,
+          "height": 1361,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p132",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=132",
+                "@type": "dctypes:Image",
+                "width": 957,
+                "height": 1361
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p132/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 132"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/132.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5557604526428596
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p133",
+          "@type": "sc:Canvas",
+          "label": "p. 133",
+          "width": 907,
+          "height": 1401,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p133",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=133",
+                "@type": "dctypes:Image",
+                "width": 907,
+                "height": 1401
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p133/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 133"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/133.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5663577933140256
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p134",
+          "@type": "sc:Canvas",
+          "label": "p. 134",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p134",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=134",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p134/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 134"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p135",
+          "@type": "sc:Canvas",
+          "label": "p. 135",
+          "width": 986,
+          "height": 1422,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p135",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=135",
+                "@type": "dctypes:Image",
+                "width": 986,
+                "height": 1422
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p135/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 135"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/135.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5669748843752893
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p136",
+          "@type": "sc:Canvas",
+          "label": "p. 136",
+          "width": 921,
+          "height": 1377,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p136",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=136",
+                "@type": "dctypes:Image",
+                "width": 921,
+                "height": 1377
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p136/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 136"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/136.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5672464070837745
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p137",
+          "@type": "sc:Canvas",
+          "label": "p. 137",
+          "width": 950,
+          "height": 1406,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p137",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=137",
+                "@type": "dctypes:Image",
+                "width": 950,
+                "height": 1406
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p137/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 137"
+            }
+          ],
+          "seeAlso": [
+            {
+              "@id": "http://localhost:8000/history00871/hocr/137.hocr",
+              "format": "text/vnd.hocr+html",
+              "profile": "http://kba.github.io/hocr-spec/1.2/",
+              "label": "HOCR OCR text"
+            }
+          ],
+          "scaleFactor": 0.5728551156714679
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p138",
+          "@type": "sc:Canvas",
+          "label": "p. 138",
+          "width": 980,
+          "height": 1412,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p138",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=138",
+                "@type": "dctypes:Image",
+                "width": 980,
+                "height": 1412
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p138/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 138"
+            }
+          ],
+          "scaleFactor": 0.5715874229817123
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p139",
+          "@type": "sc:Canvas",
+          "label": "p. 139",
+          "width": 956,
+          "height": 1386,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p139",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=139",
+                "@type": "dctypes:Image",
+                "width": 956,
+                "height": 1386
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p139/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 139"
+            }
+          ],
+          "scaleFactor": 0.5540999575151794
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p140",
+          "@type": "sc:Canvas",
+          "label": "p. 140",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p140",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=140",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p140/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 140"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p141",
+          "@type": "sc:Canvas",
+          "label": "p. 141",
+          "width": 911,
+          "height": 1421,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p141",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=141",
+                "@type": "dctypes:Image",
+                "width": 911,
+                "height": 1421
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p141/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 141"
+            }
+          ],
+          "scaleFactor": 0.5560933984585705
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p142",
+          "@type": "sc:Canvas",
+          "label": "p. 142",
+          "width": 834,
+          "height": 1358,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p142",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=142",
+                "@type": "dctypes:Image",
+                "width": 834,
+                "height": 1358
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p142/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 142"
+            }
+          ],
+          "scaleFactor": 0.57442844341341
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p143",
+          "@type": "sc:Canvas",
+          "label": "p. 143",
+          "width": 982,
+          "height": 1384,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p143",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=143",
+                "@type": "dctypes:Image",
+                "width": 982,
+                "height": 1384
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p143/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 143"
+            }
+          ],
+          "scaleFactor": 0.5678846926152183
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p144",
+          "@type": "sc:Canvas",
+          "label": "p. 144",
+          "width": 919,
+          "height": 1389,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p144",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=144",
+                "@type": "dctypes:Image",
+                "width": 919,
+                "height": 1389
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p144/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 144"
+            }
+          ],
+          "scaleFactor": 0.5424967425040633
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p145",
+          "@type": "sc:Canvas",
+          "label": "p. 145",
+          "width": 990,
+          "height": 1386,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p145",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=145",
+                "@type": "dctypes:Image",
+                "width": 990,
+                "height": 1386
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p145/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 145"
+            }
+          ],
+          "scaleFactor": 0.5732233346250293
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p146",
+          "@type": "sc:Canvas",
+          "label": "p. 146",
+          "width": 975,
+          "height": 1390,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p146",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=146",
+                "@type": "dctypes:Image",
+                "width": 975,
+                "height": 1390
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p146/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 146"
+            }
+          ],
+          "scaleFactor": 0.561664419112306
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p147",
+          "@type": "sc:Canvas",
+          "label": "p. 147",
+          "width": 919,
+          "height": 1389,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p147",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=147",
+                "@type": "dctypes:Image",
+                "width": 919,
+                "height": 1389
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p147/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 147"
+            }
+          ],
+          "scaleFactor": 0.5510396419023842
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p148",
+          "@type": "sc:Canvas",
+          "label": "p. 148",
+          "width": 954,
+          "height": 1439,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p148",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=148",
+                "@type": "dctypes:Image",
+                "width": 954,
+                "height": 1439
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p148/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 148"
+            }
+          ],
+          "scaleFactor": 0.5682909950097255
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p149",
+          "@type": "sc:Canvas",
+          "label": "p. 149",
+          "width": 838,
+          "height": 1444,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p149",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=149",
+                "@type": "dctypes:Image",
+                "width": 838,
+                "height": 1444
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p149/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 149"
+            }
+          ],
+          "scaleFactor": 0.5494087738088531
+        },
+        {
+          "@id": "http://localhost:8000/history00871/manifest.json/canvas/p150",
+          "@type": "sc:Canvas",
+          "label": "p. 150",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "http://localhost:8000/history00871/manifest.json/canvas/p150",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/2/history00871.pdf/full/full/0/default.jpg?page=150",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/history00871/p150/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 150"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "@context": "http://iiif.io/api/search/0/context.json",
+      "@id": "http://localhost:5001/search",
+      "profile": "http://iiif.io/api/search/0/search",
+      "label": "Search within this manifest",
+      "service": {
+        "@id": "http://localhost:5001/autocomplete",
+        "profile": "http://iiif.io/api/search/0/autocomplete",
+        "label": "Autocomplete words in this manifest"
+      }
+    }
+  ],
+  "metadata": [
+    {
+      "label": "Coordinate System",
+      "value": "HOCR coordinates are automatically scaled to match PDF rendering in Cantaloupe"
+    },
+    {
+      "label": "Auto-Scaling",
+      "value": "Each page uses its own calculated scale factor based on comparing HOCR, PDF, and Cantaloupe dimensions"
+    }
+  ],
+  "viewingDirection": "right-to-left",
+  "related": {
+    "@id": "http://localhost:8000/history00871/history00871.pdf",
+    "format": "application/pdf",
+    "label": "Download full PDF"
+  }
+}

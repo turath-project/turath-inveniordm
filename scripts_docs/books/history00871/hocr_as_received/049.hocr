@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>48_ history00871 تاريخ ابن عباد/hocr/049.hocr</title>
+		<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="ocr-capabilities" content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf"/>
+	</head>
+	<body>
+		<div class="ocr_page" id="page_049" title="image '48_ history00871 تاريخ ابن عباد/049.jpg'; bbox 0 0 1585 2520; ppageno 049" style="padding: 100px;">
+			<div class="ocr_carea" id="block_049_1" title="bbox 100 100 1685 2620">
+				<p class="ocr_par" id="Image_0" lang="ara" title="bbox 322 230 1585 2262" coordinate1="1585 230" coordinate2="322 230" coordinate3="322 2262" coordinate4="1585 2262" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿صورة</p>
+				<p class="ocr_par" id="ImageDesc_1" lang="ara" title="bbox 480 2278 1450 2365" coordinate1="1450 2278" coordinate2="480 2278" coordinate3="480 2365" coordinate4="1450 2365" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿الصفحة الأولى من مخطوطة ( تاريخ ابن عباد )</p>
+				<p class="ocr_par" id="PageNumber_2" lang="ara" title="bbox 945 2445 1022 2520" coordinate1="1022 2445" coordinate2="945 2445" coordinate3="945 2520" coordinate4="1022 2520" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿٤٩</p>
+			</div>
+		</div>
+	</body>
+</html>

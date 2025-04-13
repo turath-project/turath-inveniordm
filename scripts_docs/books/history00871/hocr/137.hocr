@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>48_ history00871 تاريخ ابن عباد/hocr/137.hocr</title>
+<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf" name="ocr-capabilities"/>
+</head>
+<body>
+<div class="ocr_page" id="page_137" style="padding: 100px;" title="image '48_ history00871 تاريخ ابن عباد/137.jpg'; bbox 0 0 1150 2522; ppageno 137">
+<div class="ocr_carea" id="block_137_1" title="bbox 100 100 1250 2622">
+<div class="ocr_carea"><span class="ocr_line" id="line_Paragraph_0_0" lang="ara" style="display: block; text-align: right; direction: rtl;" title="bbox 798 2358 1150 2398"><span class="ocrx_word" id="word_Paragraph_0_0" title="bbox 798 2358 1150 2398">﻿طبع بمطابع الناشر العربي</span></span><span class="ocr_line" id="line_Paragraph_0_1" lang="ara" style="display: block; text-align: right; direction: rtl;" title="bbox 798 2398 1150 2438"><span class="ocrx_word" id="word_Paragraph_0_1" title="bbox 798 2398 1150 2438">الرياض - هاتف : ٤٥٣٠٠١١</span></span><span class="ocr_line" id="line_Paragraph_0_2" lang="ara" style="display: block; text-align: right; direction: rtl;" title="bbox 798 2438 1150 2478"><span class="ocrx_word" id="word_Paragraph_0_2" title="bbox 798 2438 1150 2478">فاكس : ٤٥٦٣١٤٥</span></span></div>
+</div>
+</div>
+</body>
+</html>

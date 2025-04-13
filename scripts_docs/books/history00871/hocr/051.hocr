@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>48_ history00871 تاريخ ابن عباد/hocr/051.hocr</title>
+<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf" name="ocr-capabilities"/>
+</head>
+<body>
+<div class="ocr_page" id="page_051" style="padding: 100px;" title="image '48_ history00871 تاريخ ابن عباد/051.jpg'; bbox 0 0 1652 2508; ppageno 051">
+<div class="ocr_carea" id="block_051_1" title="bbox 100 100 1752 2608">
+<div class="ocr_carea"><span class="ocr_line" id="line_Image_0_0" lang="ara" style="display: block; text-align: right; direction: rtl;" title="bbox 360 195 1585 235"><span class="ocrx_word" id="word_Image_0_0" title="bbox 360 195 1585 235">﻿صورة</span></span></div>
+<div class="ocr_carea"><span class="ocr_line" id="line_ImageDesc_1_0" lang="ara" style="display: block; text-align: right; direction: rtl;" title="bbox 302 2085 1652 2125"><span class="ocrx_word" id="word_ImageDesc_1_0" title="bbox 302 2085 1652 2125">﻿الصفحة الأخيرة من مخطوطة ( تاريخ ابن عباد ) وتنظر</span></span><span class="ocr_line" id="line_ImageDesc_1_1" lang="ara" style="display: block; text-align: right; direction: rtl;" title="bbox 302 2125 1652 2165"><span class="ocrx_word" id="word_ImageDesc_1_1" title="bbox 302 2125 1652 2165">الصفحة ( ٣٦ ) من الكتاب حول اسم الناسخ الذي نقل المخطوطة من</span></span><span class="ocr_line" id="line_ImageDesc_1_2" lang="ara" style="display: block; text-align: right; direction: rtl;" title="bbox 302 2165 1652 2205"><span class="ocrx_word" id="word_ImageDesc_1_2" title="bbox 302 2165 1652 2205">خط الشيخ عثمان بن منصور .</span></span></div>
+<div class="ocr_carea"><span class="ocr_line" id="line_PageNumber_2_0" lang="ara" style="display: block; text-align: right; direction: rtl;" title="bbox 945 2455 1035 2495"><span class="ocrx_word" id="word_PageNumber_2_0" title="bbox 945 2455 1035 2495">﻿٥١</span></span></div>
+</div>
+</div>
+</body>
+</html>

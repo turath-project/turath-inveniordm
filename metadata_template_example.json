@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "title": "Book Title",
+    "publication_date": "2025-04-14",
+    "resource_type": {
+      "id": "publication-book"
+    },
+    "creators": [
+      {
+        "person_or_org": {
+          "family_name": "Author",
+          "given_name": "Primary",
+          "type": "personal"
+        },
+        "role": "author"
+      }
+    ],
+    "languages": [
+      {
+        "id": "ara"
+      }
+    ],
+    "description": "Description of the book",
+    "identifiers": [
+      {
+        "identifier": "book-identifier",
+        "scheme": "other"
+      }
+    ]
+  },
+  "access": {
+    "record": "public",
+    "files": "public"
+  },
+  "files": {
+    "enabled": true
+  },
+  "custom_fields": {
+    "turath:iiif_manifest": "http://your-server.com/iiif/3/book-id/manifest.json"
+  }
+}

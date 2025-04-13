@@ -23,6 +23,29 @@ will issue a warning that you will have to by-pass.
 
 ## Features
 
+### Enhanced IIIF Manifest Generation
+
+The project includes a script for generating IIIF Presentation API 2.1 compliant manifests with advanced features:
+
+- **Auto-scaling for HOCR Coordinates**: Automatically calculates appropriate scale factors by comparing HOCR, PDF, and Cantaloupe dimensions
+- **PDF Integration**: Creates manifests that reference PDF pages via Cantaloupe IIIF server
+- **Smart Dimension Detection**: Extracts actual dimensions from HOCR files and PDF pages
+- **Complete Manifest Structure**: Generates all required IIIF fields including search service integration and annotation support
+
+To use the script:
+
+```bash
+python scripts/generate_manifest.py --book-dir /path/to/book --auto-scale
+```
+
+For full options:
+
+```bash
+python scripts/generate_manifest.py --help
+```
+
+The script requires additional dependencies: Pillow, BeautifulSoup4, PyPDF2. These are included in the Pipfile.
+
 ### Custom Metadata Schema for Cultural Heritage Materials
 
 Turath InvenioRDM includes an extended metadata schema customized for cultural heritage materials. The configuration uses the turath namespace to organize custom fields, ensuring clear data organization and avoiding name clashes.

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>48_ history00871 تاريخ ابن عباد/hocr/048.hocr</title>
+		<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="ocr-capabilities" content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf"/>
+	</head>
+	<body>
+		<div class="ocr_page" id="page_048" title="image '48_ history00871 تاريخ ابن عباد/048.jpg'; bbox 0 0 1675 2530; ppageno 048" style="padding: 100px;">
+			<div class="ocr_carea" id="block_048_1" title="bbox 100 100 1775 2630">
+				<p class="ocr_par" id="Paragraph_0" lang="ara" title="bbox 202 225 1675 608" coordinate1="1675 225" coordinate2="202 225" coordinate3="202 608" coordinate4="1675 608" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿الصعب أن نجزم أن هذه الأخطاء من المؤلف أو أحد الناسخين ، على الرغم من أن
+الشيخ ( عثمان بن منصور ) الذي نسخ المخطوطة عن نسخة المؤلف قال :
+" نقلته بحروفه ولغته التي ركبه عليها " . مما يقوي الاحتمال أن الأخطاء من 
+المؤلف ومن الناسخين ، وأيا كان الأمر فمن غير المناسب الاستمرار في الخطأ</p>
+				<p class="ocr_par" id="Paragraph_1" lang="ara" title="bbox 190 608 1662 828" coordinate1="190 608" coordinate2="1662 608" coordinate3="1662 828" coordinate4="190 828" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿وأما الأخطاء النحوية فهي محدودة ، وقد قمت بتصويبها عدا جمع الفعل
+مع ذكر الفاعل ظاهراً ، وهو أكثر انتشاراً في المخطوطة ، وذلك لأمرين :</p>
+				<p class="ocr_par" id="Paragraph_2" lang="ara" title="bbox 212 835 1668 1018" coordinate1="1668 835" coordinate2="212 835" coordinate3="212 1018" coordinate4="1668 1018" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿أولهما : أن هذا الاستعمال لغة تنسب إلى بني الحارث بن كعب وهي
+المعروفة بلغة ( أكلوني البراغيث ) ، وإليها أشار ابن مالك بقوله :</p>
+				<p class="ocr_par" id="Poetry_3" lang="ara" title="bbox 350 1040 1498 1138" coordinate1="1498 1040" coordinate2="350 1040" coordinate3="350 1138" coordinate4="1498 1138" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿وجرد الفعل إذا ما أسندا لاثنين أو جمع كفاز الشُّهَدَا</p>
+				<p class="ocr_par" id="Poetry_4" lang="ara" title="bbox 338 1145 1508 1258" coordinate1="338 1145" coordinate2="1508 1145" coordinate3="1508 1258" coordinate4="338 1258" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿وقد يقال سعدا وسعدوا والفعل للظاهر بعد مسند</p>
+				<p class="ocr_par" id="Paragraph_5" lang="ara" title="bbox 212 1295 1640 1462" coordinate1="1640 1295" coordinate2="212 1295" coordinate3="212 1462" coordinate4="1640 1462" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿وفي الحديث : « يتعاقبون فيكم ملائكة بالليل وملائكة بالنهار » على
+الرواية المشهورة .</p>
+				<p class="ocr_par" id="Paragraph_6" lang="ara" title="bbox 205 1480 1658 1672" coordinate1="205 1480" coordinate2="1658 1480" coordinate3="1658 1672" coordinate4="205 1672" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿والأمر الآخر : هو أن هذه اللغة لا تزال شائعة الاستعمال في معظم البلاد
+العربية .</p>
+				<p class="ocr_par" id="PageNumber_7" lang="ara" title="bbox 892 2445 972 2530" coordinate1="972 2445" coordinate2="892 2445" coordinate3="892 2530" coordinate4="972 2530" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿- ٤٨ -</p>
+			</div>
+		</div>
+	</body>
+</html>

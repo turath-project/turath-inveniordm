@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>48_ history00871 تاريخ ابن عباد/hocr/053.hocr</title>
+		<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="ocr-capabilities" content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf"/>
+	</head>
+	<body>
+		<div class="ocr_page" id="page_053" title="image '48_ history00871 تاريخ ابن عباد/053.jpg'; bbox 0 0 1292 2512; ppageno 053" style="padding: 100px;">
+			<div class="ocr_carea" id="block_053_1" title="bbox 100 100 1392 2612">
+				<p class="ocr_par" id="Title_0" lang="ara" title="bbox 662 1220 1292 1400" coordinate1="1292 1220" coordinate2="662 1220" coordinate3="662 1400" coordinate4="1292 1400" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿تحقيق المخطوطة</p>
+				<p class="ocr_par" id="PageNumber_1" lang="ara" title="bbox 952 2440 1028 2512" coordinate1="1028 2440" coordinate2="952 2440" coordinate3="952 2512" coordinate4="1028 2512" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿٥٣</p>
+			</div>
+		</div>
+	</body>
+</html>

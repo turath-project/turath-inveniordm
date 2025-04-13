@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>48_ history00871 تاريخ ابن عباد/hocr/089.hocr</title>
+		<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="ocr-capabilities" content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf"/>
+	</head>
+	<body>
+		<div class="ocr_page" id="page_089" title="image '48_ history00871 تاريخ ابن عباد/089.jpg'; bbox 0 0 1765 2508; ppageno 089" style="padding: 100px;">
+			<div class="ocr_carea" id="block_089_1" title="bbox 100 100 1865 2608">
+				<p class="ocr_par" id="Title_0" lang="ara" title="bbox 498 710 1432 908" coordinate1="1432 710" coordinate2="498 710" coordinate3="498 908" coordinate4="1432 908" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿ثبت المصادر والمراجع </p>
+				<p class="ocr_par" id="Paragraph_1" lang="ara" title="bbox 930 1010 1728 1165" coordinate1="1728 1010" coordinate2="930 1010" coordinate3="930 1165" coordinate4="1728 1165" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿الأول - المخطوطات .
+</p>
+				<p class="ocr_par" id="Paragraph_2" lang="ara" title="bbox 768 1208 1765 1350" coordinate1="1765 1208" coordinate2="768 1208" coordinate3="768 1350" coordinate4="1765 1350" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿الثاني - الكتب المطبوعة .
+</p>
+				<p class="ocr_par" id="Paragraph_3" lang="ara" title="bbox 968 1408 1685 1538" coordinate1="1685 1408" coordinate2="968 1408" coordinate3="968 1538" coordinate4="1685 1538" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿الثالث - الدوريات .
+</p>
+				<p class="ocr_par" id="PageNumber_4" lang="ara" title="bbox 932 2430 1008 2508" coordinate1="1008 2430" coordinate2="932 2430" coordinate3="932 2508" coordinate4="1008 2508" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿٨٩</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>48_ history00871 تاريخ ابن عباد/hocr/049.hocr</title>
+<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf" name="ocr-capabilities"/>
+</head>
+<body>
+<div class="ocr_page" id="page_049" style="padding: 100px;" title="image '48_ history00871 تاريخ ابن عباد/049.jpg'; bbox 0 0 1585 2520; ppageno 049">
+<div class="ocr_carea" id="block_049_1" title="bbox 100 100 1685 2620">
+<div class="ocr_carea"><span class="ocr_line" id="line_Image_0_0" lang="ara" style="display: block; text-align: right; direction: rtl;" title="bbox 322 230 1585 270"><span class="ocrx_word" id="word_Image_0_0" title="bbox 322 230 1585 270">﻿صورة</span></span></div>
+<div class="ocr_carea"><span class="ocr_line" id="line_ImageDesc_1_0" lang="ara" style="display: block; text-align: right; direction: rtl;" title="bbox 480 2278 1450 2318"><span class="ocrx_word" id="word_ImageDesc_1_0" title="bbox 480 2278 1450 2318">﻿الصفحة الأولى من مخطوطة ( تاريخ ابن عباد )</span></span></div>
+<div class="ocr_carea"><span class="ocr_line" id="line_PageNumber_2_0" lang="ara" style="display: block; text-align: right; direction: rtl;" title="bbox 945 2445 1022 2485"><span class="ocrx_word" id="word_PageNumber_2_0" title="bbox 945 2445 1022 2485">﻿٤٩</span></span></div>
+</div>
+</div>
+</body>
+</html>
