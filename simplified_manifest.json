@@ -1,0 +1,83 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "http://127.0.0.1:9443/simplified_manifest",
+  "@type": "sc:Manifest",
+  "label": "Test Book Manifest",
+  "metadata": [
+    {
+      "label": "Title",
+      "value": "Test Book"
+    },
+    {
+      "label": "Author",
+      "value": "Test Author"
+    },
+    {
+      "label": "Language",
+      "value": "Arabic/English"
+    }
+  ],
+  "description": "A test manifest for IIIF integration with InvenioRDM",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Turath Digital Library",
+  "sequences": [
+    {
+      "@id": "http://127.0.0.1:9443/sequence/normal",
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "http://127.0.0.1:9443/canvas/p1",
+          "@type": "sc:Canvas",
+          "label": "Page 1",
+          "height": 1200,
+          "width": 800,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "http://127.0.0.1:9443/image/p1/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 1200,
+                "width": 800,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://127.0.0.1:9443/image/p1",
+                  "profile": "http://iiif.io/api/image/2/level1.json"
+                }
+              },
+              "on": "http://127.0.0.1:9443/canvas/p1"
+            }
+          ]
+        },
+        {
+          "@id": "http://127.0.0.1:9443/canvas/p2",
+          "@type": "sc:Canvas",
+          "label": "Page 2",
+          "height": 1200,
+          "width": 800,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "http://127.0.0.1:9443/image/p2/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 1200,
+                "width": 800,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://127.0.0.1:9443/image/p2",
+                  "profile": "http://iiif.io/api/image/2/level1.json"
+                }
+              },
+              "on": "http://127.0.0.1:9443/canvas/p2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} 

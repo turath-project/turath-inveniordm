@@ -1,0 +1,80 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://localhost:8443/public_manifest",
+    "@type": "sc:Manifest",
+    "label": "Test Book Manifest",
+    "metadata": [
+      {
+        "label": "Title",
+        "value": "Test Book for InvenioRDM Integration"
+      },
+      {
+        "label": "Author",
+        "value": "Turath Digital Library"
+      }
+    ],
+    "description": "A test IIIF manifest for verifying integration with InvenioRDM",
+    "attribution": "Turath Digital Library",
+    "logo": "https://localhost:8443/logo",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "sequences": [
+      {
+        "@id": "https://localhost:8443/sequence/normal",
+        "@type": "sc:Sequence",
+        "canvases": [
+          {
+            "@id": "https://localhost:8443/canvas/p1",
+            "@type": "sc:Canvas",
+            "label": "Page 1",
+            "width": 800,
+            "height": 1200,
+            "images": [
+              {
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "resource": {
+                  "@id": "https://localhost:8443/image/p1/full/full/0/default.jpg",
+                  "@type": "dctypes:Image",
+                  "format": "image/jpeg",
+                  "width": 800,
+                  "height": 1200,
+                  "service": {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": "https://localhost:8443/image/p1",
+                    "profile": "http://iiif.io/api/image/2/level1.json"
+                  }
+                },
+                "on": "https://localhost:8443/canvas/p1"
+              }
+            ]
+          },
+          {
+            "@id": "https://localhost:8443/canvas/p2",
+            "@type": "sc:Canvas",
+            "label": "Page 2",
+            "width": 800,
+            "height": 1200,
+            "images": [
+              {
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "resource": {
+                  "@id": "https://localhost:8443/image/p2/full/full/0/default.jpg",
+                  "@type": "dctypes:Image",
+                  "format": "image/jpeg",
+                  "width": 800,
+                  "height": 1200,
+                  "service": {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": "https://localhost:8443/image/p2",
+                    "profile": "http://iiif.io/api/image/2/level1.json"
+                  }
+                },
+                "on": "https://localhost:8443/canvas/p2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  } 

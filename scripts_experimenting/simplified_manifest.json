@@ -1,0 +1,71 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://localhost:8443/simplified_manifest",
+  "@type": "sc:Manifest",
+  "label": "Simplified IIIF Test Manifest",
+  "metadata": [
+    {
+      "label": "Test Purpose",
+      "value": "This is a simplified test manifest using HTTPS services"
+    }
+  ],
+  "description": "A simple manifest for testing IIIF service connectivity with InvenioRDM",
+  "viewingDirection": "left-to-right",
+  "viewingHint": "paged",
+  "sequences": [
+    {
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "https://localhost:8443/canvas/page1",
+          "@type": "sc:Canvas",
+          "label": "Test Page 1",
+          "width": 800,
+          "height": 600,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://localhost:8443/canvas/page1",
+              "resource": {
+                "@id": "https://localhost:8182/iiif/3/placeholder.jpg/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "width": 800,
+                "height": 600
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "https://localhost:8443/annotations/page1",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "@context": "http://iiif.io/api/search/0/context.json",
+      "@id": "https://localhost:8443/search",
+      "profile": "http://iiif.io/api/search/0/search",
+      "label": "Search within this manifest",
+      "service": {
+        "@id": "https://localhost:8443/autocomplete",
+        "profile": "http://iiif.io/api/search/0/autocomplete",
+        "label": "Autocomplete service"
+      }
+    }
+  ],
+  "attribution": "Created for IIIF service connectivity testing",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "logo": "https://localhost:8443/logo.png",
+  "related": {
+    "@id": "https://localhost:8443/related",
+    "format": "text/html",
+    "label": "Related information"
+  }
+} 

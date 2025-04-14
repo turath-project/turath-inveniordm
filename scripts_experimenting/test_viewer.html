@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turath IIIF Viewer Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/mirador@3.3.0/dist/mirador.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        #viewer {
+            height: 600px;
+            border: 1px solid #ddd;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+        .instructions {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .debug-info {
+            background-color: #eef;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-family: monospace;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .server-toggle {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Turath IIIF Viewer Test</h1>
+        
+        <div class="instructions">
+            <h2>How to Use This Test Page</h2>
+            <ol>
+                <li>Ensure the IIIF test server is running on port 9443 (HTTP mode)</li>
+                <li>The viewer below should load the manifest from the test server</li>
+                <li>Use the "Test Different Manifest" button to try another manifest URL</li>
+            </ol>
+        </div>
+
+        <div class="server-toggle">
+            <label>
+                <input type="radio" name="serverMode" value="http" checked> HTTP (port 9443)
+            </label>
+            <label>
+                <input type="radio" name="serverMode" value="https"> HTTPS (port 8443)
+            </label>
+        </div>
+
+        <div class="debug-info" id="debug-info">
+            <p><strong>Current Host:</strong> <span id="current-host"></span></p>
+            <p><strong>Manifest URL:</strong> <span id="manifest-url"></span></p>
+        </div>
+
+        <div>
+            <button id="reload-manifest">Reload Current Manifest</button>
+            <button id="test-different-manifest">Test Different Manifest</button>
+            <button id="test-universal-viewer">Switch to Universal Viewer</button>
+        </div>
+
+        <div id="viewer"></div>
+    </div>
+
+    <script>
+        // Get the current host and set the manifest URL
+        const currentHost = window.location.hostname;
+        
+        // Default to HTTP mode
+        let serverProtocol = "http";
+        let serverPort = "9443";
+        let manifestUrl = `${serverProtocol}://localhost:${serverPort}/public_manifest`;
+        
+        document.getElementById('current-host').textContent = window.location.host;
+        document.getElementById('manifest-url').textContent = manifestUrl;
+
+        // Server mode toggle handlers
+        const radioButtons = document.querySelectorAll('input[name="serverMode"]');
+        radioButtons.forEach(button => {
+            button.addEventListener('change', (e) => {
+                if (e.target.value === "http") {
+                    serverProtocol = "http";
+                    serverPort = "9443";
+                } else {
+                    serverProtocol = "https";
+                    serverPort = "8443";
+                }
+                
+                manifestUrl = `${serverProtocol}://localhost:${serverPort}/public_manifest`;
+                document.getElementById('manifest-url').textContent = manifestUrl;
+                
+                // Reload the viewer with the new manifest URL
+                initMirador(manifestUrl);
+            });
+        });
+
+        // Initialize Mirador viewer
+        let miradorInstance = null;
+
+        function initMirador(manifestUrl) {
+            document.getElementById('manifest-url').textContent = manifestUrl;
+            
+            if (miradorInstance) {
+                document.getElementById('viewer').innerHTML = '';
+            }
+
+            miradorInstance = Mirador.viewer({
+                id: 'viewer',
+                windows: [{
+                    manifestId: manifestUrl,
+                    canvasIndex: 0,
+                    view: 'single'
+                }],
+                window: {
+                    allowClose: false,
+                    allowFullscreen: true,
+                    allowMaximize: true,
+                    allowTopMenuButton: true,
+                    defaultView: 'single',
+                    sideBarOpen: true
+                },
+                workspace: {
+                    showZoomControls: true,
+                    type: 'mosaic'
+                },
+                theme: {
+                    palette: {
+                        primary: {
+                            main: '#1967d2',
+                        },
+                    },
+                }
+            });
+
+            console.log(`Initialized Mirador with manifest: ${manifestUrl}`);
+        }
+
+        // Initialize with default manifest
+        initMirador(manifestUrl);
+
+        // Button event handlers
+        document.getElementById('reload-manifest').addEventListener('click', () => {
+            initMirador(manifestUrl);
+        });
+
+        document.getElementById('test-different-manifest').addEventListener('click', () => {
+            const newManifestUrl = prompt("Enter a IIIF manifest URL:", manifestUrl);
+            if (newManifestUrl) {
+                manifestUrl = newManifestUrl;
+                initMirador(manifestUrl);
+            }
+        });
+
+        document.getElementById('test-universal-viewer').addEventListener('click', () => {
+            const uvUrl = `https://universalviewer.io/uv.html?manifest=${encodeURIComponent(manifestUrl)}`;
+            window.open(uvUrl, '_blank');
+        });
+    </script>
+</body>
+</html> 
