@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "creators": [
+      {
+        "person_or_org": {
+          "family_name": "Test",
+          "given_name": "Author",
+          "type": "personal"
+        }
+      }
+    ]
+  },
+  "access": {
+    "record": "public",
+    "files": "public"
+  },
+  "files": {
+    "enabled": true
+  }
+}

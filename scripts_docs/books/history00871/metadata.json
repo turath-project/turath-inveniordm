@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "title": "History Book",
+    "creators": [
+      {
+        "person_or_org": {
+          "name": "History Author",
+          "family_name": "Author",
+          "given_name": "History",
+          "type": "personal"
+        },
+        "role": "author"
+      }
+    ],
+    "resource_type": {"id": "publication-book"},
+    "publication_date": "2023-01-01",
+    "languages": [{"id": "ara"}],
+    "description": "Historical book for the Turath digital library",
+    "subjects": [
+      {"subject": "History"}
+    ]
+  },
+  "access": {
+    "record": "public",
+    "files": "public"
+  },
+  "files": {
+    "enabled": true
+  },
+  "custom_fields": {
+    "iiif": {
+      "manifest": "placeholder-to-be-updated"
+    }
+  }
+} 

@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  cantaloupe:
+    ports:
+      - "8183:8183"  # Add HTTPS port
+    volumes:
+      - ./cantaloupe-ssl:/opt/cantaloupe/ssl
+      - ./cantaloupe.properties:/etc/cantaloupe.properties
+    environment:
+      - CANTALOUPE_HTTP_PORT=8182
+      - CANTALOUPE_HTTPS_ENABLED=true
+      - CANTALOUPE_HTTPS_PORT=8183
+      - CANTALOUPE_HTTPS_KEY_STORE_TYPE=JKS
+      - CANTALOUPE_HTTPS_KEY_STORE_PASSWORD=changeit
+      - CANTALOUPE_HTTPS_KEY_STORE_PATH=/opt/cantaloupe/ssl/cantaloupe.keystore
+      - CANTALOUPE_HTTPS_KEY_PASSWORD=changeit
+      - CANTALOUPE_CORS_ENABLED=true
+      - CANTALOUPE_CORS_ALLOWED_ORIGINS=* 

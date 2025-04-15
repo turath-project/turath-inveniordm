@@ -1,0 +1,4222 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://127.0.0.1:5000/test_book/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Test Book for Workflow Integration",
+  "sequences": [
+    {
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p001",
+          "@type": "sc:Canvas",
+          "label": "p. 001",
+          "width": 868,
+          "height": 1351,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p001",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=1",
+                "@type": "dctypes:Image",
+                "width": 868,
+                "height": 1351
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p001/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 001"
+            }
+          ],
+          "scaleFactor": 0.5793053567249101
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p002",
+          "@type": "sc:Canvas",
+          "label": "p. 002",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p002",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=2",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p002/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 002"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p003",
+          "@type": "sc:Canvas",
+          "label": "p. 003",
+          "width": 969,
+          "height": 1369,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p003",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=3",
+                "@type": "dctypes:Image",
+                "width": 969,
+                "height": 1369
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p003/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 003"
+            }
+          ],
+          "scaleFactor": 0.5444498836875412
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p004",
+          "@type": "sc:Canvas",
+          "label": "p. 004",
+          "width": 929,
+          "height": 1417,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p004",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=4",
+                "@type": "dctypes:Image",
+                "width": 929,
+                "height": 1417
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p004/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 004"
+            }
+          ],
+          "scaleFactor": 0.5485134794398814
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p005",
+          "@type": "sc:Canvas",
+          "label": "p. 005",
+          "width": 960,
+          "height": 1377,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p005",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=5",
+                "@type": "dctypes:Image",
+                "width": 960,
+                "height": 1377
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p005/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 005"
+            }
+          ],
+          "scaleFactor": 0.5690389954265956
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p006",
+          "@type": "sc:Canvas",
+          "label": "p. 006",
+          "width": 877,
+          "height": 1419,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p006",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=6",
+                "@type": "dctypes:Image",
+                "width": 877,
+                "height": 1419
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p006/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 006"
+            }
+          ],
+          "scaleFactor": 0.5604794620098265
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p007",
+          "@type": "sc:Canvas",
+          "label": "p. 007",
+          "width": 988,
+          "height": 1437,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p007",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=7",
+                "@type": "dctypes:Image",
+                "width": 988,
+                "height": 1437
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p007/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 007"
+            }
+          ],
+          "scaleFactor": 0.5526242920086887
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p008",
+          "@type": "sc:Canvas",
+          "label": "p. 008",
+          "width": 889,
+          "height": 1388,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p008",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=8",
+                "@type": "dctypes:Image",
+                "width": 889,
+                "height": 1388
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p008/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 008"
+            }
+          ],
+          "scaleFactor": 0.5733435418051372
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p009",
+          "@type": "sc:Canvas",
+          "label": "p. 009",
+          "width": 1006,
+          "height": 1396,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p009",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=9",
+                "@type": "dctypes:Image",
+                "width": 1006,
+                "height": 1396
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p009/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 009"
+            }
+          ],
+          "scaleFactor": 0.5578820811293653
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p010",
+          "@type": "sc:Canvas",
+          "label": "p. 010",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p010",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=10",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p010/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 010"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p011",
+          "@type": "sc:Canvas",
+          "label": "p. 011",
+          "width": 970,
+          "height": 1421,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p011",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=11",
+                "@type": "dctypes:Image",
+                "width": 970,
+                "height": 1421
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p011/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 011"
+            }
+          ],
+          "scaleFactor": 0.551166632881048
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p012",
+          "@type": "sc:Canvas",
+          "label": "p. 012",
+          "width": 1001,
+          "height": 1407,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p012",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=12",
+                "@type": "dctypes:Image",
+                "width": 1001,
+                "height": 1407
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p012/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 012"
+            }
+          ],
+          "scaleFactor": 0.5535535416148867
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p013",
+          "@type": "sc:Canvas",
+          "label": "p. 013",
+          "width": 868,
+          "height": 1378,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p013",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=13",
+                "@type": "dctypes:Image",
+                "width": 868,
+                "height": 1378
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p013/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 013"
+            }
+          ],
+          "scaleFactor": 0.5437895845195593
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p014",
+          "@type": "sc:Canvas",
+          "label": "p. 014",
+          "width": 962,
+          "height": 1438,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p014",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=14",
+                "@type": "dctypes:Image",
+                "width": 962,
+                "height": 1438
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p014/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 014"
+            }
+          ],
+          "scaleFactor": 0.5466096841245612
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p015",
+          "@type": "sc:Canvas",
+          "label": "p. 015",
+          "width": 878,
+          "height": 1383,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p015",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=15",
+                "@type": "dctypes:Image",
+                "width": 878,
+                "height": 1383
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p015/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 015"
+            }
+          ],
+          "scaleFactor": 0.5649553372416404
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p016",
+          "@type": "sc:Canvas",
+          "label": "p. 016",
+          "width": 995,
+          "height": 1403,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p016",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=16",
+                "@type": "dctypes:Image",
+                "width": 995,
+                "height": 1403
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p016/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 016"
+            }
+          ],
+          "scaleFactor": 0.5511795374535711
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p017",
+          "@type": "sc:Canvas",
+          "label": "p. 017",
+          "width": 937,
+          "height": 1350,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p017",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=17",
+                "@type": "dctypes:Image",
+                "width": 937,
+                "height": 1350
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p017/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 017"
+            }
+          ],
+          "scaleFactor": 0.548425600121404
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p018",
+          "@type": "sc:Canvas",
+          "label": "p. 018",
+          "width": 900,
+          "height": 1387,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p018",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=18",
+                "@type": "dctypes:Image",
+                "width": 900,
+                "height": 1387
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p018/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 018"
+            }
+          ],
+          "scaleFactor": 0.5487834125084786
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p019",
+          "@type": "sc:Canvas",
+          "label": "p. 019",
+          "width": 955,
+          "height": 1424,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p019",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=19",
+                "@type": "dctypes:Image",
+                "width": 955,
+                "height": 1424
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p019/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 019"
+            }
+          ],
+          "scaleFactor": 0.5484661202837849
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p020",
+          "@type": "sc:Canvas",
+          "label": "p. 020",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p020",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=20",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p020/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 020"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p021",
+          "@type": "sc:Canvas",
+          "label": "p. 021",
+          "width": 971,
+          "height": 1411,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p021",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=21",
+                "@type": "dctypes:Image",
+                "width": 971,
+                "height": 1411
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p021/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 021"
+            }
+          ],
+          "scaleFactor": 0.5704167740711302
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p022",
+          "@type": "sc:Canvas",
+          "label": "p. 022",
+          "width": 842,
+          "height": 1408,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p022",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=22",
+                "@type": "dctypes:Image",
+                "width": 842,
+                "height": 1408
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p022/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 022"
+            }
+          ],
+          "scaleFactor": 0.547383142323666
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p023",
+          "@type": "sc:Canvas",
+          "label": "p. 023",
+          "width": 885,
+          "height": 1406,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p023",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=23",
+                "@type": "dctypes:Image",
+                "width": 885,
+                "height": 1406
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p023/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 023"
+            }
+          ],
+          "scaleFactor": 0.5742698783871205
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p024",
+          "@type": "sc:Canvas",
+          "label": "p. 024",
+          "width": 985,
+          "height": 1427,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p024",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=24",
+                "@type": "dctypes:Image",
+                "width": 985,
+                "height": 1427
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p024/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 024"
+            }
+          ],
+          "scaleFactor": 0.5792052996448286
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p025",
+          "@type": "sc:Canvas",
+          "label": "p. 025",
+          "width": 854,
+          "height": 1430,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p025",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=25",
+                "@type": "dctypes:Image",
+                "width": 854,
+                "height": 1430
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p025/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 025"
+            }
+          ],
+          "scaleFactor": 0.5760589157273535
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p026",
+          "@type": "sc:Canvas",
+          "label": "p. 026",
+          "width": 863,
+          "height": 1427,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p026",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=26",
+                "@type": "dctypes:Image",
+                "width": 863,
+                "height": 1427
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p026/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 026"
+            }
+          ],
+          "scaleFactor": 0.5786787281232472
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p027",
+          "@type": "sc:Canvas",
+          "label": "p. 027",
+          "width": 871,
+          "height": 1424,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p027",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=27",
+                "@type": "dctypes:Image",
+                "width": 871,
+                "height": 1424
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p027/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 027"
+            }
+          ],
+          "scaleFactor": 0.5686267264656716
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p028",
+          "@type": "sc:Canvas",
+          "label": "p. 028",
+          "width": 952,
+          "height": 1392,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p028",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=28",
+                "@type": "dctypes:Image",
+                "width": 952,
+                "height": 1392
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p028/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 028"
+            }
+          ],
+          "scaleFactor": 0.5524324425193244
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p029",
+          "@type": "sc:Canvas",
+          "label": "p. 029",
+          "width": 849,
+          "height": 1382,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p029",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=29",
+                "@type": "dctypes:Image",
+                "width": 849,
+                "height": 1382
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p029/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 029"
+            }
+          ],
+          "scaleFactor": 0.5527264991536105
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p030",
+          "@type": "sc:Canvas",
+          "label": "p. 030",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p030",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=30",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p030/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 030"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p031",
+          "@type": "sc:Canvas",
+          "label": "p. 031",
+          "width": 957,
+          "height": 1422,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p031",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=31",
+                "@type": "dctypes:Image",
+                "width": 957,
+                "height": 1422
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p031/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 031"
+            }
+          ],
+          "scaleFactor": 0.5596567634318227
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p032",
+          "@type": "sc:Canvas",
+          "label": "p. 032",
+          "width": 876,
+          "height": 1424,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p032",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=32",
+                "@type": "dctypes:Image",
+                "width": 876,
+                "height": 1424
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p032/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 032"
+            }
+          ],
+          "scaleFactor": 0.5450237165234229
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p033",
+          "@type": "sc:Canvas",
+          "label": "p. 033",
+          "width": 916,
+          "height": 1414,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p033",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=33",
+                "@type": "dctypes:Image",
+                "width": 916,
+                "height": 1414
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p033/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 033"
+            }
+          ],
+          "scaleFactor": 0.5451940455996132
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p034",
+          "@type": "sc:Canvas",
+          "label": "p. 034",
+          "width": 919,
+          "height": 1393,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p034",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=34",
+                "@type": "dctypes:Image",
+                "width": 919,
+                "height": 1393
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p034/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 034"
+            }
+          ],
+          "scaleFactor": 0.5585414468918322
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p035",
+          "@type": "sc:Canvas",
+          "label": "p. 035",
+          "width": 916,
+          "height": 1416,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p035",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=35",
+                "@type": "dctypes:Image",
+                "width": 916,
+                "height": 1416
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p035/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 035"
+            }
+          ],
+          "scaleFactor": 0.5468677169216604
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p036",
+          "@type": "sc:Canvas",
+          "label": "p. 036",
+          "width": 946,
+          "height": 1406,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p036",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=36",
+                "@type": "dctypes:Image",
+                "width": 946,
+                "height": 1406
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p036/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 036"
+            }
+          ],
+          "scaleFactor": 0.5642099160079258
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p037",
+          "@type": "sc:Canvas",
+          "label": "p. 037",
+          "width": 990,
+          "height": 1404,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p037",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=37",
+                "@type": "dctypes:Image",
+                "width": 990,
+                "height": 1404
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p037/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 037"
+            }
+          ],
+          "scaleFactor": 0.5423912540221221
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p038",
+          "@type": "sc:Canvas",
+          "label": "p. 038",
+          "width": 849,
+          "height": 1438,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p038",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=38",
+                "@type": "dctypes:Image",
+                "width": 849,
+                "height": 1438
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p038/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 038"
+            }
+          ],
+          "scaleFactor": 0.547816398206191
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p039",
+          "@type": "sc:Canvas",
+          "label": "p. 039",
+          "width": 914,
+          "height": 1388,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p039",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=39",
+                "@type": "dctypes:Image",
+                "width": 914,
+                "height": 1388
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p039/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 039"
+            }
+          ],
+          "scaleFactor": 0.5575560091352713
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p040",
+          "@type": "sc:Canvas",
+          "label": "p. 040",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p040",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=40",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p040/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 040"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p041",
+          "@type": "sc:Canvas",
+          "label": "p. 041",
+          "width": 895,
+          "height": 1440,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p041",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=41",
+                "@type": "dctypes:Image",
+                "width": 895,
+                "height": 1440
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p041/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 041"
+            }
+          ],
+          "scaleFactor": 0.5621789529330188
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p042",
+          "@type": "sc:Canvas",
+          "label": "p. 042",
+          "width": 956,
+          "height": 1428,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p042",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=42",
+                "@type": "dctypes:Image",
+                "width": 956,
+                "height": 1428
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p042/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 042"
+            }
+          ],
+          "scaleFactor": 0.5487523761625317
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p043",
+          "@type": "sc:Canvas",
+          "label": "p. 043",
+          "width": 871,
+          "height": 1425,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p043",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=43",
+                "@type": "dctypes:Image",
+                "width": 871,
+                "height": 1425
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p043/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 043"
+            }
+          ],
+          "scaleFactor": 0.566718883078978
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p044",
+          "@type": "sc:Canvas",
+          "label": "p. 044",
+          "width": 919,
+          "height": 1373,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p044",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=44",
+                "@type": "dctypes:Image",
+                "width": 919,
+                "height": 1373
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p044/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 044"
+            }
+          ],
+          "scaleFactor": 0.5792108349062316
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p045",
+          "@type": "sc:Canvas",
+          "label": "p. 045",
+          "width": 942,
+          "height": 1372,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p045",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=45",
+                "@type": "dctypes:Image",
+                "width": 942,
+                "height": 1372
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p045/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 045"
+            }
+          ],
+          "scaleFactor": 0.5478478199726198
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p046",
+          "@type": "sc:Canvas",
+          "label": "p. 046",
+          "width": 1007,
+          "height": 1394,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p046",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=46",
+                "@type": "dctypes:Image",
+                "width": 1007,
+                "height": 1394
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p046/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 046"
+            }
+          ],
+          "scaleFactor": 0.5734955954077346
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p047",
+          "@type": "sc:Canvas",
+          "label": "p. 047",
+          "width": 987,
+          "height": 1400,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p047",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=47",
+                "@type": "dctypes:Image",
+                "width": 987,
+                "height": 1400
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p047/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 047"
+            }
+          ],
+          "scaleFactor": 0.5540557527586506
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p048",
+          "@type": "sc:Canvas",
+          "label": "p. 048",
+          "width": 884,
+          "height": 1381,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p048",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=48",
+                "@type": "dctypes:Image",
+                "width": 884,
+                "height": 1381
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p048/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 048"
+            }
+          ],
+          "scaleFactor": 0.5627764707851725
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p049",
+          "@type": "sc:Canvas",
+          "label": "p. 049",
+          "width": 922,
+          "height": 1419,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p049",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=49",
+                "@type": "dctypes:Image",
+                "width": 922,
+                "height": 1419
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p049/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 049"
+            }
+          ],
+          "scaleFactor": 0.5760504594476199
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p050",
+          "@type": "sc:Canvas",
+          "label": "p. 050",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p050",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=50",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p050/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 050"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p051",
+          "@type": "sc:Canvas",
+          "label": "p. 051",
+          "width": 974,
+          "height": 1400,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p051",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=51",
+                "@type": "dctypes:Image",
+                "width": 974,
+                "height": 1400
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p051/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 051"
+            }
+          ],
+          "scaleFactor": 0.5497675211610397
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p052",
+          "@type": "sc:Canvas",
+          "label": "p. 052",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p052",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=52",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p052/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 052"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p053",
+          "@type": "sc:Canvas",
+          "label": "p. 053",
+          "width": 965,
+          "height": 1394,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p053",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=53",
+                "@type": "dctypes:Image",
+                "width": 965,
+                "height": 1394
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p053/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 053"
+            }
+          ],
+          "scaleFactor": 0.5694037506828362
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p054",
+          "@type": "sc:Canvas",
+          "label": "p. 054",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p054",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=54",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p054/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 054"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p055",
+          "@type": "sc:Canvas",
+          "label": "p. 055",
+          "width": 867,
+          "height": 1426,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p055",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=55",
+                "@type": "dctypes:Image",
+                "width": 867,
+                "height": 1426
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p055/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 055"
+            }
+          ],
+          "scaleFactor": 0.5576582897967771
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p056",
+          "@type": "sc:Canvas",
+          "label": "p. 056",
+          "width": 949,
+          "height": 1386,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p056",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=56",
+                "@type": "dctypes:Image",
+                "width": 949,
+                "height": 1386
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p056/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 056"
+            }
+          ],
+          "scaleFactor": 0.5668077450970813
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p057",
+          "@type": "sc:Canvas",
+          "label": "p. 057",
+          "width": 872,
+          "height": 1415,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p057",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=57",
+                "@type": "dctypes:Image",
+                "width": 872,
+                "height": 1415
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p057/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 057"
+            }
+          ],
+          "scaleFactor": 0.5758549669415838
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p058",
+          "@type": "sc:Canvas",
+          "label": "p. 058",
+          "width": 940,
+          "height": 1438,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p058",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=58",
+                "@type": "dctypes:Image",
+                "width": 940,
+                "height": 1438
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p058/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 058"
+            }
+          ],
+          "scaleFactor": 0.570980577872229
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p059",
+          "@type": "sc:Canvas",
+          "label": "p. 059",
+          "width": 855,
+          "height": 1413,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p059",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=59",
+                "@type": "dctypes:Image",
+                "width": 855,
+                "height": 1413
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p059/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 059"
+            }
+          ],
+          "scaleFactor": 0.5557607591374925
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p060",
+          "@type": "sc:Canvas",
+          "label": "p. 060",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p060",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=60",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p060/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 060"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p061",
+          "@type": "sc:Canvas",
+          "label": "p. 061",
+          "width": 970,
+          "height": 1438,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p061",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=61",
+                "@type": "dctypes:Image",
+                "width": 970,
+                "height": 1438
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p061/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 061"
+            }
+          ],
+          "scaleFactor": 0.5469596303322368
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p062",
+          "@type": "sc:Canvas",
+          "label": "p. 062",
+          "width": 875,
+          "height": 1351,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p062",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=62",
+                "@type": "dctypes:Image",
+                "width": 875,
+                "height": 1351
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p062/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 062"
+            }
+          ],
+          "scaleFactor": 0.5724065200457484
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p063",
+          "@type": "sc:Canvas",
+          "label": "p. 063",
+          "width": 884,
+          "height": 1429,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p063",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=63",
+                "@type": "dctypes:Image",
+                "width": 884,
+                "height": 1429
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p063/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 063"
+            }
+          ],
+          "scaleFactor": 0.5784744630485711
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p064",
+          "@type": "sc:Canvas",
+          "label": "p. 064",
+          "width": 931,
+          "height": 1387,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p064",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=64",
+                "@type": "dctypes:Image",
+                "width": 931,
+                "height": 1387
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p064/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 064"
+            }
+          ],
+          "scaleFactor": 0.5459567314940129
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p065",
+          "@type": "sc:Canvas",
+          "label": "p. 065",
+          "width": 1010,
+          "height": 1386,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p065",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=65",
+                "@type": "dctypes:Image",
+                "width": 1010,
+                "height": 1386
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p065/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 065"
+            }
+          ],
+          "scaleFactor": 0.5714910383446631
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p066",
+          "@type": "sc:Canvas",
+          "label": "p. 066",
+          "width": 955,
+          "height": 1383,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p066",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=66",
+                "@type": "dctypes:Image",
+                "width": 955,
+                "height": 1383
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p066/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 066"
+            }
+          ],
+          "scaleFactor": 0.5669656540973327
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p067",
+          "@type": "sc:Canvas",
+          "label": "p. 067",
+          "width": 885,
+          "height": 1428,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p067",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=67",
+                "@type": "dctypes:Image",
+                "width": 885,
+                "height": 1428
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p067/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 067"
+            }
+          ],
+          "scaleFactor": 0.572553250181101
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p068",
+          "@type": "sc:Canvas",
+          "label": "p. 068",
+          "width": 959,
+          "height": 1433,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p068",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=68",
+                "@type": "dctypes:Image",
+                "width": 959,
+                "height": 1433
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p068/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 068"
+            }
+          ],
+          "scaleFactor": 0.5699769864484501
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p069",
+          "@type": "sc:Canvas",
+          "label": "p. 069",
+          "width": 899,
+          "height": 1384,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p069",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=69",
+                "@type": "dctypes:Image",
+                "width": 899,
+                "height": 1384
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p069/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 069"
+            }
+          ],
+          "scaleFactor": 0.5560464361895162
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p070",
+          "@type": "sc:Canvas",
+          "label": "p. 070",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p070",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=70",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p070/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 070"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p071",
+          "@type": "sc:Canvas",
+          "label": "p. 071",
+          "width": 907,
+          "height": 1386,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p071",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=71",
+                "@type": "dctypes:Image",
+                "width": 907,
+                "height": 1386
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p071/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 071"
+            }
+          ],
+          "scaleFactor": 0.5640974952265735
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p072",
+          "@type": "sc:Canvas",
+          "label": "p. 072",
+          "width": 956,
+          "height": 1414,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p072",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=72",
+                "@type": "dctypes:Image",
+                "width": 956,
+                "height": 1414
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p072/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 072"
+            }
+          ],
+          "scaleFactor": 0.5746336617599846
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p073",
+          "@type": "sc:Canvas",
+          "label": "p. 073",
+          "width": 969,
+          "height": 1365,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p073",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=73",
+                "@type": "dctypes:Image",
+                "width": 969,
+                "height": 1365
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p073/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 073"
+            }
+          ],
+          "scaleFactor": 0.5421832646236022
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p074",
+          "@type": "sc:Canvas",
+          "label": "p. 074",
+          "width": 904,
+          "height": 1391,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p074",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=74",
+                "@type": "dctypes:Image",
+                "width": 904,
+                "height": 1391
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p074/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 074"
+            }
+          ],
+          "scaleFactor": 0.5476072725335159
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p075",
+          "@type": "sc:Canvas",
+          "label": "p. 075",
+          "width": 830,
+          "height": 1425,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p075",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=75",
+                "@type": "dctypes:Image",
+                "width": 830,
+                "height": 1425
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p075/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 075"
+            }
+          ],
+          "scaleFactor": 0.5459280242424424
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p076",
+          "@type": "sc:Canvas",
+          "label": "p. 076",
+          "width": 961,
+          "height": 1430,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p076",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=76",
+                "@type": "dctypes:Image",
+                "width": 961,
+                "height": 1430
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p076/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 076"
+            }
+          ],
+          "scaleFactor": 0.5795649472671612
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p077",
+          "@type": "sc:Canvas",
+          "label": "p. 077",
+          "width": 841,
+          "height": 1356,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p077",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=77",
+                "@type": "dctypes:Image",
+                "width": 841,
+                "height": 1356
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p077/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 077"
+            }
+          ],
+          "scaleFactor": 0.5655558885672628
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p078",
+          "@type": "sc:Canvas",
+          "label": "p. 078",
+          "width": 982,
+          "height": 1433,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p078",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=78",
+                "@type": "dctypes:Image",
+                "width": 982,
+                "height": 1433
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p078/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 078"
+            }
+          ],
+          "scaleFactor": 0.5546363980900256
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p079",
+          "@type": "sc:Canvas",
+          "label": "p. 079",
+          "width": 885,
+          "height": 1401,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p079",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=79",
+                "@type": "dctypes:Image",
+                "width": 885,
+                "height": 1401
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p079/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 079"
+            }
+          ],
+          "scaleFactor": 0.5466933321296542
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p080",
+          "@type": "sc:Canvas",
+          "label": "p. 080",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p080",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=80",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p080/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 080"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p081",
+          "@type": "sc:Canvas",
+          "label": "p. 081",
+          "width": 931,
+          "height": 1392,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p081",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=81",
+                "@type": "dctypes:Image",
+                "width": 931,
+                "height": 1392
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p081/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 081"
+            }
+          ],
+          "scaleFactor": 0.5717505120616179
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p082",
+          "@type": "sc:Canvas",
+          "label": "p. 082",
+          "width": 902,
+          "height": 1351,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p082",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=82",
+                "@type": "dctypes:Image",
+                "width": 902,
+                "height": 1351
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p082/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 082"
+            }
+          ],
+          "scaleFactor": 0.5437671119435373
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p083",
+          "@type": "sc:Canvas",
+          "label": "p. 083",
+          "width": 977,
+          "height": 1444,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p083",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=83",
+                "@type": "dctypes:Image",
+                "width": 977,
+                "height": 1444
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p083/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 083"
+            }
+          ],
+          "scaleFactor": 0.5415566524790971
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p084",
+          "@type": "sc:Canvas",
+          "label": "p. 084",
+          "width": 852,
+          "height": 1368,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p084",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=84",
+                "@type": "dctypes:Image",
+                "width": 852,
+                "height": 1368
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p084/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 084"
+            }
+          ],
+          "scaleFactor": 0.5575442402594505
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p085",
+          "@type": "sc:Canvas",
+          "label": "p. 085",
+          "width": 880,
+          "height": 1355,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p085",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=85",
+                "@type": "dctypes:Image",
+                "width": 880,
+                "height": 1355
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p085/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 085"
+            }
+          ],
+          "scaleFactor": 0.5701933411833485
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p086",
+          "@type": "sc:Canvas",
+          "label": "p. 086",
+          "width": 898,
+          "height": 1366,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p086",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=86",
+                "@type": "dctypes:Image",
+                "width": 898,
+                "height": 1366
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p086/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 086"
+            }
+          ],
+          "scaleFactor": 0.5525009974420863
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p087",
+          "@type": "sc:Canvas",
+          "label": "p. 087",
+          "width": 949,
+          "height": 1437,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p087",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=87",
+                "@type": "dctypes:Image",
+                "width": 949,
+                "height": 1437
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p087/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 087"
+            }
+          ],
+          "scaleFactor": 0.547281088098138
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p088",
+          "@type": "sc:Canvas",
+          "label": "p. 088",
+          "width": 955,
+          "height": 1356,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p088",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=88",
+                "@type": "dctypes:Image",
+                "width": 955,
+                "height": 1356
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p088/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 088"
+            }
+          ],
+          "scaleFactor": 0.5491758158313647
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p089",
+          "@type": "sc:Canvas",
+          "label": "p. 089",
+          "width": 870,
+          "height": 1371,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p089",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=89",
+                "@type": "dctypes:Image",
+                "width": 870,
+                "height": 1371
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p089/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 089"
+            }
+          ],
+          "scaleFactor": 0.5432222661021481
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p090",
+          "@type": "sc:Canvas",
+          "label": "p. 090",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p090",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=90",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p090/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 090"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p091",
+          "@type": "sc:Canvas",
+          "label": "p. 091",
+          "width": 996,
+          "height": 1381,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p091",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=91",
+                "@type": "dctypes:Image",
+                "width": 996,
+                "height": 1381
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p091/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 091"
+            }
+          ],
+          "scaleFactor": 0.5428268471591142
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p092",
+          "@type": "sc:Canvas",
+          "label": "p. 092",
+          "width": 892,
+          "height": 1449,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p092",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=92",
+                "@type": "dctypes:Image",
+                "width": 892,
+                "height": 1449
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p092/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 092"
+            }
+          ],
+          "scaleFactor": 0.5430231616152839
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p093",
+          "@type": "sc:Canvas",
+          "label": "p. 093",
+          "width": 927,
+          "height": 1390,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p093",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=93",
+                "@type": "dctypes:Image",
+                "width": 927,
+                "height": 1390
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p093/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 093"
+            }
+          ],
+          "scaleFactor": 0.5774199955217889
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p094",
+          "@type": "sc:Canvas",
+          "label": "p. 094",
+          "width": 994,
+          "height": 1375,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p094",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=94",
+                "@type": "dctypes:Image",
+                "width": 994,
+                "height": 1375
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p094/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 094"
+            }
+          ],
+          "scaleFactor": 0.5774124894566902
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p095",
+          "@type": "sc:Canvas",
+          "label": "p. 095",
+          "width": 835,
+          "height": 1350,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p095",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=95",
+                "@type": "dctypes:Image",
+                "width": 835,
+                "height": 1350
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p095/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 095"
+            }
+          ],
+          "scaleFactor": 0.5523710195614717
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p096",
+          "@type": "sc:Canvas",
+          "label": "p. 096",
+          "width": 965,
+          "height": 1375,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p096",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=96",
+                "@type": "dctypes:Image",
+                "width": 965,
+                "height": 1375
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p096/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 096"
+            }
+          ],
+          "scaleFactor": 0.5721411614912959
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p097",
+          "@type": "sc:Canvas",
+          "label": "p. 097",
+          "width": 995,
+          "height": 1426,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p097",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=97",
+                "@type": "dctypes:Image",
+                "width": 995,
+                "height": 1426
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p097/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 097"
+            }
+          ],
+          "scaleFactor": 0.5446263302687987
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p098",
+          "@type": "sc:Canvas",
+          "label": "p. 098",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p098",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=98",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p098/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 098"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p099",
+          "@type": "sc:Canvas",
+          "label": "p. 099",
+          "width": 839,
+          "height": 1375,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p099",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=99",
+                "@type": "dctypes:Image",
+                "width": 839,
+                "height": 1375
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p099/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 099"
+            }
+          ],
+          "scaleFactor": 0.5677785452307718
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p100",
+          "@type": "sc:Canvas",
+          "label": "p. 100",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p100",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=100",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p100/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 100"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p101",
+          "@type": "sc:Canvas",
+          "label": "p. 101",
+          "width": 869,
+          "height": 1383,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p101",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=101",
+                "@type": "dctypes:Image",
+                "width": 869,
+                "height": 1383
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p101/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 101"
+            }
+          ],
+          "scaleFactor": 0.5723577743472273
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p102",
+          "@type": "sc:Canvas",
+          "label": "p. 102",
+          "width": 976,
+          "height": 1354,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p102",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=102",
+                "@type": "dctypes:Image",
+                "width": 976,
+                "height": 1354
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p102/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 102"
+            }
+          ],
+          "scaleFactor": 0.5523163316376097
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p103",
+          "@type": "sc:Canvas",
+          "label": "p. 103",
+          "width": 876,
+          "height": 1437,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p103",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=103",
+                "@type": "dctypes:Image",
+                "width": 876,
+                "height": 1437
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p103/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 103"
+            }
+          ],
+          "scaleFactor": 0.5675877042029421
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p104",
+          "@type": "sc:Canvas",
+          "label": "p. 104",
+          "width": 916,
+          "height": 1409,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p104",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=104",
+                "@type": "dctypes:Image",
+                "width": 916,
+                "height": 1409
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p104/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 104"
+            }
+          ],
+          "scaleFactor": 0.5584771322967591
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p105",
+          "@type": "sc:Canvas",
+          "label": "p. 105",
+          "width": 979,
+          "height": 1444,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p105",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=105",
+                "@type": "dctypes:Image",
+                "width": 979,
+                "height": 1444
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p105/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 105"
+            }
+          ],
+          "scaleFactor": 0.5411720118316817
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p106",
+          "@type": "sc:Canvas",
+          "label": "p. 106",
+          "width": 922,
+          "height": 1417,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p106",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=106",
+                "@type": "dctypes:Image",
+                "width": 922,
+                "height": 1417
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p106/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 106"
+            }
+          ],
+          "scaleFactor": 0.5438651812182188
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p107",
+          "@type": "sc:Canvas",
+          "label": "p. 107",
+          "width": 933,
+          "height": 1408,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p107",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=107",
+                "@type": "dctypes:Image",
+                "width": 933,
+                "height": 1408
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p107/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 107"
+            }
+          ],
+          "scaleFactor": 0.5471470167041612
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p108",
+          "@type": "sc:Canvas",
+          "label": "p. 108",
+          "width": 907,
+          "height": 1447,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p108",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=108",
+                "@type": "dctypes:Image",
+                "width": 907,
+                "height": 1447
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p108/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 108"
+            }
+          ],
+          "scaleFactor": 0.5564926300405626
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p109",
+          "@type": "sc:Canvas",
+          "label": "p. 109",
+          "width": 954,
+          "height": 1425,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p109",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=109",
+                "@type": "dctypes:Image",
+                "width": 954,
+                "height": 1425
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p109/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 109"
+            }
+          ],
+          "scaleFactor": 0.547513220727726
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p110",
+          "@type": "sc:Canvas",
+          "label": "p. 110",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p110",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=110",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p110/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 110"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p111",
+          "@type": "sc:Canvas",
+          "label": "p. 111",
+          "width": 861,
+          "height": 1411,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p111",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=111",
+                "@type": "dctypes:Image",
+                "width": 861,
+                "height": 1411
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p111/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 111"
+            }
+          ],
+          "scaleFactor": 0.5508696792468315
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p112",
+          "@type": "sc:Canvas",
+          "label": "p. 112",
+          "width": 914,
+          "height": 1423,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p112",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=112",
+                "@type": "dctypes:Image",
+                "width": 914,
+                "height": 1423
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p112/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 112"
+            }
+          ],
+          "scaleFactor": 0.5479402189436482
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p113",
+          "@type": "sc:Canvas",
+          "label": "p. 113",
+          "width": 901,
+          "height": 1425,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p113",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=113",
+                "@type": "dctypes:Image",
+                "width": 901,
+                "height": 1425
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p113/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 113"
+            }
+          ],
+          "scaleFactor": 0.5612831055950728
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p114",
+          "@type": "sc:Canvas",
+          "label": "p. 114",
+          "width": 834,
+          "height": 1383,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p114",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=114",
+                "@type": "dctypes:Image",
+                "width": 834,
+                "height": 1383
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p114/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 114"
+            }
+          ],
+          "scaleFactor": 0.544766366228053
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p115",
+          "@type": "sc:Canvas",
+          "label": "p. 115",
+          "width": 950,
+          "height": 1377,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p115",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=115",
+                "@type": "dctypes:Image",
+                "width": 950,
+                "height": 1377
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p115/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 115"
+            }
+          ],
+          "scaleFactor": 0.5563692909301675
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p116",
+          "@type": "sc:Canvas",
+          "label": "p. 116",
+          "width": 909,
+          "height": 1399,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p116",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=116",
+                "@type": "dctypes:Image",
+                "width": 909,
+                "height": 1399
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p116/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 116"
+            }
+          ],
+          "scaleFactor": 0.5642615286314799
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p117",
+          "@type": "sc:Canvas",
+          "label": "p. 117",
+          "width": 1001,
+          "height": 1356,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p117",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=117",
+                "@type": "dctypes:Image",
+                "width": 1001,
+                "height": 1356
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p117/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 117"
+            }
+          ],
+          "scaleFactor": 0.5404047295268497
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p118",
+          "@type": "sc:Canvas",
+          "label": "p. 118",
+          "width": 981,
+          "height": 1367,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p118",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=118",
+                "@type": "dctypes:Image",
+                "width": 981,
+                "height": 1367
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p118/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 118"
+            }
+          ],
+          "scaleFactor": 0.5737167491237177
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p119",
+          "@type": "sc:Canvas",
+          "label": "p. 119",
+          "width": 876,
+          "height": 1410,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p119",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=119",
+                "@type": "dctypes:Image",
+                "width": 876,
+                "height": 1410
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p119/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 119"
+            }
+          ],
+          "scaleFactor": 0.5627156722335814
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p120",
+          "@type": "sc:Canvas",
+          "label": "p. 120",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p120",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=120",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p120/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 120"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p121",
+          "@type": "sc:Canvas",
+          "label": "p. 121",
+          "width": 981,
+          "height": 1366,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p121",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=121",
+                "@type": "dctypes:Image",
+                "width": 981,
+                "height": 1366
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p121/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 121"
+            }
+          ],
+          "scaleFactor": 0.5772170732055465
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p122",
+          "@type": "sc:Canvas",
+          "label": "p. 122",
+          "width": 1009,
+          "height": 1435,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p122",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=122",
+                "@type": "dctypes:Image",
+                "width": 1009,
+                "height": 1435
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p122/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 122"
+            }
+          ],
+          "scaleFactor": 0.5775928107503792
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p123",
+          "@type": "sc:Canvas",
+          "label": "p. 123",
+          "width": 868,
+          "height": 1408,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p123",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=123",
+                "@type": "dctypes:Image",
+                "width": 868,
+                "height": 1408
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p123/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 123"
+            }
+          ],
+          "scaleFactor": 0.5683531318359274
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p124",
+          "@type": "sc:Canvas",
+          "label": "p. 124",
+          "width": 973,
+          "height": 1427,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p124",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=124",
+                "@type": "dctypes:Image",
+                "width": 973,
+                "height": 1427
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p124/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 124"
+            }
+          ],
+          "scaleFactor": 0.5789373819250827
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p125",
+          "@type": "sc:Canvas",
+          "label": "p. 125",
+          "width": 861,
+          "height": 1417,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p125",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=125",
+                "@type": "dctypes:Image",
+                "width": 861,
+                "height": 1417
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p125/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 125"
+            }
+          ],
+          "scaleFactor": 0.5435666655899005
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p126",
+          "@type": "sc:Canvas",
+          "label": "p. 126",
+          "width": 1006,
+          "height": 1414,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p126",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=126",
+                "@type": "dctypes:Image",
+                "width": 1006,
+                "height": 1414
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p126/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 126"
+            }
+          ],
+          "scaleFactor": 0.5766678563923975
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p127",
+          "@type": "sc:Canvas",
+          "label": "p. 127",
+          "width": 855,
+          "height": 1406,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p127",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=127",
+                "@type": "dctypes:Image",
+                "width": 855,
+                "height": 1406
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p127/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 127"
+            }
+          ],
+          "scaleFactor": 0.5583877137280572
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p128",
+          "@type": "sc:Canvas",
+          "label": "p. 128",
+          "width": 830,
+          "height": 1376,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p128",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=128",
+                "@type": "dctypes:Image",
+                "width": 830,
+                "height": 1376
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p128/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 128"
+            }
+          ],
+          "scaleFactor": 0.5774371578404544
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p129",
+          "@type": "sc:Canvas",
+          "label": "p. 129",
+          "width": 992,
+          "height": 1379,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p129",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=129",
+                "@type": "dctypes:Image",
+                "width": 992,
+                "height": 1379
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p129/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 129"
+            }
+          ],
+          "scaleFactor": 0.5494959276469845
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p130",
+          "@type": "sc:Canvas",
+          "label": "p. 130",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p130",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=130",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p130/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 130"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p131",
+          "@type": "sc:Canvas",
+          "label": "p. 131",
+          "width": 959,
+          "height": 1358,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p131",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=131",
+                "@type": "dctypes:Image",
+                "width": 959,
+                "height": 1358
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p131/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 131"
+            }
+          ],
+          "scaleFactor": 0.5417438518016042
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p132",
+          "@type": "sc:Canvas",
+          "label": "p. 132",
+          "width": 916,
+          "height": 1425,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p132",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=132",
+                "@type": "dctypes:Image",
+                "width": 916,
+                "height": 1425
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p132/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 132"
+            }
+          ],
+          "scaleFactor": 0.5714138413861758
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p133",
+          "@type": "sc:Canvas",
+          "label": "p. 133",
+          "width": 858,
+          "height": 1358,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p133",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=133",
+                "@type": "dctypes:Image",
+                "width": 858,
+                "height": 1358
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p133/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 133"
+            }
+          ],
+          "scaleFactor": 0.5712107364728102
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p134",
+          "@type": "sc:Canvas",
+          "label": "p. 134",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p134",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=134",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p134/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 134"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p135",
+          "@type": "sc:Canvas",
+          "label": "p. 135",
+          "width": 873,
+          "height": 1366,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p135",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=135",
+                "@type": "dctypes:Image",
+                "width": 873,
+                "height": 1366
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p135/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 135"
+            }
+          ],
+          "scaleFactor": 0.557480971664682
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p136",
+          "@type": "sc:Canvas",
+          "label": "p. 136",
+          "width": 950,
+          "height": 1351,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p136",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=136",
+                "@type": "dctypes:Image",
+                "width": 950,
+                "height": 1351
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p136/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 136"
+            }
+          ],
+          "scaleFactor": 0.5513146143802323
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p137",
+          "@type": "sc:Canvas",
+          "label": "p. 137",
+          "width": 891,
+          "height": 1431,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p137",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=137",
+                "@type": "dctypes:Image",
+                "width": 891,
+                "height": 1431
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p137/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 137"
+            }
+          ],
+          "scaleFactor": 0.5776262832241421
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p138",
+          "@type": "sc:Canvas",
+          "label": "p. 138",
+          "width": 912,
+          "height": 1352,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p138",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=138",
+                "@type": "dctypes:Image",
+                "width": 912,
+                "height": 1352
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p138/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 138"
+            }
+          ],
+          "scaleFactor": 0.5408117964998066
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p139",
+          "@type": "sc:Canvas",
+          "label": "p. 139",
+          "width": 875,
+          "height": 1368,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p139",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=139",
+                "@type": "dctypes:Image",
+                "width": 875,
+                "height": 1368
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p139/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 139"
+            }
+          ],
+          "scaleFactor": 0.5654594834163028
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p140",
+          "@type": "sc:Canvas",
+          "label": "p. 140",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p140",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=140",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p140/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 140"
+            }
+          ]
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p141",
+          "@type": "sc:Canvas",
+          "label": "p. 141",
+          "width": 994,
+          "height": 1427,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p141",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=141",
+                "@type": "dctypes:Image",
+                "width": 994,
+                "height": 1427
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p141/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 141"
+            }
+          ],
+          "scaleFactor": 0.5578594225133784
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p142",
+          "@type": "sc:Canvas",
+          "label": "p. 142",
+          "width": 853,
+          "height": 1352,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p142",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=142",
+                "@type": "dctypes:Image",
+                "width": 853,
+                "height": 1352
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p142/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 142"
+            }
+          ],
+          "scaleFactor": 0.5608694302822451
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p143",
+          "@type": "sc:Canvas",
+          "label": "p. 143",
+          "width": 968,
+          "height": 1358,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p143",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=143",
+                "@type": "dctypes:Image",
+                "width": 968,
+                "height": 1358
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p143/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 143"
+            }
+          ],
+          "scaleFactor": 0.5663801044813666
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p144",
+          "@type": "sc:Canvas",
+          "label": "p. 144",
+          "width": 832,
+          "height": 1434,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p144",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=144",
+                "@type": "dctypes:Image",
+                "width": 832,
+                "height": 1434
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p144/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 144"
+            }
+          ],
+          "scaleFactor": 0.5695085931688174
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p145",
+          "@type": "sc:Canvas",
+          "label": "p. 145",
+          "width": 875,
+          "height": 1391,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p145",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=145",
+                "@type": "dctypes:Image",
+                "width": 875,
+                "height": 1391
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p145/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 145"
+            }
+          ],
+          "scaleFactor": 0.5739167637907295
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p146",
+          "@type": "sc:Canvas",
+          "label": "p. 146",
+          "width": 874,
+          "height": 1419,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p146",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=146",
+                "@type": "dctypes:Image",
+                "width": 874,
+                "height": 1419
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p146/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 146"
+            }
+          ],
+          "scaleFactor": 0.5691732213812526
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p147",
+          "@type": "sc:Canvas",
+          "label": "p. 147",
+          "width": 994,
+          "height": 1425,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p147",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=147",
+                "@type": "dctypes:Image",
+                "width": 994,
+                "height": 1425
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p147/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 147"
+            }
+          ],
+          "scaleFactor": 0.5524742248448197
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p148",
+          "@type": "sc:Canvas",
+          "label": "p. 148",
+          "width": 930,
+          "height": 1405,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p148",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=148",
+                "@type": "dctypes:Image",
+                "width": 930,
+                "height": 1405
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p148/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 148"
+            }
+          ],
+          "scaleFactor": 0.5642294555046642
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p149",
+          "@type": "sc:Canvas",
+          "label": "p. 149",
+          "width": 902,
+          "height": 1420,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p149",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=149",
+                "@type": "dctypes:Image",
+                "width": 902,
+                "height": 1420
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p149/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 149"
+            }
+          ],
+          "scaleFactor": 0.5498567854681122
+        },
+        {
+          "@id": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p150",
+          "@type": "sc:Canvas",
+          "label": "p. 150",
+          "width": 2000,
+          "height": 3000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://127.0.0.1:5000/test_book/manifest.json/canvas/p150",
+              "resource": {
+                "@id": "https://127.0.0.1:8182/iiif/3/private%2F3ne6r-prw34%2Ftest_book.pdf/full/full/0/default.jpg?page=150",
+                "@type": "dctypes:Image",
+                "width": 2000,
+                "height": 3000
+              }
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "http://localhost:5002/annotations/test_book/p150/line",
+              "@type": "sc:AnnotationList",
+              "label": "Text of page 150"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "@context": "http://iiif.io/api/search/0/context.json",
+      "@id": "http://localhost:5001/search",
+      "profile": "http://iiif.io/api/search/0/search",
+      "label": "Search within this manifest",
+      "service": {
+        "@id": "http://localhost:5001/autocomplete",
+        "profile": "http://iiif.io/api/search/0/autocomplete",
+        "label": "Autocomplete words in this manifest"
+      }
+    }
+  ],
+  "metadata": [
+    {
+      "label": "Coordinate System",
+      "value": "HOCR coordinates are automatically scaled to match PDF rendering in Cantaloupe"
+    },
+    {
+      "label": "Auto-Scaling",
+      "value": "Each page uses its own calculated scale factor based on comparing HOCR, PDF, and Cantaloupe dimensions"
+    }
+  ],
+  "viewingDirection": "right-to-left",
+  "related": {
+    "@id": "https://127.0.0.1:5000/test_book/test_book.pdf",
+    "format": "application/pdf",
+    "label": "Download full PDF"
+  }
+}

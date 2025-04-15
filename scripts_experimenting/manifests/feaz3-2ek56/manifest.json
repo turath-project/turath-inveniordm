@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://127.0.0.1:8000/api/records/kfkay-b4z87/files/manifest.json",
+  "id": "https://127.0.0.1:8000/api/records/feaz3-2ek56/files/manifest.json",
   "type": "Manifest",
   "label": {
     "en": [
@@ -28,7 +28,7 @@
       },
       "value": {
         "en": [
-          "kfkay-b4z87"
+          "feaz3-2ek56"
         ]
       }
     }
@@ -55,12 +55,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p1",
               "body": {
-                "id": "http://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "http://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -92,12 +92,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p2",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -129,12 +129,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p3",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -166,12 +166,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p4",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -203,12 +203,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p5",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -240,12 +240,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p6",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -277,12 +277,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p7",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -314,12 +314,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p8",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -351,12 +351,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p9",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -388,12 +388,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p10",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -425,12 +425,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p11",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -462,12 +462,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p12",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -499,12 +499,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p13",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -536,12 +536,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p14",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -573,12 +573,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p15",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -610,12 +610,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p16",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -647,12 +647,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p17",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -684,12 +684,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p18",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -721,12 +721,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p19",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -758,12 +758,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p20",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -795,12 +795,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p21",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -832,12 +832,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p22",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -869,12 +869,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p23",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -906,12 +906,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p24",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -943,12 +943,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p25",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -980,12 +980,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p26",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1017,12 +1017,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p27",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1054,12 +1054,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p28",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1091,12 +1091,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p29",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1128,12 +1128,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p30",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1165,12 +1165,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p31",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1202,12 +1202,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p32",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1239,12 +1239,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p33",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1276,12 +1276,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p34",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1313,12 +1313,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p35",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1350,12 +1350,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p36",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1387,12 +1387,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p37",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1424,12 +1424,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p38",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1461,12 +1461,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p39",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1498,12 +1498,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p40",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1535,12 +1535,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p41",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1572,12 +1572,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p42",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1609,12 +1609,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p43",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1646,12 +1646,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p44",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1683,12 +1683,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p45",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1720,12 +1720,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p46",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1757,12 +1757,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p47",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1794,12 +1794,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p48",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1831,12 +1831,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p49",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1868,12 +1868,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p50",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1905,12 +1905,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p51",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1942,12 +1942,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p52",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -1979,12 +1979,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p53",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2016,12 +2016,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p54",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2053,12 +2053,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p55",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2090,12 +2090,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p56",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2127,12 +2127,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p57",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2164,12 +2164,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p58",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2201,12 +2201,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p59",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2238,12 +2238,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p60",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2275,12 +2275,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p61",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2312,12 +2312,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p62",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2349,12 +2349,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p63",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2386,12 +2386,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p64",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2423,12 +2423,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p65",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2460,12 +2460,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p66",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2497,12 +2497,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p67",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2534,12 +2534,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p68",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2571,12 +2571,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p69",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2608,12 +2608,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p70",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2645,12 +2645,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p71",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2682,12 +2682,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p72",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2719,12 +2719,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p73",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2756,12 +2756,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p74",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2793,12 +2793,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p75",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2830,12 +2830,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p76",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2867,12 +2867,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p77",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2904,12 +2904,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p78",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2941,12 +2941,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p79",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -2978,12 +2978,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p80",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3015,12 +3015,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p81",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3052,12 +3052,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p82",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3089,12 +3089,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p83",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3126,12 +3126,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p84",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3163,12 +3163,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p85",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3200,12 +3200,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p86",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3237,12 +3237,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p87",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3274,12 +3274,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p88",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3311,12 +3311,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p89",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3348,12 +3348,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p90",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3385,12 +3385,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p91",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3422,12 +3422,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p92",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3459,12 +3459,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p93",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3496,12 +3496,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p94",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3533,12 +3533,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p95",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3570,12 +3570,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p96",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3607,12 +3607,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p97",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3644,12 +3644,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p98",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3681,12 +3681,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p99",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3718,12 +3718,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p100",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3755,12 +3755,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p101",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3792,12 +3792,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p102",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3829,12 +3829,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p103",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3866,12 +3866,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p104",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3903,12 +3903,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p105",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3940,12 +3940,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p106",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -3977,12 +3977,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p107",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4014,12 +4014,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p108",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4051,12 +4051,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p109",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4088,12 +4088,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p110",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4125,12 +4125,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p111",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4162,12 +4162,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p112",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4199,12 +4199,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p113",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4236,12 +4236,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p114",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4273,12 +4273,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p115",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4310,12 +4310,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p116",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4347,12 +4347,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p117",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4384,12 +4384,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p118",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4421,12 +4421,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p119",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4458,12 +4458,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p120",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4495,12 +4495,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p121",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4532,12 +4532,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p122",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4569,12 +4569,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p123",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4606,12 +4606,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p124",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4643,12 +4643,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p125",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4680,12 +4680,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p126",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4717,12 +4717,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p127",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4754,12 +4754,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p128",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4791,12 +4791,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p129",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4828,12 +4828,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p130",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4865,12 +4865,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p131",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4902,12 +4902,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p132",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4939,12 +4939,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p133",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -4976,12 +4976,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p134",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -5013,12 +5013,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p135",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -5050,12 +5050,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p136",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
@@ -5087,12 +5087,12 @@
               "motivation": "painting",
               "target": "https://127.0.0.1:8000/canvas/p137",
               "body": {
-                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "service": [
                   {
-                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "id": "https://127.0.0.1:8182/iiif/3/private/feaz3-2ek56/history00871.pdf",
                     "type": "ImageService3",
                     "profile": "level2"
                   }

@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "title": "Test Book for Workflow Integration",
+    "creators": [
+      {
+        "person_or_org": {
+          "name": "Test Author",
+          "family_name": "Author",
+          "given_name": "Test",
+          "type": "personal"
+        },
+        "role": "author"
+      }
+    ],
+    "resource_type": {"id": "publication-book"},
+    "publication_date": "2023-01-01",
+    "languages": [{"id": "ara"}],
+    "description": "This is a test book for validating the workflow integration",
+    "subjects": [
+      {"subject": "Testing"}
+    ]
+  },
+  "access": {
+    "record": "public",
+    "files": "public"
+  },
+  "files": {
+    "enabled": true
+  },
+  "custom_fields": {
+    "iiif": {
+      "manifest": "placeholder-to-be-updated"
+    }
+  }
+} 

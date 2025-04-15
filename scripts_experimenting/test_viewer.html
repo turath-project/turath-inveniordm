@@ -3,195 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turath IIIF Viewer Test</title>
-    <script src="https://cdn.jsdelivr.net/npm/mirador@3.3.0/dist/mirador.min.js"></script>
+    <title>IIIF HTTPS Test</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .test-section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
         }
         h1, h2 {
             color: #333;
         }
-        #viewer {
-            height: 600px;
-            border: 1px solid #ddd;
-            background-color: white;
-            margin-bottom: 20px;
+        .success {
+            color: green;
+            font-weight: bold;
         }
-        .instructions {
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 20px;
+        .error {
+            color: red;
+            font-weight: bold;
         }
-        .debug-info {
-            background-color: #eef;
+        pre {
+            background-color: #f5f5f5;
             padding: 10px;
             border-radius: 5px;
-            margin-bottom: 20px;
-            font-family: monospace;
+            overflow-x: auto;
         }
-        code {
-            background-color: #f0f0f0;
-            padding: 2px 4px;
-            border-radius: 3px;
-            font-family: monospace;
+        img {
+            max-width: 100%;
+            border: 1px solid #ddd;
         }
         button {
+            padding: 10px 15px;
             background-color: #4CAF50;
             color: white;
-            padding: 10px 15px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            margin-right: 10px;
-            margin-bottom: 10px;
         }
         button:hover {
             background-color: #45a049;
         }
-        .server-toggle {
-            margin-bottom: 20px;
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Turath IIIF Viewer Test</h1>
+        <h1>IIIF HTTPS Connection Test</h1>
         
-        <div class="instructions">
-            <h2>How to Use This Test Page</h2>
-            <ol>
-                <li>Ensure the IIIF test server is running on port 9443 (HTTP mode)</li>
-                <li>The viewer below should load the manifest from the test server</li>
-                <li>Use the "Test Different Manifest" button to try another manifest URL</li>
-            </ol>
+        <div class="test-section">
+            <h2>Test 1: Direct Image Access</h2>
+            <p>Testing direct access to a PDF page via Cantaloupe HTTPS:</p>
+            <div>
+                <p>Record ID: <input type="text" id="recordId" value="https-test"></p>
+                <p>Filename: <input type="text" id="filename" value="test.pdf"></p>
+                <p>Page: <input type="text" id="page" value="1"></p>
+                <p>
+                    <button onclick="testDirectImage()">Test Direct Image</button>
+                    <button onclick="clearImage('directImage')">Clear</button>
+                </p>
+                <div id="directResult"></div>
+                <div>
+                    <img id="directImage" alt="Direct IIIF Image" style="display: none;">
+                </div>
+            </div>
         </div>
 
-        <div class="server-toggle">
-            <label>
-                <input type="radio" name="serverMode" value="http" checked> HTTP (port 9443)
-            </label>
-            <label>
-                <input type="radio" name="serverMode" value="https"> HTTPS (port 8443)
-            </label>
+        <div class="test-section">
+            <h2>Test 2: Info.json Access</h2>
+            <p>Testing access to the info.json file:</p>
+            <div>
+                <p>
+                    <button onclick="testInfoJson()">Test Info.json</button>
+                    <button onclick="clearInfo()">Clear</button>
+                </p>
+                <div id="infoResult"></div>
+                <pre id="infoJson"></pre>
+        </div>
         </div>
 
-        <div class="debug-info" id="debug-info">
-            <p><strong>Current Host:</strong> <span id="current-host"></span></p>
-            <p><strong>Manifest URL:</strong> <span id="manifest-url"></span></p>
-        </div>
-
+        <div class="test-section">
+            <h2>Test 3: Manifest Creation</h2>
+            <p>Generate a simple test manifest with HTTPS URLs:</p>
         <div>
-            <button id="reload-manifest">Reload Current Manifest</button>
-            <button id="test-different-manifest">Test Different Manifest</button>
-            <button id="test-universal-viewer">Switch to Universal Viewer</button>
+                <p>
+                    <button onclick="generateManifest()">Generate Manifest</button>
+                    <button onclick="clearManifest()">Clear</button>
+                </p>
+                <div id="manifestResult"></div>
+                <pre id="manifestJson"></pre>
+            </div>
         </div>
-
-        <div id="viewer"></div>
     </div>
 
     <script>
-        // Get the current host and set the manifest URL
-        const currentHost = window.location.hostname;
+        const CANTALOUPE_URL = 'https://localhost:8183/iiif/3';
         
-        // Default to HTTP mode
-        let serverProtocol = "http";
-        let serverPort = "9443";
-        let manifestUrl = `${serverProtocol}://localhost:${serverPort}/public_manifest`;
-        
-        document.getElementById('current-host').textContent = window.location.host;
-        document.getElementById('manifest-url').textContent = manifestUrl;
-
-        // Server mode toggle handlers
-        const radioButtons = document.querySelectorAll('input[name="serverMode"]');
-        radioButtons.forEach(button => {
-            button.addEventListener('change', (e) => {
-                if (e.target.value === "http") {
-                    serverProtocol = "http";
-                    serverPort = "9443";
-                } else {
-                    serverProtocol = "https";
-                    serverPort = "8443";
-                }
-                
-                manifestUrl = `${serverProtocol}://localhost:${serverPort}/public_manifest`;
-                document.getElementById('manifest-url').textContent = manifestUrl;
-                
-                // Reload the viewer with the new manifest URL
-                initMirador(manifestUrl);
-            });
-        });
-
-        // Initialize Mirador viewer
-        let miradorInstance = null;
-
-        function initMirador(manifestUrl) {
-            document.getElementById('manifest-url').textContent = manifestUrl;
+        function testDirectImage() {
+            const recordId = document.getElementById('recordId').value;
+            const filename = document.getElementById('filename').value;
+            const page = document.getElementById('page').value;
             
-            if (miradorInstance) {
-                document.getElementById('viewer').innerHTML = '';
-            }
+            // Construct the URL
+            const identifier = `private%2F${recordId}%2F${filename}`;
+            const imageUrl = `${CANTALOUPE_URL}/${identifier}/full/,400/0/default.jpg?page=${page}`;
+            
+            const resultDiv = document.getElementById('directResult');
+            const img = document.getElementById('directImage');
+            
+            resultDiv.innerHTML = `<p>Testing URL: <a href="${imageUrl}" target="_blank">${imageUrl}</a></p>`;
 
-            miradorInstance = Mirador.viewer({
-                id: 'viewer',
-                windows: [{
-                    manifestId: manifestUrl,
-                    canvasIndex: 0,
-                    view: 'single'
-                }],
-                window: {
-                    allowClose: false,
-                    allowFullscreen: true,
-                    allowMaximize: true,
-                    allowTopMenuButton: true,
-                    defaultView: 'single',
-                    sideBarOpen: true
-                },
-                workspace: {
-                    showZoomControls: true,
-                    type: 'mosaic'
-                },
-                theme: {
-                    palette: {
-                        primary: {
-                            main: '#1967d2',
-                        },
-                    },
-                }
-            });
-
-            console.log(`Initialized Mirador with manifest: ${manifestUrl}`);
+            // Test loading the image
+            img.onload = function() {
+                resultDiv.innerHTML += `<p class="success">✓ Image loaded successfully!</p>`;
+                img.style.display = 'block';
+            };
+            
+            img.onerror = function() {
+                resultDiv.innerHTML += `<p class="error">✗ Failed to load image. Check browser console for details.</p>`;
+                img.style.display = 'none';
+            };
+            
+            img.src = imageUrl;
         }
-
-        // Initialize with default manifest
-        initMirador(manifestUrl);
-
-        // Button event handlers
-        document.getElementById('reload-manifest').addEventListener('click', () => {
-            initMirador(manifestUrl);
-        });
-
-        document.getElementById('test-different-manifest').addEventListener('click', () => {
-            const newManifestUrl = prompt("Enter a IIIF manifest URL:", manifestUrl);
-            if (newManifestUrl) {
-                manifestUrl = newManifestUrl;
-                initMirador(manifestUrl);
-            }
-        });
-
-        document.getElementById('test-universal-viewer').addEventListener('click', () => {
-            const uvUrl = `https://universalviewer.io/uv.html?manifest=${encodeURIComponent(manifestUrl)}`;
-            window.open(uvUrl, '_blank');
-        });
+        
+        function testInfoJson() {
+            const recordId = document.getElementById('recordId').value;
+            const filename = document.getElementById('filename').value;
+            
+            // Construct the URL
+            const identifier = `private%2F${recordId}%2F${filename}`;
+            const infoUrl = `${CANTALOUPE_URL}/${identifier}/info.json`;
+            
+            const resultDiv = document.getElementById('infoResult');
+            const jsonPre = document.getElementById('infoJson');
+            
+            resultDiv.innerHTML = `<p>Testing URL: <a href="${infoUrl}" target="_blank">${infoUrl}</a></p>`;
+                
+            // Fetch the info.json
+            fetch(infoUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    resultDiv.innerHTML += `<p class="success">✓ info.json retrieved successfully!</p>`;
+                    jsonPre.textContent = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    resultDiv.innerHTML += `<p class="error">✗ Failed to retrieve info.json: ${error.message}</p>`;
+                    jsonPre.textContent = '';
+                });
+        }
+        
+        function generateManifest() {
+            const recordId = document.getElementById('recordId').value;
+            const filename = document.getElementById('filename').value;
+            
+            // Construct the identifier
+            const identifier = `private%2F${recordId}%2F${filename}`;
+            
+            const resultDiv = document.getElementById('manifestResult');
+            const manifestPre = document.getElementById('manifestJson');
+            
+            // First get the info.json to get dimensions
+            const infoUrl = `${CANTALOUPE_URL}/${identifier}/info.json`;
+            
+            resultDiv.innerHTML = `<p>Fetching info.json to generate manifest...</p>`;
+            
+            fetch(infoUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(info => {
+                    // Create a simple manifest with one canvas
+                    const manifest = {
+                        "@context": "http://iiif.io/api/presentation/2/context.json",
+                        "@id": "https://example.org/manifest.json",
+                        "@type": "sc:Manifest",
+                        "label": `Test Manifest for ${filename}`,
+                        "viewingDirection": "left-to-right",
+                        "viewingHint": "paged",
+                        "sequences": [
+                            {
+                                "@type": "sc:Sequence",
+                                "canvases": [
+                                    {
+                                        "@id": `https://example.org/canvas/p1`,
+                                        "@type": "sc:Canvas",
+                                        "label": "Page 1",
+                                        "width": info.width || 800,
+                                        "height": info.height || 1200,
+                                        "images": [
+                                            {
+                                                "@type": "oa:Annotation",
+                                                "motivation": "sc:painting",
+                                                "resource": {
+                                                    "@id": `${CANTALOUPE_URL}/${identifier}/full/full/0/default.jpg?page=1`,
+                                                    "@type": "dctypes:Image",
+                                                    "format": "image/jpeg",
+                                                    "width": info.width || 800,
+                                                    "height": info.height || 1200,
+                                                    "service": {
+                                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                                        "@id": `${CANTALOUPE_URL}/${identifier}`,
+                                                        "profile": "http://iiif.io/api/image/2/level2.json"
+                                                    }
+                                                },
+                                                "on": `https://example.org/canvas/p1`
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    };
+                    
+                    resultDiv.innerHTML = `<p class="success">✓ Manifest generated successfully with HTTPS URLs!</p>`;
+                    manifestPre.textContent = JSON.stringify(manifest, null, 2);
+                })
+                .catch(error => {
+                    resultDiv.innerHTML += `<p class="error">✗ Failed to generate manifest: ${error.message}</p>`;
+                    manifestPre.textContent = '';
+                });
+        }
+        
+        function clearImage(id) {
+            document.getElementById(id).style.display = 'none';
+            document.getElementById('directResult').innerHTML = '';
+        }
+        
+        function clearInfo() {
+            document.getElementById('infoResult').innerHTML = '';
+            document.getElementById('infoJson').textContent = '';
+        }
+        
+        function clearManifest() {
+            document.getElementById('manifestResult').innerHTML = '';
+            document.getElementById('manifestJson').textContent = '';
+        }
     </script>
 </body>
 </html> 
