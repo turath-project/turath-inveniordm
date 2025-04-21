@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>48_ history00871 تاريخ ابن عباد/hocr/001.hocr</title>
+		<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="ocr-capabilities" content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf"/>
+	</head>
+	<body>
+		<div class="ocr_page" id="page_001" title="image '48_ history00871 تاريخ ابن عباد/001.jpg'; bbox 0 0 1768 2605; ppageno 001" style="padding: 100px;">
+			<div class="ocr_carea" id="block_001_1" title="bbox 100 100 1868 2705">
+				<p class="ocr_par" id="Paragraph_0" lang="ara" title="bbox 718 328 1218 650" coordinate1="1218 328" coordinate2="718 328" coordinate3="718 650" coordinate4="1218 650" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿المملكة العربية السعودية 
+الأمانة العامة للاحتفال 
+بمرور مائة عام على تأسيس المملكة</p>
+				<p class="ocr_par" id="Image_1" lang="ara" title="bbox 1405 338 1755 680" coordinate1="1755 338" coordinate2="1405 338" coordinate3="1405 680" coordinate4="1755 680" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿صورة</p>
+				<p class="ocr_par" id="Image_2" lang="ara" title="bbox 220 260 488 675" coordinate1="488 260" coordinate2="220 260" coordinate3="220 675" coordinate4="488 675" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿صورة</p>
+				<p class="ocr_par" id="BookName_3" lang="ara" title="bbox 510 1002 1448 1385" coordinate1="1448 1002" coordinate2="510 1002" coordinate3="510 1385" coordinate4="1448 1385" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿تاريخ ابن عباد</p>
+				<p class="ocr_par" id="Author_4" lang="ara" title="bbox 622 1472 1320 1705" coordinate1="1320 1472" coordinate2="622 1472" coordinate3="622 1705" coordinate4="1320 1705" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿تأليف .
+محمد بن حمد بن عباد العوسجي</p>
+				<p class="ocr_par" id="Author_5" lang="ara" title="bbox 568 1848 1368 2072" coordinate1="1368 1848" coordinate2="568 1848" coordinate3="568 2072" coordinate4="1368 2072" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿دراسة وتحقيق
+الأستاذ الدكتور / عبد الله بن يوسف الشبل</p>
+				<p class="ocr_par" id="Paragraph_6" lang="ara" title="bbox 182 2262 1768 2385" coordinate1="1768 2262" coordinate2="182 2262" coordinate3="182 2385" coordinate4="1768 2385" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿صدر هذا الكتاب بمناسبة الاحتفال بمرور مائة عام على تأسيس المملكة العربية السعودية</p>
+				<p class="ocr_par" id="Paragraph_7" lang="ara" title="bbox 762 2492 1192 2605" coordinate1="1192 2492" coordinate2="762 2492" coordinate3="762 2605" coordinate4="1192 2605" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿١٤١٩ ه - ١٩٩٩ م</p>
+			</div>
+		</div>
+	</body>
+</html>

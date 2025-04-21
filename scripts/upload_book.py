@@ -36,11 +36,16 @@ import glob
 import json
 import re
 import traceback
+import tempfile
 from datetime import datetime
 from typing import Dict, List, Optional, Union
 import requests
 import logging
 from pathlib import Path
+from PIL import Image
+from bs4 import BeautifulSoup
+import PyPDF2
+import shutil
 
 # Setup logging
 logging.basicConfig(
@@ -137,6 +142,292 @@ class BookUploader:
             import urllib3
             urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     
+    # --- Helper methods for Manifest Generation (adapted) ---
+    def _get_hocr_dimensions(self, hocr_path):
+        """Extract page dimensions from HOCR file"""
+        try:
+            with open(hocr_path, 'r', encoding='utf-8') as file:
+                soup = BeautifulSoup(file, 'html.parser')
+                page = soup.find('div', class_='ocr_page')
+                if page and 'title' in page.attrs:
+                    title = page['title']
+                    bbox_match = re.search(r'bbox\s+\d+\s+\d+\s+(\d+)\s+(\d+)', title)
+                    if bbox_match:
+                        width = int(bbox_match.group(1))
+                        height = int(bbox_match.group(2))
+                        return width, height
+        except Exception as e:
+            logger.error(f"Error extracting dimensions from HOCR {os.path.basename(hocr_path)}: {e}")
+        return None
+
+    def _get_pdf_dimensions(self, pdf_path, page_number=0):
+        """Extract actual dimensions from PDF page"""
+        try:
+            with open(pdf_path, 'rb') as f:
+                pdf = PyPDF2.PdfReader(f)
+                if len(pdf.pages) > page_number:
+                    page = pdf.pages[page_number]
+                    mediabox = page.mediabox
+                    width_pt = mediabox.width
+                    height_pt = mediabox.height
+                    width_px = int(width_pt) # Assume 72 DPI for direct conversion
+                    height_px = int(height_pt)
+                    return width_px, height_px
+        except Exception as e:
+            logger.error(f"Error extracting dimensions from PDF page {page_number}: {e}")
+        return None
+
+    def _get_cantaloupe_dimensions(self, identifier, page_number=None):
+        """Get dimensions from Cantaloupe for a specific identifier/page"""
+        # Assuming Cantaloupe runs on localhost:8182 for now
+        # TODO: Make Cantaloupe URL configurable
+        base_url = "http://localhost:8182/iiif/2" 
+        url = f"{base_url}/{identifier}/info.json"
+        if page_number:
+            url += f"?page={page_number}"
+        
+        try:
+            logger.debug(f"Querying Cantaloupe: {url}")
+            response = requests.get(url, verify=False, timeout=10) # Add timeout
+            if response.status_code == 200:
+                data = response.json()
+                dims = (data.get('width'), data.get('height'))
+                logger.debug(f"Got Cantaloupe dimensions: {dims}")
+                return dims
+            else:
+                 logger.warning(f"Cantaloupe returned status {response.status_code} for {url}")
+        except Exception as e:
+            logger.error(f"Error getting dimensions from Cantaloupe ({url}): {e}")
+        return None
+
+    def _calculate_scale_factor(self, hocr_dim, pdf_dim, cantaloupe_dim):
+        """Calculate appropriate scale factor between coordinate systems"""
+        if not all([hocr_dim, cantaloupe_dim]): # PDF dim not strictly needed for scaling?
+            logger.warning("Missing dimensions for scale factor calculation, using 1.0")
+            return 1.0  # Default if any dimensions are missing
+        
+        hocr_width, hocr_height = hocr_dim
+        cantaloupe_width, cantaloupe_height = cantaloupe_dim
+        pdf_width, pdf_height = pdf_dim if pdf_dim else (None, None)
+
+        if hocr_width == 0 or hocr_height == 0:
+             logger.warning("HOCR dimensions are zero, cannot calculate scale factor, using 1.0")
+             return 1.0
+        
+        width_ratio = cantaloupe_width / hocr_width
+        height_ratio = cantaloupe_height / hocr_height
+        scale_factor = (width_ratio + height_ratio) / 2
+        
+        logger.debug(f"Dimension comparison:")
+        logger.debug(f"  HOCR: {hocr_width}x{hocr_height}")
+        logger.debug(f"  PDF: {pdf_width}x{pdf_height}")
+        logger.debug(f"  Cantaloupe: {cantaloupe_width}x{cantaloupe_height}")
+        logger.debug(f"  Calculated scale factor: {scale_factor}")
+        
+        return scale_factor
+        
+    def _generate_manifest_content(self, record_id: str, book_info: Dict, files: Dict) -> Optional[Dict]:
+        """Generate IIIF Manifest content as a dictionary."""
+        logger.info("Generating IIIF Manifest content...")
+        pdf_files = files.get('pdf', [])
+        hocr_files = files.get('hocr', [])
+        
+        if not pdf_files:
+            logger.error("Cannot generate manifest without a PDF file.")
+            return None
+            
+        pdf_path = pdf_files[0]
+        pdf_filename = os.path.basename(pdf_path)
+        
+        # Use Invenio Base URL (remove /api)
+        invenio_base_url = self.api_url.rsplit('/api', 1)[0] if self.api_url.endswith('/api') else self.api_url
+        
+        # Determine protocol for services based on invenio_base_url
+        service_protocol = "https" if invenio_base_url.startswith("https") else "http"
+
+        # Construct Manifest ID using Invenio URL
+        # Use the final record URL structure (even if draft, links should resolve post-publish)
+        manifest_id = f"{invenio_base_url}/records/{record_id}/files/manifest.json"
+        
+        # New approach: Use the unique copied filename format (record_id + original name)
+        cantaloupe_pdf_identifier = f"{record_id}_{pdf_filename}"
+        cantaloupe_pdf_identifier = requests.utils.quote(cantaloupe_pdf_identifier)
+        logger.debug(f"Using Cantaloupe identifier: {cantaloupe_pdf_identifier}")
+        
+        # --- Use determined protocol for Cantaloupe --- 
+        # TODO: Make Cantaloupe base host/port configurable
+        cantaloupe_host_port = "localhost:8182" 
+        # --- FORCE HTTP for Cantaloupe for now --- 
+        # cantaloupe_base_url = f"{service_protocol}://{cantaloupe_host_port}/iiif/2" 
+        cantaloupe_base_url = f"http://{cantaloupe_host_port}/iiif/2" 
+
+        # Annotation and Search Service URLs
+        # TODO: Make these host/ports configurable
+        annotation_service_base = f"{service_protocol}://localhost:5002/annotations"
+        search_service_url = f"{service_protocol}://localhost:5001/search"
+        autocomplete_service_url = f"{service_protocol}://localhost:5001/autocomplete"
+        
+        try:
+            with open(pdf_path, 'rb') as f:
+                pdf = PyPDF2.PdfReader(f)
+                num_pages = len(pdf.pages)
+                logger.info(f"PDF has {num_pages} pages")
+        except Exception as e:
+            logger.error(f"Error reading PDF for page count: {e}")
+            return None
+        
+        default_width = 2000
+        default_height = 3000
+        
+        manifest = {
+            "@context": "http://iiif.io/api/presentation/2/context.json",
+            "@id": manifest_id,
+            "@type": "sc:Manifest",
+            "label": book_info.get("title", self.book_id), # Use title from book_info
+            # --- Add metadata like the example ---
+            "metadata": [
+                {
+                    "label": "Coordinate System",
+                    "value": "HOCR coordinates are automatically scaled to match PDF rendering in Cantaloupe"
+                },
+                {
+                    "label": "Auto-Scaling",
+                    "value": "Each page uses its own calculated scale factor based on comparing HOCR, PDF, and Cantaloupe dimensions"
+                }
+            ], 
+            "sequences": [
+                {
+                    "@type": "sc:Sequence",
+                    "canvases": []
+                }
+            ]
+        }
+        
+        hocr_map = {os.path.basename(p): p for p in hocr_files}
+        
+        for page_num in range(1, num_pages + 1):
+            page_label = str(page_num).zfill(3) # Use zero-padded label like '001'
+            hocr_filename = f"{page_label}.hocr"
+            hocr_path = hocr_map.get(hocr_filename)
+            
+            width, height = default_width, default_height
+            scale_factor = 1.0
+            hocr_dimensions = None
+            pdf_dimensions = self._get_pdf_dimensions(pdf_path, page_num - 1)
+
+            if hocr_path:
+                hocr_dimensions = self._get_hocr_dimensions(hocr_path)
+            
+            # Get Cantaloupe dimensions for this page
+            # Add a small delay/retry here in case Cantaloupe needs time after copy?
+            # time.sleep(0.5) # Optional short delay 
+            cantaloupe_dimensions = self._get_cantaloupe_dimensions(cantaloupe_pdf_identifier, page_num)
+
+            if hocr_dimensions and pdf_dimensions and cantaloupe_dimensions:
+                # --- Calculate scale factor only if all dimensions are present --- 
+                scale_factor = self._calculate_scale_factor(hocr_dimensions, pdf_dimensions, cantaloupe_dimensions)
+                # Use HOCR dimensions scaled by the factor for the canvas
+                orig_width, orig_height = hocr_dimensions
+                width = int(orig_width * scale_factor) # Use scaled HOCR dims
+                height = int(orig_height * scale_factor)
+                logger.debug(f"Using scaled HOCR dimensions for page {page_label}: {width}x{height} (Scale: {scale_factor})")
+            elif cantaloupe_dimensions: # Use Cantaloupe if HOCR/PDF dims missing
+                width, height = cantaloupe_dimensions
+                logger.debug(f"Using Cantaloupe dimensions (no scaling possible) for page {page_label}: {width}x{height}")
+            elif pdf_dimensions: # Fallback to PDF
+                 width, height = pdf_dimensions
+                 logger.warning(f"Using PDF dimensions (no Cantaloupe/HOCR) for page {page_label}: {width}x{height}")
+            else: # Fallback to default
+                logger.warning(f"Using default dimensions for page {page_label}: {width}x{height}")
+
+            # Ensure width/height are integers
+            width = int(width) if width else default_width
+            height = int(height) if height else default_height
+                
+            # --- Use p{page_label} format for canvas ID --- 
+            canvas_id = f"{manifest_id}/canvas/p{page_label}"
+            canvas = {
+                "@id": canvas_id,
+                "@type": "sc:Canvas",
+                # --- Use p. {page_label} format for label --- 
+                "label": f"p. {page_label}", 
+                "width": width,
+                "height": height,
+                "images": [
+                    {
+                        "@type": "oa:Annotation",
+                        "motivation": "sc:painting",
+                        "on": canvas_id,
+                        "resource": {
+                            # Point resource to Cantaloupe URL for the specific page
+                            # --- Use full/full like example, remove service block/format --- 
+                            "@id": f"{cantaloupe_base_url}/{cantaloupe_pdf_identifier}/full/full/0/default.jpg?page={page_num}",
+                            "@type": "dctypes:Image",
+                            # "format": "image/jpeg", # Removed
+                            "width": width, # Use canvas width/height for image dims too
+                            "height": height
+                            # "service": { ... } # Removed nested service block
+                        }
+                    }
+                ],
+                "otherContent": [
+                    {
+                        "@id": f"{annotation_service_base}/{self.book_id}/p{page_label}/line",
+                        "@type": "sc:AnnotationList",
+                         # --- Match example label --- 
+                        "label": f"Text of page {page_label}"
+                    }
+                ]
+            }
+
+            if hocr_path:
+                # Use the InvenioRDM file URL for HOCR
+                hocr_file_url = f"{invenio_base_url}/records/{record_id}/files/{hocr_filename}"
+                canvas["seeAlso"] = [
+                    {
+                        "@id": hocr_file_url,
+                        "format": "text/vnd.hocr+html",
+                        "profile": "http://kba.github.io/hocr-spec/1.2/",
+                        "label": "HOCR OCR text"
+                    }
+                ]
+                # --- Include scale factor if calculated --- 
+                if hocr_dimensions and pdf_dimensions and cantaloupe_dimensions:
+                     canvas["scaleFactor"] = scale_factor
+            
+            manifest["sequences"][0]["canvases"].append(canvas)
+
+        # Add search service
+        manifest["service"] = [
+            {
+                "@context": "http://iiif.io/api/search/0/context.json",
+                "@id": search_service_url,
+                "profile": "http://iiif.io/api/search/0/search",
+                "label": "Search within this manifest",
+                "service": {
+                    "@id": autocomplete_service_url,
+                    "profile": "http://iiif.io/api/search/0/autocomplete",
+                    "label": "Autocomplete words in this manifest"
+                }
+            }
+        ]
+        
+        # Add PDF download link using Invenio URL
+        # --- Use http for download link like example? Or stick to service_protocol? Stick to invenio URL --- 
+        pdf_file_url = f"{invenio_base_url}/records/{record_id}/files/{pdf_filename}"
+        manifest["related"] = {
+            "@id": pdf_file_url,
+            "format": "application/pdf",
+            "label": "Download full PDF"
+        }
+        
+        # Basic metadata was added to manifest["metadata"] above
+
+        logger.info("IIIF Manifest content generated successfully.")
+        return manifest
+        
+    # --- End of Manifest Generation Helpers ---
+    
     def collect_files(self) -> Dict[str, List[str]]:
         """
         Collect files from the book directory.
@@ -153,8 +444,9 @@ class BookUploader:
         # Always include manifest.json if it exists, even in pdf-only mode
         manifest_path = os.path.join(self.book_dir, "manifest.json")
         if os.path.exists(manifest_path):
-            files['other'].append(manifest_path)
-            logger.info(f"Including manifest.json for IIIF viewer support")
+            # Don't add it to the upload list here, as we will generate and upload our own.
+            # files['other'].append(manifest_path) 
+            logger.info(f"Found original manifest.json (will be replaced by generated one during upload)")
         
         # Collect HOCR files if not skipping
         if not self.skip_hocr:
@@ -177,96 +469,119 @@ class BookUploader:
     
     def extract_book_info(self) -> Dict:
         """
-        Extract book information from manifest.json or infer from directory structure.
+        Extract book information, prioritizing metadata.json then manifest.json.
         
         Returns:
             Dictionary with book metadata
         """
         book_info = {
             "book_id": self.book_id,
-            "title": self.book_id,  # Default title is the book ID
+            "title": self.book_id,  # Default title
             "creators": [],
             "subjects": [],
-            "language": "ar",
-            "publication_date": "1900-01-01"
+            "language": "ara", # Default language Arabic
+            "publication_date": datetime.now().strftime("%Y-%m-%d"), # Default date
+            "description": f"Book from Turath Digital Library: {self.book_id}", # Default description
+            "resource_type": {"id": "publication-book"} # Default resource type
         }
         
-        # Try to load from manifest.json
-        manifest_path = os.path.join(self.book_dir, "manifest.json")
-        if os.path.exists(manifest_path):
+        metadata_loaded = False
+        
+        # 1. Try metadata.json first
+        metadata_path = os.path.join(self.book_dir, "metadata.json")
+        if os.path.exists(metadata_path):
             try:
-                with open(manifest_path, 'r', encoding='utf-8') as f:
-                    manifest_data = f.read()
+                with open(metadata_path, 'r', encoding='utf-8') as f:
+                    direct_metadata = json.load(f)
                 
-                try:
-                    manifest = json.loads(manifest_data)
+                # Assume structure like {"metadata": {...}, "access": {...}, ...}
+                if "metadata" in direct_metadata:
+                    # Overwrite defaults with values from metadata.json
+                    meta_section = direct_metadata["metadata"]
+                    book_info["title"] = meta_section.get("title", book_info["title"])
+                    book_info["creators"] = meta_section.get("creators", []) # Take creators directly
+                    book_info["subjects"] = meta_section.get("subjects", []) # Take subjects directly
+                    book_info["language"] = meta_section.get("languages", [{"id": book_info["language"]}])[0].get("id", book_info["language"])
+                    book_info["publication_date"] = meta_section.get("publication_date", book_info["publication_date"])
+                    book_info["description"] = meta_section.get("description", book_info["description"])
+                    book_info["resource_type"] = meta_section.get("resource_type", book_info["resource_type"])
+                    # Add identifiers if present
+                    book_info["identifiers"] = meta_section.get("identifiers", [])
                     
-                    # Extract basic metadata
+                    logger.info(f"Successfully loaded primary metadata from metadata.json: {book_info['title']}")
+                    metadata_loaded = True
+                else:
+                     logger.warning(f"metadata.json found but missing top-level 'metadata' key.")
+                     
+            except Exception as e:
+                logger.error(f"Error parsing metadata.json: {str(e)}")
+
+        # 2. If metadata.json wasn't loaded or didn't have needed fields, try manifest.json
+        if not metadata_loaded:
+            manifest_path = os.path.join(self.book_dir, "manifest.json")
+            if os.path.exists(manifest_path):
+                logger.info("Attempting to extract metadata from manifest.json...")
+                try:
+                    with open(manifest_path, 'r', encoding='utf-8') as f:
+                        manifest = json.load(f)
+                    
                     if isinstance(manifest, dict):
-                        # Handle label - could be a string or dict with language keys
+                        # Extract label as title (handle dict/str)
                         label = manifest.get("label", {})
                         if isinstance(label, dict):
-                            # Try English label first, then any label
-                            if "en" in label and isinstance(label["en"], list) and label["en"]:
-                                book_info["title"] = label["en"][0]
-                            elif label:
-                                # Get first label from any language
-                                for lang, values in label.items():
-                                    if isinstance(values, list) and values:
-                                        book_info["title"] = values[0]
-                                        break
+                             # Prefer English, fallback to any lang
+                            en_label = label.get("en", [book_info["title"]])[0]
+                            book_info["title"] = en_label if en_label else next((v[0] for v in label.values() if v), book_info["title"])
                         elif isinstance(label, str):
                             book_info["title"] = label
+
+                        # Extract from IIIF metadata block if present
+                        iiif_metadata = manifest.get("metadata", [])
+                        if isinstance(iiif_metadata, list):
+                            for item in iiif_metadata:
+                                if isinstance(item, dict) and "label" in item and "value" in item:
+                                    label_dict = item["label"]
+                                    value_dict = item["value"]
+                                    # Get english label preferably
+                                    label_en = label_dict.get("en", [None])[0]
+                                    # Get first value preferably english
+                                    value_en = value_dict.get("en", [None])[0]
+                                    value_any = next((v[0] for v in value_dict.values() if v), None)
+                                    current_value = value_en if value_en else value_any
+
+                                    if label_en and current_value:
+                                        label_lower = label_en.lower()
+                                        if "author" in label_lower or "creator" in label_lower:
+                                            # Simple name parsing for creator
+                                            book_info["creators"].append({"person_or_org": {"name": current_value, "type": "personal"}})
+                                        elif "subject" in label_lower:
+                                            book_info["subjects"].append({"subject": current_value})
+                                        elif "language" in label_lower:
+                                             # Basic lang code handling
+                                            lang_code = current_value[:3].lower()
+                                            if len(lang_code) == 3:
+                                                book_info["language"] = lang_code
+                                        elif "date" in label_lower or "publication date" in label_lower:
+                                            book_info["publication_date"] = current_value
+                                        elif "description" in label_lower:
+                                            book_info["description"] = current_value
+                                        # Add more mappings here if needed (e.g., publisher)
                         
-                        # Look for metadata in the manifest
-                        metadata = manifest.get("metadata", {})
-                        
-                        # Extract creator information
-                        if "author" in metadata:
-                            authors = metadata["author"]
-                            if isinstance(authors, list):
-                                for author in authors:
-                                    if isinstance(author, dict) and "value" in author:
-                                        book_info["creators"].append({"name": author["value"]})
-                            elif isinstance(authors, dict) and "value" in authors:
-                                book_info["creators"].append({"name": authors["value"]})
-                        
-                        # Extract subject information
-                        if "subject" in metadata:
-                            subjects = metadata["subject"]
-                            if isinstance(subjects, list):
-                                for subject in subjects:
-                                    if isinstance(subject, dict) and "value" in subject:
-                                        book_info["subjects"].append(subject["value"])
-                            elif isinstance(subjects, dict) and "value" in subjects:
-                                book_info["subjects"].append(subjects["value"])
-                        
-                        # Extract language
-                        if "language" in metadata:
-                            language = metadata["language"]
-                            if isinstance(language, list) and language:
-                                book_info["language"] = language[0]
-                            elif isinstance(language, str):
-                                book_info["language"] = language
-                        
-                        # Extract publication date
-                        if "date" in metadata:
-                            date = metadata["date"]
-                            if isinstance(date, list) and date:
-                                if isinstance(date[0], dict) and "value" in date[0]:
-                                    book_info["publication_date"] = date[0]["value"]
-                                else:
-                                    book_info["publication_date"] = str(date[0])
-                            elif isinstance(date, str):
-                                book_info["publication_date"] = date
-                    
-                    logger.info(f"Successfully extracted book info from manifest.json: {book_info['title']}")
-                except json.JSONDecodeError:
-                    logger.error(f"Invalid JSON in manifest.json")
-            except Exception as e:
-                logger.error(f"Error parsing manifest.json: {str(e)}")
-        else:
-            logger.warning(f"No manifest.json found in {self.book_dir}, using default metadata")
+                        logger.info(f"Extracted partial metadata from manifest.json: {book_info['title']}")
+                        metadata_loaded = True # Mark as loaded even if partial
+
+                except Exception as e:
+                    logger.error(f"Error parsing manifest.json: {str(e)}")
+            else:
+                logger.warning(f"No metadata.json or manifest.json found in {self.book_dir}, using default metadata.")
+
+        # Ensure core fields have defaults if still missing after checks
+        # (This is slightly redundant with initial defaults but safe)
+        book_info["title"] = book_info.get("title") or self.book_id
+        book_info["publication_date"] = book_info.get("publication_date") or datetime.now().strftime("%Y-%m-%d")
+        book_info["resource_type"] = book_info.get("resource_type") or {"id": "publication-book"}
+        book_info["description"] = book_info.get("description") or f"Book from Turath Digital Library: {self.book_id}"
+        # Creator default is handled later in prepare/validate
         
         return book_info
     
@@ -305,79 +620,103 @@ class BookUploader:
     
     def prepare_metadata(self, book_info: Dict) -> Dict:
         """
-        Prepare metadata for record creation.
+        Prepare metadata for record creation based on extracted book_info.
         
         Args:
-            book_info: Dictionary with book information
+            book_info: Dictionary with book information from extract_book_info
             
         Returns:
-            Dictionary with record metadata
+            Dictionary with record metadata ready for API submission
         """
-        # Format creators
+        # Format creators from book_info (which might be pre-formatted or simple names)
+        creators_info = book_info.get("creators", [])
         creators = []
-        for creator in book_info.get("creators", []):
-            if isinstance(creator, dict) and "name" in creator:
-                # Split the name into family name and given name
-                full_name = creator["name"]
+        
+        # Check if creators_info is empty or contains invalid data
+        # Default creator addition moved primarily to validate_metadata
+        # if not creators_info:
+        #    logger.warning("No creator info found in book_info, default will be added during validation.")
+            
+        for creator_data in creators_info:
+            # If creator_data already has the RDM structure, use it
+            if isinstance(creator_data, dict) and "person_or_org" in creator_data and "type" in creator_data["person_or_org"]:
+                creators.append(creator_data)
+                logger.debug(f"Using pre-formatted creator: {creator_data['person_or_org']}")
+            # If it only has a simple name field
+            elif isinstance(creator_data, dict) and "name" in creator_data:
+                full_name = creator_data["name"]
+                logger.debug(f"Processing simple creator name: {full_name}")
                 name_parts = full_name.split()
-                
-                if len(name_parts) > 1:
-                    # Use the last part as family name and the rest as given name
-                    family_name = name_parts[-1]
-                    given_name = " ".join(name_parts[:-1])
-                else:
-                    # If only one part, use it as family name
-                    family_name = full_name
-                    given_name = "Unknown"
-                
+                family_name = name_parts[-1] if len(name_parts) > 1 else full_name
+                given_name = " ".join(name_parts[:-1]) if len(name_parts) > 1 else ""
                 creators.append({
                     "person_or_org": {
                         "family_name": family_name,
                         "given_name": given_name,
+                        "name": full_name, # Keep original name too if desired
+                        "type": "personal" # Assume personal if only name given
+                    },
+                    "role": creator_data.get("role", "author") # Preserve role if provided
+                })
+            elif isinstance(creator_data, str): # Handle case where creator is just a string name
+                 logger.debug(f"Processing string creator name: {creator_data}")
+                 full_name = creator_data
+                 name_parts = full_name.split()
+                 family_name = name_parts[-1] if len(name_parts) > 1 else full_name
+                 given_name = " ".join(name_parts[:-1]) if len(name_parts) > 1 else ""
+                 creators.append({
+                    "person_or_org": {
+                        "family_name": family_name,
+                        "given_name": given_name,
+                        "name": full_name,
                         "type": "personal"
                     },
                     "role": "author"
                 })
-        
-        # If no creators were found, add a default one
-        if not creators:
-            creators.append({
-                "person_or_org": {
-                    "family_name": "Library",
-                    "given_name": "Turath Digital",
-                    "type": "organizational"
-                }
-            })
-        
-        # Format publication date
-        pub_date = book_info.get("publication_date", "1900-01-01")
-        # Make sure it's in YYYY-MM-DD format
-        if re.match(r'^\d{4}$', pub_date):  # YYYY
-            pub_date = f"{pub_date}-01-01"
-        elif re.match(r'^\d{4}-\d{2}$', pub_date):  # YYYY-MM
-            pub_date = f"{pub_date}-01"
-        
-        # Convert language code to ISO 639-3 if necessary
+            else:
+                 logger.warning(f"Skipping unrecognized creator format: {creator_data}")
+
+        # Format publication date (ensure YYYY-MM-DD)
+        pub_date = book_info.get("publication_date", datetime.now().strftime("%Y-%m-%d"))
+        if isinstance(pub_date, str):
+            if re.match(r'^\d{4}$', pub_date): pub_date = f"{pub_date}-01-01"
+            elif re.match(r'^\d{4}-\d{2}$', pub_date): pub_date = f"{pub_date}-01"
+            elif not re.match(r'^\d{4}-\d{2}-\d{2}$', pub_date):
+                 logger.warning(f"Invalid date format '{pub_date}', using current date.")
+                 pub_date = datetime.now().strftime("%Y-%m-%d")
+        else:
+             logger.warning(f"Invalid date type '{type(pub_date)}', using current date.")
+             pub_date = datetime.now().strftime("%Y-%m-%d")
+
+        # Format language (ensure list of dicts with id)
         language_code = book_info.get("language", "ara")
-        # Map common 2-letter codes to 3-letter codes
-        language_map = {
-            "ar": "ara",
-            "en": "eng",
-            "fr": "fra",
-            "de": "deu",
-            "es": "spa"
-        }
-        if language_code in language_map:
-            language_code = language_map[language_code]
+        language_map = {"ar": "ara", "en": "eng", "fr": "fra", "de": "deu", "es": "spa"}
+        if language_code in language_map: language_code = language_map[language_code]
+        languages = [{"id": language_code}]
         
-        # Start with base metadata
+        # Format subjects (ensure list of dicts with subject)
+        subjects_info = book_info.get("subjects", [])
+        subjects = []
+        for sub in subjects_info:
+             if isinstance(sub, dict) and "subject" in sub:
+                 subjects.append(sub)
+             elif isinstance(sub, str):
+                 subjects.append({"subject": sub})
+             else:
+                 logger.warning(f"Skipping unrecognized subject format: {sub}")
+                 
+        # Format resource type (ensure dict with id)
+        resource_type_info = book_info.get("resource_type", {"id": "publication-book"})
+        resource_type = resource_type_info if isinstance(resource_type_info, dict) and "id" in resource_type_info else {"id": "publication-book"}
+
+        # Start building final metadata structure
         metadata = {
             "metadata": {
                 "title": book_info.get("title", self.book_id),
                 "publication_date": pub_date,
-                "resource_type": {"id": "publication-book"},
-                "creators": creators,
-                "languages": [{"id": language_code}],
+                "resource_type": resource_type,
+                "creators": creators, # Use processed creators
+                "languages": languages,
                 "description": book_info.get("description", f"Book from Turath Digital Library: {self.book_id}")
             },
             "access": {
@@ -389,57 +728,61 @@ class BookUploader:
             }
         }
         
-        # Add subjects if available
-        if book_info.get("subjects"):
-            metadata["metadata"]["subjects"] = [
-                {"subject": subject} for subject in book_info.get("subjects", [])
-            ]
+        # Add subjects if processed list is not empty
+        if subjects:
+            metadata["metadata"]["subjects"] = subjects
         
         # Add community if specified
         if self.community:
             metadata["parent"] = {"id": self.community}
         
-        # Add book ID as identifier with proper scheme
-        metadata["metadata"]["identifiers"] = [
-            {
-                "identifier": self.book_id,
-                "scheme": "other"  # Use a valid scheme accepted by InvenioRDM
-            }
-        ]
+        # Add identifiers (use provided or default)
+        identifiers_info = book_info.get("identifiers", [])
+        identifiers = []
+        if identifiers_info:
+            # Basic validation of provided identifiers
+            for ident in identifiers_info:
+                 if isinstance(ident, dict) and "identifier" in ident and "scheme" in ident:
+                     identifiers.append(ident)
+                 else:
+                     logger.warning(f"Skipping invalid identifier format: {ident}")
+        # Ensure at least one identifier exists (defaulting to book_id)
+        if not identifiers:
+             identifiers.append({"identifier": self.book_id, "scheme": "other"})
+        metadata["metadata"]["identifiers"] = identifiers
         
         # Add custom fields for IIIF support
         manifest_url = self.get_iiif_manifest_url()
         if manifest_url:
-            if "custom_fields" not in metadata:
-                metadata["custom_fields"] = {}
-            
-            # Add IIIF manifest URL
+            if "custom_fields" not in metadata: metadata["custom_fields"] = {}
             metadata["custom_fields"]["turath:iiif_manifest"] = manifest_url
         
-        # Merge with custom_metadata, allowing override
+        # Merge with external custom_metadata file content (if provided)
         if self.custom_metadata:
-            # Merge metadata fields
-            for key, value in self.custom_metadata.get("metadata", {}).items():
-                metadata["metadata"][key] = value
-            
-            # Merge access settings
-            for key, value in self.custom_metadata.get("access", {}).items():
-                metadata["access"][key] = value
-            
-            # Merge custom fields if any
-            if "custom_fields" in self.custom_metadata:
-                if "custom_fields" not in metadata:
-                    metadata["custom_fields"] = {}
+            # Merge metadata fields (carefully, avoid overwriting essentials if not intended)
+            # User provided metadata takes precedence
+            external_meta = self.custom_metadata.get("metadata", {})
+            for key, value in external_meta.items():
+                # Special handling for creators/subjects?
+                # Currently overwrites if key exists
+                metadata["metadata"][key] = value 
                 
-                for key, value in self.custom_metadata.get("custom_fields", {}).items():
-                    metadata["custom_fields"][key] = value
+            # Merge access settings
+            metadata["access"].update(self.custom_metadata.get("access", {}))
             
-            # Merge other top-level fields
+            # Merge custom fields 
+            if "custom_fields" in self.custom_metadata:
+                if "custom_fields" not in metadata: metadata["custom_fields"] = {}
+                metadata["custom_fields"].update(self.custom_metadata.get("custom_fields", {}))
+            
+            # Merge other top-level fields like parent community
             for key, value in self.custom_metadata.items():
-                if key not in ["metadata", "access", "custom_fields"]:
+                if key not in ["metadata", "access", "custom_fields", "files"]:
                     metadata[key] = value
-        
-        return metadata
+
+        # Final validation step is crucial before returning
+        # return self.validate_metadata(metadata) # Call validation here
+        return metadata # Let validate_metadata run just before API call
     
     def validate_metadata(self, metadata: Dict) -> Dict:
         """
@@ -532,6 +875,26 @@ class BookUploader:
             
             # Remove any None values from identifiers
             cleaned["metadata"]["identifiers"] = [i for i in cleaned["metadata"]["identifiers"] if i is not None]
+        
+        # Ensure at least one valid creator exists after validation
+        creators_list = cleaned["metadata"].get("creators", [])
+        is_valid_creator_present = False
+        if isinstance(creators_list, list):
+            for c in creators_list:
+                if isinstance(c, dict) and isinstance(c.get("person_or_org"), dict) and \
+                   (c["person_or_org"].get("name") or (c["person_or_org"].get("family_name") and c["person_or_org"].get("given_name"))):
+                    is_valid_creator_present = True
+                    break # Found at least one valid creator
+
+        if not is_valid_creator_present:
+            logger.warning("No valid creators found after validation, adding default organizational creator.")
+            cleaned["metadata"]["creators"] = [{
+                "person_or_org": {
+                    "name": "Turath Digital Library", # Use a non-blank name
+                    "type": "organizational"
+                },
+                "role": "author" # Add a default role
+            }]
         
         # Ensure publication date is valid
         if "publication_date" not in cleaned.get("metadata", {}):
@@ -666,13 +1029,13 @@ class BookUploader:
                 "error": error_msg
             }
     
-    def upload_files_to_record(self, record_id: str, files_to_upload: List[str]) -> Dict:
+    def upload_files_to_record(self, record_id: str, files_to_upload: List[Union[str, Dict]]) -> Dict:
         """
         Upload files to a draft record.
         
         Args:
             record_id: Record ID to upload files to
-            files_to_upload: List of file paths to upload
+            files_to_upload: List of file paths or dicts({"path": ..., "name": ...}) to upload
             
         Returns:
             Dictionary with upload results
@@ -689,7 +1052,19 @@ class BookUploader:
         
         # Step 1: Initialize all files at once
         try:
-            file_keys = [{"key": os.path.basename(path)} for path in files_to_upload]
+            file_keys = []
+            file_path_map = {}
+            for item in files_to_upload:
+                if isinstance(item, dict):
+                    file_path = item['path']
+                    file_name = item['name']
+                elif isinstance(item, str):
+                    file_path = item
+                    file_name = os.path.basename(file_path)
+                else:
+                    continue # Skip invalid items
+                file_keys.append({"key": file_name})
+                file_path_map[file_name] = file_path
             
             init_response = requests.post(
                 api_endpoint,
@@ -725,9 +1100,10 @@ class BookUploader:
             }
         
         # Step 2: Upload each file
-        for file_path in files_to_upload:
-            file_name = os.path.basename(file_path)
-            logger.info(f"Uploading file: {file_name}")
+        # Use the file_path_map created during initialization
+        for file_name, file_path in file_path_map.items():
+            # file_name = os.path.basename(file_path)
+            logger.info(f"Uploading file: {file_name} (from {file_path})")
             
             # Retry logic for resilient uploads
             for retry in range(self.max_retries):
@@ -862,6 +1238,11 @@ class BookUploader:
         Returns:
             Dictionary with processing results
         """
+        temp_manifest_path = None # Keep track of temporary manifest file
+        record_id = None # Initialize record_id
+        final_record_id = None # Initialize final_record_id
+        unique_pdf_filename = None # Initialize unique pdf filename
+
         try:
             # Step 1: Collect files
             files = self.collect_files()
@@ -882,19 +1263,76 @@ class BookUploader:
             # Step 3: Prepare metadata
             metadata = self.prepare_metadata(book_info)
             
-            # Step 4: Create record
+            # Step 4: Create record (get draft ID)
             create_result = self.create_record(metadata)
             if not create_result["success"]:
                 return create_result
             
             record_id = create_result["record_id"]
+
+            # --- Step 4.5: Copy PDF to Cantaloupe source *before* manifest generation --- 
+            if files['pdf']:
+                source_pdf_path = files['pdf'][0]
+                original_pdf_filename = os.path.basename(source_pdf_path)
+                # Use the draft record ID for the initial unique filename
+                base_name = os.path.splitext(original_pdf_filename)[0]
+                unique_pdf_filename = f"{record_id}_{base_name}.pdf" # Filename used by Cantaloupe
+                
+                dest_dir = os.path.abspath("./test-images") 
+                dest_pdf_path = os.path.join(dest_dir, unique_pdf_filename)
+                
+                try:
+                    os.makedirs(dest_dir, exist_ok=True)
+                    logger.info(f"Copying PDF to Cantaloupe source: {source_pdf_path} -> {dest_pdf_path}")
+                    shutil.copy2(source_pdf_path, dest_pdf_path) 
+                    logger.info(f"Successfully copied PDF for Cantaloupe.")
+                    # --- Add small delay --- 
+                    logger.info("Waiting 2 seconds for Cantaloupe to potentially recognize the file...")
+                    time.sleep(2)
+                except Exception as e:
+                    logger.error(f"Failed to copy PDF to {dest_pdf_path}: {e}")
+                    # If copy fails, manifest gen will likely fail dimension check - proceed but log warning
+                    # Alternatively, could return error here: 
+                    # return {"success": False, "error": f"Failed to copy PDF to Cantaloupe source: {e}", "record_id": record_id}
+            else:
+                 logger.warning("No PDF file found, cannot copy to Cantaloupe source.")
+
+            # Step 5a: Generate IIIF Manifest (now happens *after* PDF copy)
+            manifest_content = self._generate_manifest_content(record_id, book_info, files)
             
-            # Step 5: Upload files
+            if manifest_content:
+                try:
+                    # Create a temporary file for the manifest
+                    with tempfile.NamedTemporaryFile(mode='w', suffix=".json", prefix=f"{self.book_id}_", delete=False, encoding='utf-8') as tmp_file:
+                        json.dump(manifest_content, tmp_file, indent=2, ensure_ascii=False)
+                        temp_manifest_path = tmp_file.name
+                    logger.info(f"Generated manifest saved to temporary file: {temp_manifest_path}")
+                    
+                    # Add manifest to the list of files to upload
+                    # Ensure it's named manifest.json in the upload list
+                    files['other'].append({"path": temp_manifest_path, "name": "manifest.json"})
+                    
+                except Exception as e:
+                    logger.error(f"Failed to create or write temporary manifest file: {e}")
+                    # Continue without uploading generated manifest
+            else:
+                 logger.warning("Manifest generation failed, proceeding without generated manifest.")
+
+            # Step 5b: Upload files (including generated manifest if created)
             all_files_to_upload = []
             all_files_to_upload.extend(files['pdf'])
             all_files_to_upload.extend(files['hocr'])
             all_files_to_upload.extend(files['tiff'])
-            all_files_to_upload.extend(files['other'])
+            # Handle 'other' files which might be paths or dicts with path/name
+            processed_other_files = []
+            for item in files['other']:
+                if isinstance(item, dict):
+                    processed_other_files.append(item) # Already has path/name
+                elif isinstance(item, str):
+                    processed_other_files.append({"path": item, "name": os.path.basename(item)})
+                else:
+                    logger.warning(f"Skipping unrecognized item in 'other' files list: {item}")
+            all_files_to_upload.extend(processed_other_files)
             
             upload_result = self.upload_files_to_record(record_id, all_files_to_upload)
             
@@ -907,16 +1345,41 @@ class BookUploader:
                 }
             
             # Step 6: Publish record if requested
+            published = False
+            publish_data = None
             if self.publish:
                 publish_result = self.publish_record(record_id)
                 if not publish_result["success"]:
+                    # Return error but include record_id for potential cleanup
                     return {
                         "success": False,
                         "error": publish_result.get("error", "Failed to publish record"),
                         "record_id": record_id,
                         "partial": True
                     }
-            
+                published = True
+                publish_data = publish_result.get("data")
+                final_record_id = publish_data.get("id") # Get the final published ID
+            else:
+                logger.info(f"Record {record_id} left as draft.")
+                final_record_id = record_id # Draft ID is the final ID if not publishing
+                
+            # Step 7: (Former PDF Copy Step - Now handled earlier) 
+            # --- Optional: Rename PDF in Cantaloupe source if ID changed upon publish? --- 
+            # This adds complexity. Simpler to just use draft ID for filename always.
+            # If the record ID changed after publishing AND we copied the PDF earlier...
+            if published and final_record_id != record_id and unique_pdf_filename:
+                 old_dest_pdf_path = os.path.join(dest_dir, unique_pdf_filename) # Path used draft ID
+                 new_unique_pdf_filename = f"{final_record_id}_{base_name}.pdf"
+                 new_dest_pdf_path = os.path.join(dest_dir, new_unique_pdf_filename)
+                 if os.path.exists(old_dest_pdf_path):
+                     try:
+                         logger.info(f"Renaming Cantaloupe source PDF due to publication ID change: {old_dest_pdf_path} -> {new_dest_pdf_path}")
+                         os.rename(old_dest_pdf_path, new_dest_pdf_path)
+                     except Exception as e:
+                         logger.error(f"Failed to rename PDF in Cantaloupe source: {e}")
+                         # Log error, but don't fail the overall process
+
             # Success!
             return {
                 "success": True,
@@ -940,6 +1403,14 @@ class BookUploader:
                 "success": False,
                 "error": error_msg
             }
+        finally:
+            # Clean up temporary manifest file if it was created
+            if temp_manifest_path and os.path.exists(temp_manifest_path):
+                try:
+                    os.remove(temp_manifest_path)
+                    logger.info(f"Cleaned up temporary manifest file: {temp_manifest_path}")
+                except Exception as e:
+                    logger.error(f"Error removing temporary manifest file {temp_manifest_path}: {e}")
 
 
 def main():

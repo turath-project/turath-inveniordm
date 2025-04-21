@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>48_ history00871 تاريخ ابن عباد/hocr/051.hocr</title>
+		<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="ocr-capabilities" content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf"/>
+	</head>
+	<body>
+		<div class="ocr_page" id="page_051" title="image '48_ history00871 تاريخ ابن عباد/051.jpg'; bbox 0 0 1652 2508; ppageno 051" style="padding: 100px;">
+			<div class="ocr_carea" id="block_051_1" title="bbox 100 100 1752 2608">
+				<p class="ocr_par" id="Image_0" lang="ara" title="bbox 360 195 1585 2072" coordinate1="1585 195" coordinate2="360 195" coordinate3="360 2072" coordinate4="1585 2072" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿صورة</p>
+				<p class="ocr_par" id="ImageDesc_1" lang="ara" title="bbox 302 2085 1652 2392" coordinate1="1652 2085" coordinate2="302 2085" coordinate3="302 2392" coordinate4="1652 2392" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿الصفحة الأخيرة من مخطوطة ( تاريخ ابن عباد ) وتنظر 
+الصفحة ( ٣٦ ) من الكتاب حول اسم الناسخ الذي نقل المخطوطة من 
+خط الشيخ عثمان بن منصور .</p>
+				<p class="ocr_par" id="PageNumber_2" lang="ara" title="bbox 945 2455 1035 2508" coordinate1="1035 2455" coordinate2="945 2455" coordinate3="945 2508" coordinate4="1035 2508" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿٥١</p>
+			</div>
+		</div>
+	</body>
+</html>

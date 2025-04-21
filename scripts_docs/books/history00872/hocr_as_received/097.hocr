@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>48_ history00871 تاريخ ابن عباد/hocr/097.hocr</title>
+		<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="ocr-capabilities" content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf"/>
+	</head>
+	<body>
+		<div class="ocr_page" id="page_097" title="image '48_ history00871 تاريخ ابن عباد/097.jpg'; bbox 0 0 1512 2510; ppageno 097" style="padding: 100px;">
+			<div class="ocr_carea" id="block_097_1" title="bbox 100 100 1612 2610">
+				<p class="ocr_par" id="Title_0" lang="ara" title="bbox 602 510 1325 695" coordinate1="1325 510" coordinate2="602 510" coordinate3="602 695" coordinate4="1325 695" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿الفهارس :</p>
+				<p class="ocr_par" id="Paragraph_1" lang="ara" title="bbox 925 842 1480 962" coordinate1="1480 842" coordinate2="925 842" coordinate3="925 962" coordinate4="1480 962" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿١ - الأعلام .</p>
+				<p class="ocr_par" id="Paragraph_2" lang="ara" title="bbox 730 1005 1495 1145" coordinate1="1495 1005" coordinate2="730 1005" coordinate3="730 1145" coordinate4="1495 1145" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿٢ - القبائل والأسر .</p>
+				<p class="ocr_par" id="Paragraph_3" lang="ara" title="bbox 928 1150 1502 1290" coordinate1="1502 1150" coordinate2="928 1150" coordinate3="928 1290" coordinate4="1502 1290" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿٣ - الأماكن .</p>
+				<p class="ocr_par" id="Paragraph_4" lang="ara" title="bbox 660 1328 1498 1465" coordinate1="1498 1328" coordinate2="660 1328" coordinate3="660 1465" coordinate4="1498 1465" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿٤ - الأوزان والعملات .</p>
+				<p class="ocr_par" id="Paragraph_5" lang="ara" title="bbox 645 1500 1512 1630" coordinate1="1512 1500" coordinate2="645 1500" coordinate3="645 1630" coordinate4="1512 1630" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿٥ - الحوادث التاريخية .</p>
+				<p class="ocr_par" id="Paragraph_6" lang="ara" title="bbox 960 1655 1490 1805" coordinate1="1490 1655" coordinate2="960 1655" coordinate3="960 1805" coordinate4="1490 1805" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿٦ - المحتوى .</p>
+				<p class="ocr_par" id="PageNumber_7" lang="ara" title="bbox 932 2440 1010 2510" coordinate1="1010 2440" coordinate2="932 2440" coordinate3="932 2510" coordinate4="1010 2510" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿٩٧</p>
+			</div>
+		</div>
+	</body>
+</html>

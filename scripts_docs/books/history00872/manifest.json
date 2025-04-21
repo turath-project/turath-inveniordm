@@ -1,0 +1,5107 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://127.0.0.1:8000/api/records/kfkay-b4z87/files/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "history00871"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "en": [
+          "history00871"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "en": [
+          "kfkay-b4z87"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://127.0.0.1:8000/canvas/p1",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 1"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p1/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p1/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p1",
+              "body": {
+                "id": "http://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "http://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p2",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 2"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p2/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p2/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p2",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p3",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 3"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p3/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p3/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p3",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p4",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 4"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p4/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p4/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p4",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p5",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 5"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p5/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p5/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p5",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p6",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 6"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p6/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p6/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p6",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p7",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 7"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p7/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p7/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p7",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p8",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 8"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p8/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p8/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p8",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p9",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 9"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p9/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p9/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p9",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p10",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 10"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p10/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p10/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p10",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p11",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 11"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p11/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p11/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p11",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p12",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 12"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p12/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p12/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p12",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p13",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 13"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p13/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p13/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p13",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p14",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 14"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p14/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p14/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p14",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p15",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 15"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p15/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p15/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p15",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p16",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 16"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p16/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p16/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p16",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p17",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 17"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p17/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p17/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p17",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p18",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 18"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p18/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p18/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p18",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p19",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 19"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p19/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p19/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p19",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p20",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 20"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p20/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p20/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p20",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p21",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 21"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p21/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p21/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p21",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p22",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 22"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p22/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p22/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p22",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p23",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 23"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p23/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p23/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p23",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p24",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 24"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p24/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p24/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p24",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p25",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 25"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p25/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p25/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p25",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p26",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 26"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p26/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p26/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p26",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p27",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 27"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p27/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p27/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p27",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p28",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 28"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p28/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p28/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p28",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p29",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 29"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p29/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p29/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p29",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p30",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 30"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p30/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p30/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p30",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p31",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 31"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p31/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p31/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p31",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p32",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 32"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p32/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p32/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p32",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p33",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 33"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p33/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p33/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p33",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p34",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 34"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p34/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p34/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p34",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p35",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 35"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p35/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p35/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p35",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p36",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 36"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p36/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p36/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p36",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p37",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 37"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p37/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p37/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p37",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p38",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 38"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p38/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p38/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p38",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p39",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 39"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p39/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p39/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p39",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p40",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 40"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p40/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p40/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p40",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p41",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 41"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p41/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p41/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p41",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p42",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 42"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p42/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p42/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p42",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p43",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 43"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p43/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p43/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p43",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p44",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 44"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p44/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p44/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p44",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p45",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 45"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p45/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p45/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p45",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p46",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 46"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p46/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p46/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p46",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p47",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 47"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p47/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p47/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p47",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p48",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 48"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p48/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p48/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p48",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p49",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 49"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p49/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p49/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p49",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p50",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 50"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p50/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p50/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p50",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p51",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 51"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p51/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p51/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p51",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p52",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 52"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p52/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p52/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p52",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p53",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 53"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p53/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p53/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p53",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p54",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 54"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p54/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p54/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p54",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p55",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 55"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p55/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p55/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p55",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p56",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 56"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p56/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p56/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p56",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p57",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 57"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p57/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p57/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p57",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p58",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 58"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p58/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p58/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p58",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p59",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 59"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p59/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p59/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p59",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p60",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 60"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p60/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p60/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p60",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p61",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 61"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p61/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p61/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p61",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p62",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 62"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p62/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p62/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p62",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p63",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 63"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p63/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p63/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p63",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p64",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 64"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p64/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p64/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p64",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p65",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 65"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p65/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p65/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p65",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p66",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 66"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p66/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p66/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p66",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p67",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 67"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p67/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p67/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p67",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p68",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 68"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p68/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p68/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p68",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p69",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 69"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p69/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p69/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p69",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p70",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 70"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p70/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p70/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p70",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p71",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 71"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p71/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p71/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p71",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p72",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 72"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p72/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p72/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p72",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p73",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 73"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p73/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p73/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p73",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p74",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 74"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p74/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p74/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p74",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p75",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 75"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p75/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p75/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p75",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p76",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 76"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p76/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p76/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p76",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p77",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 77"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p77/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p77/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p77",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p78",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 78"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p78/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p78/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p78",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p79",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 79"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p79/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p79/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p79",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p80",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 80"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p80/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p80/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p80",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p81",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 81"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p81/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p81/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p81",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p82",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 82"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p82/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p82/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p82",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p83",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 83"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p83/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p83/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p83",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p84",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 84"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p84/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p84/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p84",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p85",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 85"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p85/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p85/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p85",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p86",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 86"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p86/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p86/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p86",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p87",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 87"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p87/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p87/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p87",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p88",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 88"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p88/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p88/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p88",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p89",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 89"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p89/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p89/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p89",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p90",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 90"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p90/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p90/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p90",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p91",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 91"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p91/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p91/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p91",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p92",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 92"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p92/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p92/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p92",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p93",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 93"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p93/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p93/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p93",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p94",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 94"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p94/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p94/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p94",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p95",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 95"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p95/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p95/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p95",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p96",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 96"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p96/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p96/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p96",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p97",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 97"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p97/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p97/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p97",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p98",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 98"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p98/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p98/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p98",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p99",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 99"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p99/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p99/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p99",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p100",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 100"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p100/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p100/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p100",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p101",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 101"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p101/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p101/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p101",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p102",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 102"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p102/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p102/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p102",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p103",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 103"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p103/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p103/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p103",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p104",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 104"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p104/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p104/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p104",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p105",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 105"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p105/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p105/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p105",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p106",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 106"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p106/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p106/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p106",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p107",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 107"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p107/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p107/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p107",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p108",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 108"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p108/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p108/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p108",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p109",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 109"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p109/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p109/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p109",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p110",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 110"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p110/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p110/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p110",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p111",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 111"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p111/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p111/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p111",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p112",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 112"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p112/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p112/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p112",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p113",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 113"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p113/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p113/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p113",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p114",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 114"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p114/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p114/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p114",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p115",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 115"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p115/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p115/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p115",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p116",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 116"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p116/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p116/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p116",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p117",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 117"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p117/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p117/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p117",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p118",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 118"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p118/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p118/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p118",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p119",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 119"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p119/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p119/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p119",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p120",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 120"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p120/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p120/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p120",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p121",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 121"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p121/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p121/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p121",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p122",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 122"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p122/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p122/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p122",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p123",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 123"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p123/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p123/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p123",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p124",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 124"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p124/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p124/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p124",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p125",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 125"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p125/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p125/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p125",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p126",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 126"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p126/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p126/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p126",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p127",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 127"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p127/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p127/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p127",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p128",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 128"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p128/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p128/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p128",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p129",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 129"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p129/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p129/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p129",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p130",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 130"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p130/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p130/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p130",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p131",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 131"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p131/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p131/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p131",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p132",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 132"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p132/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p132/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p132",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p133",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 133"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p133/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p133/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p133",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p134",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 134"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p134/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p134/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p134",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p135",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 135"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p135/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p135/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p135",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p136",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 136"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p136/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p136/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p136",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://127.0.0.1:8000/canvas/p137",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Page 137"
+        ]
+      },
+      "width": 1800,
+      "height": 2600,
+      "items": [
+        {
+          "id": "https://127.0.0.1:8000/canvas/p137/items",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://127.0.0.1:8000/canvas/p137/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://127.0.0.1:8000/canvas/p137",
+              "body": {
+                "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "id": "https://127.0.0.1:8182/iiif/3/private%2Fkfkay-b4z87%2Fhistory00871.pdf",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

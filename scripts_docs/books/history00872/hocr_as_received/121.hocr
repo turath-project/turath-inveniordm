@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>48_ history00871 تاريخ ابن عباد/hocr/121.hocr</title>
+		<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="ocr-capabilities" content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf"/>
+	</head>
+	<body>
+		<div class="ocr_page" id="page_121" title="image '48_ history00871 تاريخ ابن عباد/121.jpg'; bbox 0 0 1675 2505; ppageno 121" style="padding: 100px;">
+			<div class="ocr_carea" id="block_121_1" title="bbox 100 100 1775 2605">
+				<p class="ocr_par" id="Paragraph_0" lang="ara" title="bbox 818 228 1048 305" coordinate1="1048 228" coordinate2="818 228" coordinate3="818 305" coordinate4="1048 305" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿- ه - </p>
+				<p class="ocr_par" id="Paragraph_1" lang="ara" title="bbox 935 345 1655 422" coordinate1="1655 345" coordinate2="935 345" coordinate3="935 422" coordinate4="1655 422" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿-آل أبى هلال :  ٥٨</p>
+				<p class="ocr_par" id="Paragraph_2" lang="ara" title="bbox 832 448 1025 542" coordinate1="1025 448" coordinate2="832 448" coordinate3="832 542" coordinate4="1025 542" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿- و -</p>
+				<p class="ocr_par" id="Paragraph_3" lang="ara" title="bbox 935 575 1675 660" coordinate1="1675 575" coordinate2="935 575" coordinate3="935 660" coordinate4="1675 660" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿- آل وطبان :  ٦٦</p>
+				<p class="ocr_par" id="Paragraph_4" lang="ara" title="bbox 645 678 1662 775" coordinate1="1662 678" coordinate2="645 678" coordinate3="645 775" coordinate4="1662 775" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿- الوهبة :  ٢٣،١٥ ،٧٢ ،٧٣
+</p>
+				<p class="ocr_par" id="PageNumber_5" lang="ara" title="bbox 885 2432 998 2505" coordinate1="998 2432" coordinate2="885 2432" coordinate3="885 2505" coordinate4="998 2505" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿١٢٢</p>
+			</div>
+		</div>
+	</body>
+</html>

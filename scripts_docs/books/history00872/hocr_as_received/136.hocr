@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>48_ history00871 تاريخ ابن عباد/hocr/136.hocr</title>
+		<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="ocr-capabilities" content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf"/>
+	</head>
+	<body>
+		<div class="ocr_page" id="page_136" title="image '48_ history00871 تاريخ ابن عباد/136.jpg'; bbox 0 0 1682 2510; ppageno 136" style="padding: 100px;">
+			<div class="ocr_carea" id="block_136_1" title="bbox 100 100 1782 2610">
+				<p class="ocr_par" id="Index_0" lang="ara" title="bbox 198 170 1682 1848" coordinate1="1682 170" coordinate2="198 170" coordinate3="198 1848" coordinate4="1682 1848" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿٢ - حملات بني خالد على نجد وأخبارهم    ٤٠
+٣ - أخبار الحروب والغزوات والإغارات      ٤١
+٤ - الظواهر الكونية والآفات الزراعية        ٤٣
+٥ - وفيات الأعيان                            ٤٥
+أسلوب ابن عباد ولغته                          ٤٧
+نص المخطوطة وتحقيقها والتعليق عليها         ٥٣    
+ثبت بمصادر الدراسة والتحقيق والتعليق        ٨٩
+الفهارس :                                        ٩٧
+١ - الأعلام                                     ٩٩
+٢ - القبائل والأسر                            ١١٧
+٣ - الأماكن                                    ١٢٣
+٤ - الأوزان والعملات                         ١٣٠
+٥ - الحوادث التاريخية                           ١٣١             
+٦ - المحتوى                                      ١٣٥</p>
+				<p class="ocr_par" id="PageNumber_1" lang="ara" title="bbox 858 2448 982 2510" coordinate1="982 2448" coordinate2="858 2448" coordinate3="858 2510" coordinate4="982 2510" style="text-wrap: wrap;text-align: right;font-size: 30px;direction: rtl;">﻿١٣٦</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -8,6 +8,7 @@ import json
 import tempfile
 import getpass
 import requests
+import warnings
 from urllib.parse import urljoin
 
 def create_test_pdf():
@@ -81,27 +82,29 @@ startxref
     print(f"Created test PDF at: {temp_path}")
     return temp_path
 
-def get_auth_token(base_url, email=None, password=None):
+def get_auth_token(base_url):
     """
     Get authentication token from Invenio.
     
     Args:
         base_url: Base URL of the Invenio instance
-        email: User email (if not provided, will prompt)
-        password: User password (if not provided, will prompt)
         
     Returns:
         Authentication token if successful, None otherwise
     """
+    # Try RDM_API_TOKEN environment variable first
+    api_token = os.environ.get('RDM_API_TOKEN')
+    if api_token:
+        print("✅ Using RDM_API_TOKEN from environment")
+        return api_token
+        
     # Ensure base_url doesn't end with a slash
     if base_url.endswith('/'):
         base_url = base_url[:-1]
     
     # Prompt for credentials if not provided
-    if not email:
-        email = input("Enter your email: ")
-    if not password:
-        password = getpass.getpass("Enter your password: ")
+    email = input("Enter your email: ")
+    password = getpass.getpass("Enter your password: ")
     
     # Get token
     token_url = f"{base_url}/api/accounts/login"
@@ -111,7 +114,11 @@ def get_auth_token(base_url, email=None, password=None):
     }
     
     try:
-        response = requests.post(token_url, json=data)
+        # Add verify=False for self-signed certs
+        # Also suppress the InsecureRequestWarning
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            response = requests.post(token_url, json=data, verify=False)
         if response.status_code == 200:
             token_data = response.json()
             token = token_data.get("token")
@@ -131,7 +138,7 @@ def get_auth_token(base_url, email=None, password=None):
         return None
 
 def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000", 
-                       title="Test PDF Document", email=None, password=None):
+                       title="Test PDF Document"):
     """
     Upload a PDF file via the API and generate a IIIF manifest.
     
@@ -139,8 +146,6 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
         pdf_path: Path to the PDF file to upload. If None, a test PDF will be created.
         base_url: Base URL of the Invenio instance (default: http://localhost:5000)
         title: Title for the record
-        email: User email for authentication (if not provided, will prompt)
-        password: User password for authentication (if not provided, will prompt)
         
     Returns:
         Record ID if successful, None otherwise
@@ -170,14 +175,13 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
             base_url = base_url[:-1]
         
         # Get authentication token
-        token = get_auth_token(base_url, email, password)
+        token = get_auth_token(base_url)
         if not token:
-            print("Continuing without authentication...")
-            headers = {}
-        else:
-            headers = {
-                "Authorization": f"Bearer {token}"
-            }
+            print("❌ No API token found or provided. Cannot authenticate.")
+            return None
+        headers = {
+            "Authorization": f"Bearer {token}"
+        }
         
         # 1. Create draft record
         print("Creating draft record...")
@@ -188,7 +192,12 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
                 "description": "A test PDF document for IIIF manifest generation",
                 "publication_date": "2023-01-01",
                 "resource_type": {"id": "publication"},
-                "creators": [{"person_or_org": {"name": "Test User"}}]
+                "creators": [{
+                    "person_or_org": {
+                        "name": "Test User",
+                        "type": "personal"
+                     }
+                }]
             },
             "access": {
                 "record": "public",
@@ -198,7 +207,9 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
         
         draft_url = f"{base_url}/api/records"
         print(f"POST {draft_url}")
-        response = requests.post(draft_url, json=metadata, headers=headers)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            response = requests.post(draft_url, json=metadata, headers=headers, verify=False)
         
         if response.status_code != 201:
             print(f"Error creating draft: {response.status_code}")
@@ -217,7 +228,9 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
         files_init_data = [{"key": filename}]
         
         print(f"POST {files_init_url}")
-        response = requests.post(files_init_url, json=files_init_data, headers=headers)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            response = requests.post(files_init_url, json=files_init_data, headers=headers, verify=False)
         if response.status_code != 201:
             print(f"Error initializing files: {response.status_code}")
             print(response.text)
@@ -227,7 +240,9 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
         file_upload_url = f"{base_url}/api/records/{recid}/draft/files/{filename}/content"
         print(f"PUT {file_upload_url}")
         with open(pdf_path, 'rb') as file:
-            response = requests.put(file_upload_url, data=file, headers=headers)
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                response = requests.put(file_upload_url, data=file, headers=headers, verify=False)
         
         if response.status_code != 200:
             print(f"Error uploading file: {response.status_code}")
@@ -237,7 +252,9 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
         # Commit the file
         file_commit_url = f"{base_url}/api/records/{recid}/draft/files/{filename}/commit"
         print(f"POST {file_commit_url}")
-        response = requests.post(file_commit_url, headers=headers)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            response = requests.post(file_commit_url, headers=headers, verify=False)
         
         if response.status_code != 200:
             print(f"Error committing file: {response.status_code}")
@@ -251,7 +268,9 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
         
         publish_url = f"{base_url}/api/records/{recid}/draft/actions/publish"
         print(f"POST {publish_url}")
-        response = requests.post(publish_url, headers=headers)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            response = requests.post(publish_url, headers=headers, verify=False)
         
         if response.status_code != 202:
             print(f"Error publishing record: {response.status_code}")
@@ -264,7 +283,9 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
         manifest_url = f"{base_url}/api/iiif/record:{recid}/manifest.json"
         print(f"\nChecking IIIF manifest at: {manifest_url}")
         
-        response = requests.get(manifest_url)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            response = requests.get(manifest_url, verify=False)
         if response.status_code == 200:
             print("✅ IIIF manifest is available!")
             manifest_data = response.json()
@@ -284,7 +305,9 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
             
             for alt_url in alt_manifest_urls:
                 print(f"\nTrying alternative URL: {alt_url}")
-                alt_response = requests.get(alt_url)
+                with warnings.catch_warnings():
+                    warnings.simplefilter("ignore")
+                    alt_response = requests.get(alt_url, verify=False)
                 if alt_response.status_code == 200:
                     print("✅ IIIF manifest is available at this URL!")
                     manifest_data = alt_response.json()
@@ -299,7 +322,9 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
         canteloupe_url = f"{base_url}/iiif/2/{recid}:{filename}/full/full/0/default.jpg"
         print(f"\nChecking PDF rendering via IIIF: {canteloupe_url}")
         
-        response = requests.get(canteloupe_url)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            response = requests.get(canteloupe_url, verify=False)
         if response.status_code == 200:
             print("✅ PDF can be rendered via IIIF!")
             content_type = response.headers.get('Content-Type', '')
@@ -318,7 +343,9 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
             # Try alternative URL
             alt_canteloupe_url = f"{base_url}/iiif/2/record:{recid}/files:{filename}/full/full/0/default.jpg"
             print(f"\nTrying alternative IIIF URL: {alt_canteloupe_url}")
-            alt_response = requests.get(alt_canteloupe_url)
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                alt_response = requests.get(alt_canteloupe_url, verify=False)
             if alt_response.status_code == 200:
                 print("✅ PDF can be rendered via IIIF with alternative URL!")
                 content_type = alt_response.headers.get('Content-Type', '')
@@ -354,8 +381,6 @@ def main():
     # Check arguments
     base_url = "http://localhost:5000"
     pdf_path = None
-    email = None
-    password = None
     
     # Parse command line arguments
     i = 1
@@ -367,12 +392,6 @@ def main():
             i += 2
         elif arg == "--pdf" and i + 1 < len(sys.argv):
             pdf_path = sys.argv[i + 1]
-            i += 2
-        elif arg == "--email" and i + 1 < len(sys.argv):
-            email = sys.argv[i + 1]
-            i += 2
-        elif arg == "--password" and i + 1 < len(sys.argv):
-            password = sys.argv[i + 1]
             i += 2
         elif arg.startswith("http"):
             base_url = arg
@@ -396,7 +415,7 @@ def main():
         print("Will create a test PDF file")
     
     # Run the upload
-    recid = upload_pdf_via_api(pdf_path, base_url, email=email, password=password)
+    recid = upload_pdf_via_api(pdf_path, base_url)
     if recid:
         print("\nSuccess! You can now access the PDF file and its IIIF manifest.")
     else:

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>48_ history00871 تاريخ ابن عباد/hocr/004.hocr</title>
+		<style>
+                .ocr_par {
+                    text-wrap: wrap;
+                    white-space: normal; /* This allows text to wrap within the paragraph */
+                    word-wrap: break-word; /* Break long words to avoid overflow */
+                    overflow-wrap: break-word; /* Ensure proper text wrapping in modern browsers */
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+        }
+        </style>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="ocr-capabilities" content="ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf"/>
+	</head>
+	<body>
+		<div class="ocr_page" id="page_004" title="image '48_ history00871 تاريخ ابن عباد/004.jpg'; bbox 0 0 1315 1700; ppageno 004" style="padding: 100px;">
+			<div class="ocr_carea" id="block_004_1" title="bbox 100 100 1415 1800">
+				<p class="ocr_par" id="Paragraph_0" lang="ara" title="bbox 650 995 1315 1700" coordinate1="1315 995" coordinate2="650 995" coordinate3="650 1700" coordinate4="1315 1700" style="text-wrap: wrap;text-align: right;font-size: 48px;direction: rtl;">﻿بسم الله الرحمن الرحيم</p>
+			</div>
+		</div>
+	</body>
+</html>
