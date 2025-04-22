@@ -16,6 +16,15 @@
 #
 version: '2.2'
 services:
+  frontend:
+    build: ./docker/nginx/             # Copied from docker-services.yml
+    image: turath-inveniordm-frontend  # Copied from docker-services.yml
+    restart: "unless-stopped"          # Copied from docker-services.yml
+    ports:                             # Ensure fixed ports
+      - "80:80"
+      - "443:443"
+    volumes:                           # Ensure volume mount is present
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
   cache:
     extends:
       file: docker-services.yml
@@ -62,8 +71,60 @@ services:
       - CANTALOUPE_FILESYSTEM_RESOLVER_LOOKUP_STRATEGY_PATH_PREFIX=/opt/cantaloupe/images
     volumes:
       - ./test-images:/opt/cantaloupe/images
+
+  # Turath Annotation Service (HOCR-based)
+  annotation-service:
+    build:
+      context: ./services/annotation_service
+    restart: "unless-stopped"
+    ports:
+      # Map container port 5002 to host port 5002 (accessible only locally)
+      - "127.0.0.1:5002:5002"
+    volumes:
+      # Mount the host directory specified by the user to the data path inside the container
+      - ./hocr_mount:/hocr_data # Assumes ./hocr_mount exists on the host
+      # Optional: Mount local certs if USE_SSL=true
+      # - ./certs:/app/certs
+    environment:
+      - FLASK_DEBUG=1 # Enable debug mode for development
+      - PORT=5002
+      - HOCR_BASE_DIR=/hocr_data/books
+      - ANNOTATION_SERVICE_BASE_URL=http://annotation-service:5002
+      - IIIF_SERVER_BASE_URL=http://nginx:80 # Assumes nginx proxies the IIIF Presentation API
+      - USE_SSL=false
+      # Define allowed origins for CORS (adjust as needed)
+      - CORS_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,http://localhost:8000,http://127.0.0.1:5000
+    expose:
+      - 5002 # Expose port internally
+
+  # Turath Search Service (HOCR-based)
+  search-service:
+    build:
+      context: ./services/search_service
+    restart: "unless-stopped"
+    ports:
+      # Map container port 5001 to host port 5001 (accessible only locally)
+      - "127.0.0.1:5001:5001"
+    volumes:
+      # Mount the host directory specified by the user to the data path inside the container
+      - ./hocr_mount:/hocr_data # Assumes ./hocr_mount exists on the host
+      # Optional: Mount local certs if USE_SSL=true
+      # - ./certs:/app/certs
+    environment:
+      - FLASK_DEBUG=1 # Enable debug mode for development
+      - PORT=5001
+      - HOCR_BASE_DIR=/hocr_data/books
+      - SEARCH_SERVICE_BASE_URL=http://search-service:5001
+      - IIIF_SERVER_BASE_URL=http://nginx:80 # Assumes nginx proxies the IIIF Presentation API
+      - USE_SSL=false
+      # Define allowed origins for CORS (adjust as needed)
+      - CORS_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,http://localhost:8000,http://127.0.0.1:5000
+    expose:
+      - 5001 # Expose port internally
+
 volumes:
   data:
   images:
   image_tiles:
+  # hocr-data: {} # Replaced by bind mount from host directory
 

@@ -27,6 +27,8 @@ services:
     ports:
       - "80"
       - "443"
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
   cache:
     image: redis:7
     restart: "unless-stopped"

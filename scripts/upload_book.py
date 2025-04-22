@@ -84,7 +84,8 @@ class BookUploader:
         publish: bool = True,
         community: str = None,
         verify_ssl: bool = True,
-        custom_metadata: Dict = None
+        custom_metadata: Dict = None,
+        hocr_mount_point: str = None
     ):
         """
         Initialize the Book Uploader.
@@ -102,6 +103,7 @@ class BookUploader:
             community: Community ID to add the record to
             verify_ssl: Whether to verify SSL certificates
             custom_metadata: Additional metadata to add to the record
+            hocr_mount_point: Host path where HOCR files should be copied for service access
         """
         self.book_dir = os.path.abspath(book_dir)
         if not os.path.exists(self.book_dir):
@@ -121,6 +123,7 @@ class BookUploader:
         self.community = community
         self.verify_ssl = verify_ssl
         self.custom_metadata = custom_metadata or {}
+        self.hocr_mount_point = hocr_mount_point
         
         # Setup authentication
         self.headers = {'Accept': 'application/json'}
@@ -239,34 +242,35 @@ class BookUploader:
         pdf_path = pdf_files[0]
         pdf_filename = os.path.basename(pdf_path)
         
-        # Use Invenio Base URL (remove /api)
+        # --- Determine Base URLs ---
+        # InvenioRDM Base URL (without /api) for internal file links
         invenio_base_url = self.api_url.rsplit('/api', 1)[0] if self.api_url.endswith('/api') else self.api_url
         
-        # Determine protocol for services based on invenio_base_url
-        service_protocol = "https" if invenio_base_url.startswith("https") else "http"
+        # Public facing Base URL (e.g., served by nginx, used for browser-accessible links in manifest)
+        # TODO: Make this configurable (e.g., via env var or command line arg)
+        public_facing_base_url = "https://localhost" 
+        logger.info(f"Using public facing base URL: {public_facing_base_url}")
 
-        # Construct Manifest ID using Invenio URL
-        # Use the final record URL structure (even if draft, links should resolve post-publish)
+        # Construct Manifest ID using Invenio URL (resolves post-publish)
         manifest_id = f"{invenio_base_url}/records/{record_id}/files/manifest.json"
         
-        # New approach: Use the unique copied filename format (record_id + original name)
+        # Identifier for Cantaloupe (Record ID + Original Filename)
         cantaloupe_pdf_identifier = f"{record_id}_{pdf_filename}"
         cantaloupe_pdf_identifier = requests.utils.quote(cantaloupe_pdf_identifier)
         logger.debug(f"Using Cantaloupe identifier: {cantaloupe_pdf_identifier}")
         
-        # --- Use determined protocol for Cantaloupe --- 
-        # TODO: Make Cantaloupe base host/port configurable
+        # --- Cantaloupe Base URL --- 
+        # TODO: Make Cantaloupe host/port configurable
         cantaloupe_host_port = "localhost:8182" 
         # --- FORCE HTTP for Cantaloupe for now --- 
-        # cantaloupe_base_url = f"{service_protocol}://{cantaloupe_host_port}/iiif/2" 
-        cantaloupe_base_url = f"http://{cantaloupe_host_port}/iiif/2" 
+        cantaloupe_base_url = f"http://{cantaloupe_host_port}/iiif/2"
 
-        # Annotation and Search Service URLs
-        # TODO: Make these host/ports configurable
-        annotation_service_base = f"{service_protocol}://localhost:5002/annotations"
-        search_service_url = f"{service_protocol}://localhost:5001/search"
-        autocomplete_service_url = f"{service_protocol}://localhost:5001/autocomplete"
-        
+        # --- Annotation and Search Service URLs (via public-facing reverse proxy) ---
+        annotation_service_proxy_url = f"{public_facing_base_url}/annotations/{self.book_id}" # Annotation endpoint pattern: /annotations/{book_id}/{page_id}/line
+        search_service_proxy_url = f"{public_facing_base_url}/search/{self.book_id}" # Search service endpoint pattern: /search/{book_id}
+        autocomplete_service_proxy_url = f"{public_facing_base_url}/autocomplete/{self.book_id}" # Autocomplete endpoint pattern: /autocomplete/{book_id}
+
+        # --- Get PDF page count ---
         try:
             with open(pdf_path, 'rb') as f:
                 pdf = PyPDF2.PdfReader(f)
@@ -372,7 +376,8 @@ class BookUploader:
                 ],
                 "otherContent": [
                     {
-                        "@id": f"{annotation_service_base}/{self.book_id}/p{page_label}/line",
+                        # Use the proxied URL for annotations
+                        "@id": f"{annotation_service_proxy_url}/p{page_label}/line",
                         "@type": "sc:AnnotationList",
                          # --- Match example label --- 
                         "label": f"Text of page {page_label}"
@@ -401,11 +406,13 @@ class BookUploader:
         manifest["service"] = [
             {
                 "@context": "http://iiif.io/api/search/0/context.json",
-                "@id": search_service_url,
+                # Use the proxied URL for search
+                "@id": search_service_proxy_url,
                 "profile": "http://iiif.io/api/search/0/search",
                 "label": "Search within this manifest",
                 "service": {
-                    "@id": autocomplete_service_url,
+                    # Use the proxied URL for autocomplete
+                    "@id": autocomplete_service_proxy_url,
                     "profile": "http://iiif.io/api/search/0/autocomplete",
                     "label": "Autocomplete words in this manifest"
                 }
@@ -1343,7 +1350,31 @@ class BookUploader:
                     "record_id": record_id,
                     "partial": True
                 }
-            
+            else:
+                # --- Copy HOCR files to mount point if specified ---
+                if self.hocr_mount_point and files['hocr']:
+                    target_hocr_base = os.path.join(self.hocr_mount_point, 'books', self.book_id, 'hocr')
+                    logger.info(f"Copying {len(files['hocr'])} HOCR files to service mount point: {target_hocr_base}")
+                    try:
+                        os.makedirs(target_hocr_base, exist_ok=True)
+                        copied_count = 0
+                        for hocr_file_path in files['hocr']:
+                            hocr_filename = os.path.basename(hocr_file_path)
+                            dest_path = os.path.join(target_hocr_base, hocr_filename)
+                            try:
+                                shutil.copy2(hocr_file_path, dest_path)
+                                copied_count += 1
+                            except Exception as copy_err:
+                                logger.error(f"Failed to copy HOCR file {hocr_filename} to {dest_path}: {copy_err}")
+                        logger.info(f"Successfully copied {copied_count} HOCR files to {target_hocr_base}")
+                    except Exception as e:
+                        logger.error(f"Failed to create or copy HOCR files to {target_hocr_base}: {e}")
+                        # Log error but don't necessarily fail the whole process,
+                        # as the primary upload to RDM succeeded.
+                elif self.hocr_mount_point:
+                    logger.info("HOCR mount point specified, but no HOCR files were found or collected to copy.")
+                # --- End HOCR copy ---
+
             # Step 6: Publish record if requested
             published = False
             publish_data = None
@@ -1510,6 +1541,10 @@ def main():
         help="Maximum number of upload retries"
     )
     parser.add_argument(
+        "--hocr-mount-point",
+        help="Host directory path where HOCR files should be copied for service volume access (e.g., ./hocr_volume_data)"
+    )
+    parser.add_argument(
         "--verbose", "-v", 
         action="store_true",
         help="Enable verbose output"
@@ -1604,7 +1639,8 @@ def main():
         publish=not (args.no_publish or args.draft),
         community=args.community,
         verify_ssl=verify_ssl,
-        custom_metadata=custom_metadata
+        custom_metadata=custom_metadata,
+        hocr_mount_point=args.hocr_mount_point
     )
     
     # Process upload

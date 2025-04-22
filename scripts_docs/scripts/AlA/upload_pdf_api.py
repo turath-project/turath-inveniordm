@@ -103,8 +103,8 @@ def get_auth_token(base_url):
         base_url = base_url[:-1]
     
     # Prompt for credentials if not provided
-    email = input("Enter your email: ")
-    password = getpass.getpass("Enter your password: ")
+        email = input("Enter your email: ")
+        password = getpass.getpass("Enter your password: ")
     
     # Get token
     token_url = f"{base_url}/api/accounts/login"
@@ -179,9 +179,9 @@ def upload_pdf_via_api(pdf_path=None, base_url="http://localhost:5000",
         if not token:
             print("❌ No API token found or provided. Cannot authenticate.")
             return None
-        headers = {
-            "Authorization": f"Bearer {token}"
-        }
+            headers = {
+                "Authorization": f"Bearer {token}"
+            }
         
         # 1. Create draft record
         print("Creating draft record...")
