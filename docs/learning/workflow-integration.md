@@ -1,102 +1,104 @@
-# Book Upload and IIIF Integration Workflow
+# Book Upload and IIIF Integration Workflow (Using `upload_book.py`)
 
-This document explains the automated workflow for uploading digitized books to InvenioRDM and integrating them with IIIF for enhanced viewing capabilities.
+This document explains the automated workflow for uploading digitized books to InvenioRDM and integrating them with IIIF for enhanced viewing capabilities, as handled by the **`scripts/upload_book.py`** script.
 
 ## Overview
 
-The workflow integration combines several separate processes into a single seamless flow:
+The `upload_book.py` script consolidates several steps into a single process:
 
-1. **Upload a book** to InvenioRDM
-2. **Copy the PDF** to Cantaloupe's image server
-3. **Generate a IIIF manifest** pointing to the correct image server
-4. **Update the InvenioRDM record** with the manifest
+1.  **Collect Files:** Read PDF, HOCR, and metadata from a local book directory.
+2.  **Create Record:** Create a draft record in InvenioRDM via API.
+3.  **Upload Files:** Upload the collected files (PDF, HOCR, etc.) to the draft record.
+4.  **Prepare IIIF Server Data:** Copy the primary PDF to Cantaloupe's image directory (`./cantaloupe-files`) and HOCR files to the shared service directory (`./hocr_mount`), if applicable.
+5.  **Generate & Upload IIIF Manifest:** Construct a static IIIF manifest (`manifest.json`) containing links to Cantaloupe, annotation/search services, and Invenio files, then upload this manifest to the record.
+6.  **Publish Record:** Publish the draft record.
 
-## Workflow Diagram
+## Workflow Diagram (Conceptual for `upload_book.py`)
 
+```mermaid
+graph TD
+    A[Start upload_book.py] --> B(Collect Files);
+    B --> C(Create Draft Record via API);
+    C -- Record ID --> D(Upload Files via API);
+    D --> E{Copy PDF to ./cantaloupe-files};
+    D --> F{Copy HOCR to ./hocr_mount (if specified)};
+    F --> G(Generate Static IIIF Manifest);
+    E --> G;
+    G --> H(Upload manifest.json via API);
+    H --> I(Publish Record via API);
+    I --> J[End];
+
+    style A fill:#lightgrey,stroke:#333
+    style J fill:#lightgrey,stroke:#333
 ```
-┌─────────────┐     ┌──────────────┐     ┌────────────────┐     ┌───────────────┐
-│ Upload Book │ ──► │ Copy PDF to  │ ──► │ Generate IIIF  │ ──► │ Update Record │
-│ to InvenioRDM│     │ Cantaloupe  │     │ Manifest      │     │ with Manifest │
-└─────────────┘     └──────────────┘     └────────────────┘     └───────────────┘
-```
 
-## Components
+## Components Involved
 
-### 1. Book Upload (InvenioRDM)
+*   **`scripts/upload_book.py`:** The orchestrator script.
+*   **Local Book Directory:** Contains source PDF, HOCR, `metadata.json`.
+*   **InvenioRDM API:** Used for creating records, uploading files, publishing.
+*   **Cantaloupe Image Server:** Reads PDFs from `./cantaloupe-files` to serve IIIF images.
+*   **Annotation/Search Services:** Read HOCR from `./hocr_mount` to provide annotations/search.
+*   **Nginx Proxy:** Routes public requests (`/annotations/`, `/search/`) to the correct internal services.
+*   **Host Directories:**
+    *   `./cantaloupe-files`: PDFs copied here for Cantaloupe access.
+    *   `./hocr_mount`: HOCR files copied here for annotation/search service access.
 
-The script first uploads the book to InvenioRDM using the following process:
+## Integration Details
 
-- Invokes the `upload_book.py` script
-- Uploads PDF, HOCR files, and other related content
-- Creates record metadata from manifest.json or directory structure
-- Uploads all files and publishes the record (if specified)
-- Returns the record ID for subsequent steps
-
-### 2. PDF Copy to Cantaloupe
-
-Once the book is uploaded to InvenioRDM, the PDF is copied to the Cantaloupe image server:
-
-- Creates directory structure in Cantaloupe: `/cantaloupe_dir/private/record_id/`
-- Copies the PDF to this location
-- Verifies that Cantaloupe can access the PDF by checking the info URL
-- Returns the PDF filename for the manifest generation step
-
-### 3. IIIF Manifest Generation
-
-The workflow then generates a IIIF manifest for the book:
-
-- Uses existing manifest.json as a starting point (if available)
-- Updates image URLs to point to Cantaloupe with the correct record ID
-- Sets proper page references in the manifest
-- Saves the updated manifest back to the book directory
-
-### 4. Record Update with Manifest
-
-Finally, the workflow updates the InvenioRDM record with the IIIF manifest:
-
-- Uploads the manifest file to the InvenioRDM record
-- Updates the record's metadata with IIIF manifest URL in custom fields
-- Connects the InvenioRDM record with the IIIF viewer
+*   **InvenioRDM <-> Cantaloupe:** The `upload_book.py` script bridges this by:
+    1.  Uploading the PDF to Invenio.
+    2.  Copying the PDF (renamed with record ID) to `./cantaloupe-files`.
+    3.  Generating manifest links pointing to Cantaloupe using the `{record_id}_{pdf_filename}` identifier.
+*   **InvenioRDM <-> Annotation/Search Services:** The `upload_book.py` script bridges this by:
+    1.  Uploading HOCR files to Invenio.
+    2.  Copying HOCR files to `./hocr_mount/books/{book_id}/hocr/` (requires `--hocr-mount-point`).
+    3.  Generating manifest links pointing to the Nginx proxy endpoints (`/annotations/`, `/search/`) which route to the services that read from the mount point.
+*   **Manifest <-> Services:** The generated static `manifest.json` (uploaded to Invenio) contains the necessary URLs pointing to Cantaloupe (via `http://localhost:8182`) and the proxied annotation/search services (via `https://localhost`).
 
 ## Usage
 
+The entire workflow is triggered by running the `upload_book.py` script:
+
 ```bash
-python workflow_integration.py --book-dir /path/to/book \
-    --api-url https://inveniordm.example.com/api \
+pipenv run python scripts/upload_book.py \
+    --book-dir /path/to/book \
+    --api-url https://127.0.0.1:5000/api \
     --token YOUR_API_TOKEN \
-    --cantaloupe-url https://cantaloupe.example.com/iiif/3
+    --hocr-mount-point ./hocr_mount \ # Essential for annotation/search
+    --no-verify-ssl \
+    --verbose \
+    # Add --skip-tiff, --skip-hocr, or --pdf-only as needed
+    # Add --no-publish or --draft to review before publishing
 ```
-
-### Required Arguments
-
-- `--book-dir`: Directory containing the book files
-- `--token`: InvenioRDM API token
-
-### Optional Arguments
-
-- `--api-url`: InvenioRDM API URL (default: https://localhost:5000/api)
-- `--cantaloupe-dir`: Cantaloupe data directory (default: /opt/cantaloupe/images)
-- `--cantaloupe-url`: Cantaloupe server URL (default: https://localhost:8182)
-- `--verify-ssl`: Verify SSL certificates (default: no verification)
-- `--no-publish`: Keep the record as a draft
-- `--verbose`: Enable verbose output
 
 ## Error Handling
 
-The workflow includes robust error handling:
+The `upload_book.py` script includes error handling:
 
-- Each step checks for success before proceeding to the next
-- Detailed logging for troubleshooting
-- Early exit if critical steps fail
-- Verification of Cantaloupe access
+*   Retries file uploads (`--max-retries`).
+*   Logs warnings and errors during metadata processing, file upload, manifest generation, and publishing.
+*   Exits with non-zero status on critical failures.
+*   File copying steps occur *after* successful Invenio uploads but before publishing.
 
-## Implementation Details
+## Configuration
 
-The implementation uses:
-- Python requests library for API interactions
-- JSON manipulation for manifest updates
-- Filesystem operations for copying PDFs
-- Subprocess calls for invoking the upload script
+Key configurations impacting this workflow:
+
+*   **`upload_book.py` Arguments:** `--api-url`, `--token`, `--hocr-mount-point`, file skipping flags (`--skip-tiff`, etc.), `--no-verify-ssl`.
+*   **`.env` file:** Provides `RDM_API_TOKEN` if `--token` isn't used.
+*   **`docker-compose.yml`:** Defines volume mounts (`./cantaloupe-files`, `./hocr_mount`) and service configurations (Cantaloupe paths, service environment variables).
+*   **`docker/nginx/nginx.conf`:** Defines proxy rules for `/annotations/` and `/search/`.
+*   **Service Code (`services/*/app.py`):** Reads environment variables for base paths (`HOCR_BASE_DIR`) and URLs.
+
+## Result
+
+When the `upload_book.py` script completes successfully, you should have:
+
+1.  A published (or draft) InvenioRDM record containing the PDF, HOCR (if not skipped), and the generated `manifest.json`.
+2.  The primary PDF copied to `./cantaloupe-files` accessible by Cantaloupe.
+3.  HOCR files copied to `./hocr_mount` accessible by annotation/search services (if `--hocr-mount-point` used).
+4.  A static IIIF manifest available at `.../files/manifest.json/content` that correctly links all components for viewing via a IIIF client interacting with the Nginx frontend.
 
 ## Expected Directory Structure
 

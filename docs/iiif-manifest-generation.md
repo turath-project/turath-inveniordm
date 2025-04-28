@@ -249,6 +249,38 @@ The generated manifest can also be used with external IIIF viewers:
 2. **Universal Viewer**: Load the manifest in Universal Viewer for a different reading experience
 3. **OpenSeadragon**: Use just the image URLs for a simpler viewing experience
 
+## Manifest Generation within `upload_book.py` (Current Approach)
+
+While the standalone `generate_manifest.py` script exists, the current primary workflow uses the **`scripts/upload_book.py`** script, which incorporates manifest generation *during* the upload process.
+
+### Process:
+
+1.  The `upload_book.py` script first creates a draft record in InvenioRDM.
+2.  It uploads the required files (PDF, HOCR, etc., based on flags like `--skip-tiff`).
+3.  It copies the primary PDF to a location accessible by the Cantaloupe IIIF server (e.g., `./cantaloupe-files/`).
+4.  **Crucially**, *after* file uploads, it calls its internal `_generate_manifest_content` method.
+5.  This method:
+    *   Uses the record ID and uploaded file information.
+    *   Calculates scale factors by querying the Cantaloupe server for PDF page dimensions (using the copied PDF) and comparing them with HOCR dimensions (if HOCR files were uploaded and found).
+    *   Constructs the IIIF manifest JSON, including links to:
+        *   Cantaloupe image resources (`http://localhost:8182/...`).
+        *   Annotation service endpoints (`https://localhost/annotations/...`).
+        *   Search service endpoints (`https://localhost/search/...`).
+        *   Uploaded HOCR files within Invenio (`.../files/XXX.hocr`).
+        *   The main PDF download link (`.../files/book.pdf`).
+    *   Sets the manifest's `@id` to the expected final location: `https://{invenio_host}/records/{record_id}/files/manifest.json`.
+6.  The script then saves this generated content to a file explicitly named `manifest.json`.
+7.  Finally, it uploads *this* `manifest.json` file to the InvenioRDM record using the key `manifest.json`.
+
+### Important Considerations & Past Issues:
+
+*   **Filename Consistency:** A previous version of the script incorrectly uploaded the manifest using a temporary filename (e.g., `tmpXXXX.json`) while the `@id` inside pointed to `manifest.json`. This caused 404 errors when trying to resolve manifest or canvas IDs via the API. The script has been **fixed** to ensure it uploads the file with the correct `manifest.json` key.
+*   **Cantaloupe Dependency:** This generation process relies on the Cantaloupe server being accessible (default `http://localhost:8182`) during the upload script's execution to retrieve accurate image dimensions for scaling.
+*   **Static Manifest:** The generated manifest is static and uploaded as a file. This differs from potential dynamic approaches where the manifest might be generated on-the-fly by an InvenioRDM endpoint.
+*   **HOCR Copy:** For annotation services that rely on accessing HOCR files directly, the `upload_book.py` script includes logic (using the `--hocr-mount-point` argument) to copy uploaded HOCR files to a specified host directory accessible by those services.
+
+For a detailed history of troubleshooting this process, including errors and specific commands, please refer to `docs/learning/book_upload_and_manifest_process.md`.
+
 ## Troubleshooting
 
 ### Common Issues

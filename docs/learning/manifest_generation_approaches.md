@@ -8,44 +8,47 @@ This document explains the two main approaches for providing IIIF Presentation A
 ### Approach 1: Static Manifest Generation (Current Method)
 
 *   **What is it?**
-    This approach involves creating a complete, static IIIF Presentation API v2 or v3 manifest as a JSON file. This file is generated *before* or *during* the book upload process by an external script (`scripts/upload_book.py` in this case).
+    This approach involves creating a complete, static IIIF Presentation API v2 manifest as a JSON file. This file is generated *during* the book upload process by the `scripts/upload_book.py` script.
 
 *   **How does it work (in `upload_book.py`)?**
-    1.  The script gathers necessary information:
+    1.  The script gathers necessary information after creating the draft record and uploading primary files:
         *   Record metadata (from `metadata.json` or defaults).
-        *   File information (PDF paths, HOCR paths, dimensions).
-        *   It attempts to query Cantaloupe (the IIIF Image Server, e.g., at `http://localhost:8182`) for accurate image dimensions for each page, but falls back to PDF-extracted dimensions if Cantaloupe is unavailable (as observed in our logs).
+        *   File information (PDF paths, HOCR paths, record ID).
+        *   It queries the Cantaloupe server (e.g., at `http://localhost:8182`) for accurate image dimensions for each PDF page.
+        *   It compares Cantaloupe dimensions with HOCR dimensions (if available) to calculate scale factors.
     2.  It constructs the IIIF manifest JSON structure, including:
-        *   `@context`, `@id`, `@type`.
-        *   `label`, `metadata`, `description` (from record metadata).
+        *   `@context`, `@id` (pointing to `.../files/manifest.json`), `@type`.
+        *   `label`, `metadata` (from record metadata).
         *   `sequences` containing an array of `canvases` (one per page).
         *   Each canvas includes:
-            *   Dimensions (`width`, `height`).
-            *   `images` array pointing to the IIIF Image API endpoint for that page on the image server (e.g., Cantaloupe URL like `http://localhost:8182/iiif/2/{identifier}/full/full/0/default.jpg?page=N`).
-            *   **(Optional)** `otherContent` pointing to annotation lists (e.g., `https://localhost/annotations/...`).
-            *   **(Optional)** `seeAlso` pointing to related resources like the HOCR file for that page.
-    3.  It might add other IIIF features like search service (`service`) or related links (`related`).
-    4.  The script saves this generated JSON structure to a temporary file (e.g., `tmpXXXX.json`).
-    5.  This manifest file is then uploaded to the InvenioRDM record like any other file (PDF, HOCR).
+            *   Dimensions (`width`, `height`), potentially scaled based on HOCR/Cantaloupe comparison.
+            *   `images` array pointing to the IIIF Image API endpoint for that page on the Cantaloupe server (`http://localhost:8182/iiif/2/{record_id}_{pdf_filename}.pdf/...?page=N`).
+            *   `otherContent` pointing to annotation lists provided by the Nginx proxy (`https://localhost/annotations/...`).
+            *   `seeAlso` pointing to the uploaded HOCR file within Invenio (`.../files/XXX.hocr`).
+            *   `scaleFactor` property if calculated.
+    3.  It adds other IIIF features like the search service (`service`) pointing to the Nginx proxy (`https://localhost/search/...`) and a related PDF download link (`related`) pointing to the Invenio file (`.../files/book.pdf`).
+    4.  The script saves this generated JSON structure to a file named `manifest.json` in a temporary location.
+    5.  This `manifest.json` file is then uploaded to the InvenioRDM record using the **key `manifest.json`**. (This fixed a previous bug where a temporary name was used).
 
 *   **What's needed to make it work?**
     *   The script logic (`upload_book.py`) must correctly generate the manifest JSON.
     *   Source metadata must be available to the script.
-    *   **(Ideally)** A running Cantaloupe instance accessible *by the script* during generation for accurate dimensions (though the script has fallbacks).
+    *   A running Cantaloupe instance accessible *by the script* during generation for accurate dimensions.
+    *   The script needs the record ID after creating the draft.
     *   InvenioRDM instance to upload the file to.
-    *   A mechanism for IIIF viewers (like Mirador) to *discover* the URL of this uploaded static manifest file. This typically involves storing the file's download URL in a specific field within the record's metadata (e.g., `custom_fields.turath:iiif_manifest`). *(Note: We observed this step wasn't working correctly, as the custom field wasn't present in the final record, likely due to the field not being defined in the Invenio data model).* 
+    *   A mechanism for IIIF viewers (like Mirador) to *discover* the URL of this uploaded static manifest file. Currently, this relies on the standard file path `.../files/manifest.json` being requested by the viewer, possibly configured via `invenio.cfg` (`IIIF_VIEWER_CONFIG['manifest_field']` might need review if it was pointing to a custom metadata field).
 
 *   **Pros & Cons:**
     *   **Pros:**
-        *   Full control over the manifest structure; can include highly custom elements not supported by dynamic generators.
+        *   Full control over the manifest structure; allows integration with external annotation/search services.
         *   Manifest content is fixed and doesn't depend on server-side generation logic at view time.
-        *   Can potentially pre-generate complex manifests offline.
+        *   Can pre-calculate complex scaling factors.
     *   **Cons:**
         *   Manifest is static; it won't automatically update if the record metadata or files change unless regenerated and re-uploaded.
         *   Requires custom script logic (`upload_book.py`) to be maintained.
         *   Requires uploading an extra file per record.
-        *   Discovery mechanism (linking the record to its static manifest) needs to be robustly implemented and configured in Invenio.
-        *   Can lead to inconsistencies if the generation script fails to get accurate info (like Cantaloupe dimensions).
+        *   Relies on Cantaloupe being available *during* the upload script execution.
+        *   Discovery relies on the viewer knowing to look for `manifest.json` or configuration pointing to it.
 
 ### Approach 2: Dynamic Manifest Generation (`invenio-iiif`)
 
@@ -92,4 +95,4 @@ Making customizations when using the dynamic approach involves working within th
 4.  **Invenio Signals:** `invenio-iiif` likely emits signals (using Flask/Blinker signals) at various points during manifest generation (e.g., `before_manifest_render`). You can write custom Python code (a signal receiver) in your Invenio instance to listen for these signals and modify the manifest data dictionary just before it's converted to JSON. This is powerful for adding custom logic or fields.
 5.  **Overriding Components:** For deep customization, you might need to override parts of `invenio-iiif`, such as its internal data serializers (e.g., Marshmallow schemas) or templates, using Invenio's module overriding mechanisms. This requires a good understanding of both Invenio and the `invenio-iiif` module's code.
 
-In summary, the static approach offers maximum control but requires external generation and careful management, while the dynamic approach offers automatic updates and integration but requires a fully configured server environment and potentially more complex customization methods within Invenio. 
+In summary, the **static approach** is currently used to provide the necessary customization for integrating external services and calculated scaling factors, despite the need for careful script maintenance and an extra upload step. The dynamic approach remains an option but would require significant configuration and potentially custom development to replicate the current manifest features. 

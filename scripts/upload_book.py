@@ -524,23 +524,24 @@ class BookUploader:
 
         # 2. If metadata.json wasn't loaded or didn't have needed fields, try manifest.json
         if not metadata_loaded:
+            # --- Start of indented block ---
             manifest_path = os.path.join(self.book_dir, "manifest.json")
             if os.path.exists(manifest_path):
                 logger.info("Attempting to extract metadata from manifest.json...")
                 try:
                     with open(manifest_path, 'r', encoding='utf-8') as f:
                         manifest = json.load(f)
-                    
+
                     if isinstance(manifest, dict):
                         # Extract label as title (handle dict/str)
                         label = manifest.get("label", {})
                         if isinstance(label, dict):
-                             # Prefer English, fallback to any lang
+                            # Prefer English, fallback to any lang
                             en_label = label.get("en", [book_info["title"]])[0]
                             book_info["title"] = en_label if en_label else next((v[0] for v in label.values() if v), book_info["title"])
                         elif isinstance(label, str):
                             book_info["title"] = label
-                        
+
                         # Extract from IIIF metadata block if present
                         iiif_metadata = manifest.get("metadata", [])
                         if isinstance(iiif_metadata, list):
@@ -563,7 +564,7 @@ class BookUploader:
                                         elif "subject" in label_lower:
                                             book_info["subjects"].append({"subject": current_value})
                                         elif "language" in label_lower:
-                                             # Basic lang code handling
+                                            # Basic lang code handling
                                             lang_code = current_value[:3].lower()
                                             if len(lang_code) == 3:
                                                 book_info["language"] = lang_code
@@ -572,23 +573,23 @@ class BookUploader:
                                         elif "description" in label_lower:
                                             book_info["description"] = current_value
                                         # Add more mappings here if needed (e.g., publisher)
-                        
+
                         logger.info(f"Extracted partial metadata from manifest.json: {book_info['title']}")
                         metadata_loaded = True # Mark as loaded even if partial
 
                 except Exception as e:
                     logger.error(f"Error parsing manifest.json: {str(e)}")
-        else:
-            logger.warning(f"No metadata.json or manifest.json found in {self.book_dir}, using default metadata.")
+            else:
+                logger.warning(f"No metadata.json or manifest.json found in {self.book_dir}, using default metadata.")
+            # --- End of indented block ---
 
         # Ensure core fields have defaults if still missing after checks
-        # (This is slightly redundant with initial defaults but safe)
         book_info["title"] = book_info.get("title") or self.book_id
         book_info["publication_date"] = book_info.get("publication_date") or datetime.now().strftime("%Y-%m-%d")
         book_info["resource_type"] = book_info.get("resource_type") or {"id": "publication-book"}
         book_info["description"] = book_info.get("description") or f"Book from Turath Digital Library: {self.book_id}"
         # Creator default is handled later in prepare/validate
-        
+
         return book_info
     
     def get_iiif_manifest_url(self) -> Optional[str]:
@@ -662,7 +663,7 @@ class BookUploader:
                         "name": full_name, # Keep original name too if desired
                         "type": "personal" # Assume personal if only name given
                     },
-                    "role": creator_data.get("role", "author") # Preserve role if provided
+                      "role": creator_data.get("role", "author") # Preserve role if provided
                 })
             elif isinstance(creator_data, str): # Handle case where creator is just a string name
                 logger.debug(f"Processing string creator name: {creator_data}")
@@ -670,18 +671,20 @@ class BookUploader:
                 name_parts = full_name.split()
                 family_name = name_parts[-1] if len(name_parts) > 1 else full_name
                 given_name = " ".join(name_parts[:-1]) if len(name_parts) > 1 else ""
+                # --- Start of indented block ---
                 creators.append({
                     "person_or_org": {
-                        "family_name": family_name,
-                        "given_name": given_name,
-                        "name": full_name,
-                        "type": "personal"
-                    },
-                    "role": "author"
-                })
+                            "family_name": family_name,
+                            "given_name": given_name,
+                            "name": full_name,
+                            "type": "personal"
+                        },
+                        "role": "author"
+                    })
+                # --- End of indented block ---
             else:
                 logger.warning(f"Skipping unrecognized creator format: {creator_data}")
-        
+
         # Format publication date (ensure YYYY-MM-DD)
         pub_date = book_info.get("publication_date", datetime.now().strftime("%Y-%m-%d"))
         if isinstance(pub_date, str):
@@ -975,7 +978,7 @@ class BookUploader:
             }
         
         return cleaned
-
+    
     def create_record(self, metadata: Dict) -> Dict:
         """
         Create a record in InvenioRDM.
@@ -1321,17 +1324,26 @@ class BookUploader:
             # Step 5.5: Generate and upload IIIF manifest
             manifest_content = self._generate_manifest_content(record_id, book_info, files)
             if manifest_content:
-                with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False, encoding='utf-8') as temp_manifest:
-                    json.dump(manifest_content, temp_manifest, indent=2, ensure_ascii=False)
-                    temp_manifest_path = temp_manifest.name
-                
-                logger.info(f"Uploading generated manifest.json")
-                manifest_upload_result = self.upload_files_to_record(record_id, [temp_manifest_path])
-                os.remove(temp_manifest_path) # Clean up temp file
-                
-                if not manifest_upload_result["success"]:
-                    logger.error("Failed to upload generated manifest.json")
-                    # Proceed anyway, but log the error
+                # ---- Change Start ----
+                # Define the target manifest filename
+                manifest_filename = "manifest.json"
+                # Create a temporary directory to store the manifest
+                with tempfile.TemporaryDirectory() as temp_dir:
+                    manifest_path = os.path.join(temp_dir, manifest_filename)
+                    try:
+                        with open(manifest_path, 'w', encoding='utf-8') as f:
+                            json.dump(manifest_content, f, indent=2, ensure_ascii=False)
+
+                        logger.info(f"Uploading generated {manifest_filename}")
+                        # Upload using the correct filename (basename will be manifest.json)
+                        manifest_upload_result = self.upload_files_to_record(record_id, [manifest_path])
+
+                        if not manifest_upload_result["success"]:
+                            logger.error(f"Failed to upload generated {manifest_filename}")
+                            # Proceed anyway, but log the error
+                    except Exception as e:
+                        logger.error(f"Error writing or uploading generated manifest: {e}")
+                # ---- Change End ----
             else:
                 logger.warning("Could not generate IIIF manifest content.")
 

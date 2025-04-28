@@ -61,13 +61,42 @@ This document outlines the steps taken to diagnose and resolve issues preventing
 *   **Investigation:** The Python `requests` library was correctly rejecting the self-signed certificate used by the local development server. Checked `upload_book.py` and found it used a `verify_ssl` parameter, controlled by a command-line flag.
 *   **Resolution:** Added the `--no-verify-ssl` flag to the `pipenv run python scripts/upload_book.py ...` command.
 
-### 7. Cantaloupe Errors (Informational)
+### 7. Script Indentation Errors
+
+*   **Symptom:** Script failed immediately (e.g., running `--help`) with `IndentationError`.
+*   **Investigation:** Python relies heavily on correct indentation. The traceback indicated errors related to specific lines.
+*   **Errors Found:**
+    1.  Incorrect indentation under the `if not metadata_loaded:` block (around line 527).
+    2.  Incorrect indentation under the `elif isinstance(creator_data, str):` block (around line 674).
+*   **Resolution:** Manually corrected the indentation in both locations in `scripts/upload_book.py`.
+*   **Lesson:** Always validate Python script syntax, especially indentation. Use a linter. Automated fixes might fail.
+
+### 8. Manifest Naming & `@id` Link Bug
+
+*   **Symptom:** Manifest `@id` and Canvas `@id` links returned 404 errors when tested via `curl` against the API, even though the upload seemed successful.
+*   **Investigation:**
+    *   Logs showed the manifest being uploaded with a temporary name (e.g., `tmpXXXX.json`).
+    *   Listing record files confirmed the temporary name.
+    *   Downloading the temporary manifest showed internal `@id` links pointing to the *intended* but non-existent `manifest.json` file path within the record.
+*   **Cause:** The script generated the manifest correctly internally but saved it to a temporary file and uploaded *that* file, resulting in a name mismatch between the internal `@id` and the actual uploaded file key.
+*   **Resolution:** Modified the `process` method (around line 1326) to save the generated content explicitly as `manifest.json` in a temporary directory and upload *that* file, ensuring the key matches the internal `@id`.
+*   **Lesson:** Ensure consistency between generated IIIF `@id`s and the filename/key used for uploading the manifest.
+
+### 9. Incorrect Usage of File Exclusion Flags
+
+*   **Symptom:** Log showed "no HOCR files found" even though they existed in the `hocr/` directory.
+*   **Investigation:** Realized the script was being run with the `--pdf-only` flag.
+*   **Cause:** `--pdf-only` explicitly tells the script to skip collecting HOCR and TIFF files.
+*   **Resolution:** Removed `--pdf-only`. Used `--skip-tiff` when the goal was to upload PDF+HOCR but skip TIFF.
+*   **Lesson:** Carefully check the purpose of script flags using `--help`. `--pdf-only` is a broad exclusion.
+
+### 10. Cantaloupe Errors (Informational - During Static Manifest Gen)
 
 *   **Symptom:** During the final successful upload, the logs showed multiple warnings: `Cantaloupe returned status 404 for http://localhost:8182/iiif/2/.../info.json?page=N`.
 *   **Investigation:** These occurred during the IIIF manifest generation step when the script tried to query the Cantaloupe IIIF server (expected at `http://localhost:8182`) for image dimensions.
 *   **Resolution (Implicit):** The script was designed to handle this failure gracefully by falling back to dimensions extracted directly from the PDF. The overall upload succeeded. This indicates Cantaloupe might not be running, accessible, or configured correctly at that address, which could be addressed separately if full IIIF functionality is required.
 
-**Final Working Command:**
+**Final Working Command (PDF + HOCR, Skip TIFF):**
 
 ```bash
 pipenv run python scripts/upload_book.py \
@@ -79,4 +108,4 @@ pipenv run python scripts/upload_book.py \
     --no-verify-ssl
 ```
 
-This detailed breakdown should help avoid similar issues in the future by highlighting the importance of database initialization (with `.env` present), correct dependency versions (and restarting the server after changes), admin user setup, and handling local HTTPS configurations (URL and SSL verification). 
+This detailed breakdown should help avoid similar issues in the future by highlighting the importance of database initialization (with `.env` present), correct dependency versions (and restarting the server after changes), admin user setup, handling local HTTPS configurations, validating script syntax, understanding script flags, and ensuring manifest generation logic aligns with upload mechanics. 

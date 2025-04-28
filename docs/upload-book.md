@@ -35,28 +35,74 @@ The implementation follows these standards and best practices:
 
 ## 4. Usage
 
-### 4.1 Basic Usage
+### 4.1 Basic Usage (PDF + HOCR + TIFF + Generated Manifest)
 
 ```bash
-python scripts/upload_book.py --book-dir /path/to/book --api-url https://repository.example.org/api --token YOUR_TOKEN
+# Assumes RDM_API_TOKEN is set in .env
+pipenv run python scripts/upload_book.py \
+    --book-dir /path/to/book \
+    --api-url https://127.0.0.1:5000/api \
+    --no-verify-ssl \
+    --verbose
 ```
 
-### 4.2 Metadata-Only Mode
+### 4.2 Usage with Specific Token
 
 ```bash
-python scripts/upload_book.py --book-dir /path/to/book --api-url https://repository.example.org/api --token YOUR_TOKEN --pdf-only
+pipenv run python scripts/upload_book.py \
+    --book-dir /path/to/book \
+    --api-url https://127.0.0.1:5000/api \
+    --token YOUR_RDM_API_TOKEN \
+    --no-verify-ssl \
+    --verbose
 ```
 
-### 4.3 Draft Mode (No Publication)
+### 4.3 Usage Skipping TIFF Images (PDF + HOCR + Generated Manifest)
+
+This is a common scenario if page images are not needed in the repository, but OCR text is.
 
 ```bash
-python scripts/upload_book.py --book-dir /path/to/book --api-url https://repository.example.org/api --token YOUR_TOKEN --draft
+pipenv run python scripts/upload_book.py \
+    --book-dir /path/to/book \
+    --api-url https://127.0.0.1:5000/api \
+    --token YOUR_RDM_API_TOKEN \
+    --skip-tiff \
+    --no-verify-ssl \
+    --verbose
 ```
 
-### 4.4 Generate Metadata Template
+### 4.4 Usage Uploading Only PDF (No HOCR, No TIFF + Generated Manifest)
+
+Use this if only the main PDF document is required.
 
 ```bash
-python scripts/upload_book.py --generate-metadata-template --template-output metadata_template.json
+pipenv run python scripts/upload_book.py \
+    --book-dir /path/to/book \
+    --api-url https://127.0.0.1:5000/api \
+    --token YOUR_RDM_API_TOKEN \
+    --pdf-only \
+    --no-verify-ssl \
+    --verbose
+```
+
+### 4.5 Draft Mode (No Publication)
+
+Uploads files but leaves the record as a draft for further review/modification.
+
+```bash
+pipenv run python scripts/upload_book.py \
+    --book-dir /path/to/book \
+    --api-url https://127.0.0.1:5000/api \
+    --token YOUR_RDM_API_TOKEN \
+    --draft \
+    --no-verify-ssl \
+    --verbose 
+```
+
+### 4.6 Generate Metadata Template
+
+```bash
+pipenv run python scripts/upload_book.py --generate-metadata-template --template-output metadata_template.json
 ```
 
 ## 5. Data Model and Metadata Requirements
@@ -287,18 +333,44 @@ Example metadata.json:
 
 ## 13. Troubleshooting
 
-### 13.1 Common Issues
+This section highlights common issues encountered specifically with the `upload_book.py` script.
+For a more general cheatsheet, see `docs/learning/troubleshooting-cheatsheet.md`.
 
-| Issue | Symptom | Resolution |
-|-------|---------|------------|
-| Authentication Failure | "Error creating record: 401 Unauthorized" | Verify token validity and permissions |
-| SSL Verification Error | "SSL Certificate Verification Failed" | Use --no-verify-ssl for self-signed certificates |
-| Validation Error | "Family name cannot be blank" | Check metadata format, use --generate-metadata-template |
-| Timeout | "Max retries exceeded" | Increase --max-retries, check network connection |
+**1. Problem: Script fails immediately (e.g., running `--help`) with `IndentationError`.**
 
-### 13.2 Support
+*   **Cause:** Incorrect Python indentation. Python uses indentation to define code blocks.
+*   **Errors Found (Specific Session):**
+    *   Block under `if not metadata_loaded:` (around line 527) was not indented.
+    *   `creators.append({...})` block under `elif isinstance(creator_data, str):` (around line 674) was not indented.
+*   **Solution:** Carefully check and correct Python indentation. Use a linter or IDE that highlights indentation issues. Manual correction might be needed if automated tools fail.
+*   **Lesson:** Python syntax, especially indentation, is critical. Validate scripts before running.
 
-For support and additional information, contact the repository administrators or refer to the InvenioRDM documentation.
+**2. Problem: Manifest `@id` and Canvas `@id` links give 404 errors when checked via API, even though upload succeeded.**
+
+*   **Cause:** A previous version of the script uploaded the internally generated manifest using a temporary filename (`tmpXXX.json`) but the `@id` links *inside* the manifest pointed to the intended final name (`manifest.json`). The API couldn't find a file named `manifest.json` associated with the record.
+*   **Solution:** The script was modified (around line 1326 in the `process` method) to:
+    1.  Explicitly save the generated manifest content to a file named `manifest.json` within a temporary directory.
+    2.  Upload *that specific file*, ensuring the key used in InvenioRDM is `manifest.json`.
+*   **Lesson:** Ensure consistency between internal IIIF `@id` links and the actual filename/key used for storing the manifest file in the repository.
+
+**3. Problem: Log shows "no HOCR files found" even though they exist in the `hocr/` directory.**
+
+*   **Cause:** The script was run with the `--pdf-only` flag, which explicitly tells it to *skip* collecting HOCR and TIFF files during the `collect_files` step.
+*   **Solution:** Remove the `--pdf-only` flag. If you want to exclude only TIFFs, use `--skip-tiff`. If you want to exclude only HOCR, use `--skip-hocr`.
+*   **Lesson:** Understand the specific function of script flags (`--help` is useful). `--pdf-only` broadly skips HOCR and TIFFs.
+
+**4. Problem: Log shows `WARNING - Invalid date format 'YYYY-MM-DD', using current date.`**
+
+*   **Cause:** The date format in the source `metadata.json` file (e.g., `2023-01-01`) did not strictly match the validation logic/regex within the `upload_book.py` script's `prepare_metadata` or `validate_metadata` methods.
+*   **Solution:** Either correct the date format in `metadata.json` to strictly match `YYYY-MM-DD` or adjust the validation logic in the script if more flexibility is needed.
+*   **Lesson:** Ensure source metadata adheres to the expected formats defined or validated by the processing script.
+
+**5. Problem: Upload fails partway through, especially with many files.**
+
+*   **Cause:** Potential network timeouts, server-side limits, or temporary issues.
+*   **Solution:** The script includes a `--max-retries` option (default 3). Consider increasing this for large uploads. Check InvenioRDM logs for specific server-side errors.
+
+For more details on the troubleshooting process and specific commands used, refer to `docs/learning/book_upload_and_manifest_process.md`.
 
 ## 14. References
 

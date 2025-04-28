@@ -20,11 +20,11 @@ fi
 # Assign permissions and role (should be idempotent)
 echo "Assigning permissions and role..."
 # Grant administration-access system role need
-pipenv run invenio access allow administration-access user admin@turath.com
+    pipenv run invenio access allow administration-access user admin@turath.com
 # Add user to the admin role
-pipenv run invenio roles add admin@turath.com admin
+    pipenv run invenio roles add admin@turath.com admin
 # Grant superuser-access to the admin role
-pipenv run invenio access allow superuser-access role admin
+    pipenv run invenio access allow superuser-access role admin
 
 echo "$(tput setaf 2)✓ Admin setup process completed (check logs for any specific errors).$(tput sgr0)"
 

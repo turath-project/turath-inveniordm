@@ -66,20 +66,21 @@ graph LR
 **Explanation of Workflow:**
 
 1.  The user executes `pipenv run python scripts/upload_book.py ...`.
-2.  The script collects PDF, HOCR, and metadata files from the specified book directory.
-3.  It prepares the InvenioRDM metadata structure.
+2.  The script collects PDF, HOCR, and metadata files from the specified book directory (honoring flags like `--skip-tiff`, `--skip-hocr`, `--pdf-only`).
+3.  It prepares the InvenioRDM metadata structure (extracting from `metadata.json` or `manifest.json`, applying defaults).
 4.  It makes an authenticated `POST` request to the InvenioRDM API (`https://127.0.0.1:5000/api/records`) to create a draft record.
 5.  If successful, it receives the new `record_id`.
-6.  It uploads the PDF, HOCR, and any other specified files to the draft record via the API.
+6.  It uploads the collected files (PDF, HOCR, potentially others) to the draft record via the API, using a multi-step process (init, upload content, commit).
 7.  **Crucially**, it copies the primary PDF file to the `./cantaloupe-files` directory on the host, renaming it to `{record_id}_{original_pdf_filename}.pdf`. This makes it discoverable by Cantaloupe.
-8.  **Also**, it copies the HOCR files to the `./hocr_mount/books/{book_id}/hocr/` directory on the host. This makes them accessible to the Annotation and Search services.
+8.  **Also**, if HOCR files were uploaded and `--hocr-mount-point` was specified, it copies the HOCR files to the `./hocr_mount/books/{book_id}/hocr/` directory on the host. This makes them accessible to the Annotation and Search services.
 9.  It generates a static IIIF Presentation API manifest (`manifest.json`), including links that point to:
     *   The Cantaloupe server (`http://localhost:8182`) for images.
     *   The Nginx proxy (`https://localhost`) for annotations and search.
     *   The InvenioRDM file endpoints (`https://127.0.0.1:5000`) for HOCR `seeAlso` links and the related PDF download.
-10. It uploads this generated `manifest.json` file to the record.
-11. It makes a `POST` request to publish the draft record.
-12. When a user accesses the record via a IIIF viewer, the viewer fetches the static manifest file. The viewer then uses the links within the manifest to request images from Cantaloupe and annotations/search results via the Nginx proxy, which directs them to the appropriate backend services.
+    *   **Importantly:** The manifest's `@id` is set to the correct final URL (`.../files/manifest.json`).
+10. It uploads this generated `manifest.json` file to the record **using the key `manifest.json`** (this fixed a previous bug where a temporary name was used).
+11. If the `--draft` or `--no-publish` flag was *not* used, it makes a `POST` request to publish the draft record.
+12. When a user accesses the record via a IIIF viewer, the viewer fetches the static manifest file (`.../files/manifest.json/content`). The viewer then uses the links within the manifest to request images from Cantaloupe and annotations/search results via the Nginx proxy, which directs them to the appropriate backend services.
 
 ## 2. Static vs. Dynamic Manifest Generation
 
@@ -113,6 +114,10 @@ Several files were modified or created during troubleshooting:
     *   **Solution 2:** Utilized the existing `--no-verify-ssl` command-line flag, which controls the `verify=self.verify_ssl` parameter passed to `requests`.
     *   **Problem 3:** Cantaloupe couldn't access PDFs stored within Invenio's internal volume structure.
     *   **Solution 3:** Added code to the `process()` method (after file uploads succeed) to copy the primary PDF to `./cantaloupe-files/{record_id}_{pdf_filename}.pdf`. Added `import os, shutil`.
+    *   **Problem 4:** Python `IndentationError` due to incorrect code formatting.
+    *   **Solution 4:** Manually corrected indentation in multiple places (around lines 527 and 674).
+    *   **Problem 5:** Generated IIIF manifest was uploaded with a temporary filename, causing broken `@id` links.
+    *   **Solution 5:** Modified the `process` method (around line 1326) to explicitly save the manifest as `manifest.json` in a temporary directory and upload it using that specific filename as the key.
 *   **`scripts/create_admin.sh` (Modified):**
     *   **Problem:** Script failed due to invalid commands (`invenio roles list`) and non-idempotent actions (user/role creation).
     *   **Solution:** Removed invalid checks, used `|| echo ...` to handle existing roles gracefully, attempted user activation if creation failed, commented out `set -e`.
@@ -245,6 +250,8 @@ Several files were modified or created during troubleshooting:
 *   **Incorrect `docker-compose` Volume Strategy:** Initially suggested mounting the Invenio `data` volume directly into Cantaloupe without accounting for Invenio's internal file structure vs. Cantaloupe's `FilesystemSource` expectation. *Lesson: Understand how each component expects to find files and configure mounts/copy steps accordingly.*
 *   **Forgetting Service Restarts:** Didn't always explicitly mention the need to restart backend/docker services immediately after dependency or configuration changes. *Lesson: Always restart affected services after changing dependencies (`pipenv install`), configurations (`docker-compose.yml`, `.env`), or code.*
 *   **Not Checking All Logs:** Focused initially on client script logs (`upload_book.py`) instead of immediately checking the relevant *backend* logs (Invenio, Cantaloupe, Annotation service) when connection/server errors occurred. *Lesson: Server-side logs are crucial for diagnosing backend failures indicated by client errors like "Connection reset".*
-*   **Script Argument Errors:** Used incorrect flags (`--record-ids`) for `delete_records.py`. *Lesson: Double-check script `usage` or `--help` output.*
+*   **Script Argument Errors:** Used incorrect flags (`--record-ids`) for `delete_records.py`. Misinterpreted user intent regarding file exclusions (`--pdf-only` vs `--skip-tiff`). *Lesson: Double-check script `usage` or `--help` output. Clarify user requirements if script flags are ambiguous.*
+*   **Automated Edit Failures:** Assistant tool failed to apply indentation fixes correctly multiple times. *Lesson: Recognize when automated tools struggle, verify diffs, and switch to manual/explicit fixes sooner.*
+*   **Tool Parameter Errors:** Assistant forgot required parameters for tool calls (e.g., `is_background`). *Lesson: Adhere strictly to tool schemas.*
 
 By following this guide and understanding the architecture and common pitfalls, future development and troubleshooting related to the book upload process should be significantly smoother. 

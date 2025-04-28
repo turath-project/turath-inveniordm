@@ -6,94 +6,67 @@ This document summarizes the challenges and solutions encountered when integrati
 
 ## Core Challenges
 
-1. **Protocol Mismatch**: InvenioRDM runs on HTTPS (`https://127.0.0.1:5000`), while many IIIF servers run on HTTP. Modern browsers enforce strict security policies that prevent HTTPS pages from loading HTTP resources.
+1. **Protocol Mismatch**: InvenioRDM runs on HTTPS (`https://127.0.0.1:5000`), while dependent services like Cantaloupe might run on HTTP (`http://localhost:8182`). Modern browsers enforce strict security policies that prevent HTTPS pages from loading HTTP resources.
 
-2. **CORS Restrictions**: The IIIF viewer (Mirador) embedded in InvenioRDM makes cross-origin requests to IIIF servers, which are blocked by default due to browser security policies.
+2. **CORS Restrictions**: The IIIF viewer (Mirador) embedded in InvenioRDM makes cross-origin requests to IIIF Image servers (Cantaloupe) and potentially annotation/search services (if proxied). These requests are blocked by default due to browser security policies unless the *target* server sends the correct `Access-Control-Allow-Origin` headers.
 
-3. **Mixed Content Blocking**: Browsers block "mixed content" - when HTTPS pages load resources over insecure HTTP connections.
+3. **Mixed Content Blocking**: Browsers block "mixed content" - when an HTTPS page (InvenioRDM) tries to load resources (images, manifests, annotations) over insecure HTTP connections.
 
-4. **Service URL Context**: IIIF manifests must have service URLs that match the protocol (HTTP/HTTPS) of the requesting application.
+4. **Service URL Context**: IIIF manifests must contain absolute URLs. These URLs need to be correct *from the perspective of the client (browser)* loading the viewer. This means using publicly accessible URLs (like `https://localhost/...` via the Nginx proxy) rather than internal Docker service names (`http://annotation-service:5002/...`).
 
-## Solutions
+5. **Manifest Discovery & Linking:** How does InvenioRDM know which manifest to display for a given record? How are services like annotations and search linked within the manifest?
 
-### 1. Run IIIF Server with HTTPS
+6. **Data Access for Services:** How do separate services (Cantaloupe, Annotation, Search) access the necessary files (PDFs, HOCR) associated with an InvenioRDM record?
 
-The primary solution is to ensure your IIIF server uses HTTPS. This eliminates the protocol mismatch issue.
+## Solutions Implemented (Current System)
 
-```python
-# Example using the Python http.server with SSL
-import http.server
-import ssl
+### 1. Nginx Reverse Proxy for HTTPS & Service Access
 
-server_address = ('localhost', 8443)
-httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
+*   The `frontend` (Nginx) service runs on HTTPS (port 443) using a self-signed certificate locally.
+*   It acts as the single public entry point (`https://localhost`).
+*   It proxies requests for `/annotations/` and `/search/` (and `/autocomplete/`) to the internal HTTP Annotation and Search services (`http://annotation-service:5002`, `http://search-service:5001`).
+*   This solves the **protocol mismatch** for annotation/search services from the browser's perspective, as the browser only talks HTTPS to Nginx.
+*   **Challenge:** Requires correct Nginx configuration (`docker/nginx/nginx.conf`) with proper `location` blocks and `proxy_pass` directives (without trailing slashes for these services) placed *before* the general InvenioRDM `location /` block.
 
-# Configure SSL
-ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
-ssl_context.load_cert_chain('cert.pem', 'key.pem')  # Self-signed certificates
-httpd.socket = ssl_context.wrap_socket(httpd.socket, server_side=True)
+### 2. Static Manifest Generation (`upload_book.py`)
 
-print(f"Server running at https://{server_address[0]}:{server_address[1]}/")
-httpd.serve_forever()
-```
+*   The `upload_book.py` script generates a static `manifest.json` file during the upload process.
+*   **Service Linking:** This manifest is constructed with URLs pointing to the **Nginx proxy** for annotations and search (e.g., `https://localhost/annotations/...`).
+*   **Image Linking:** It links images to the **Cantaloupe server** directly (e.g., `http://localhost:8182/...`).
+*   **HOCR Linking:** It links HOCR files using the InvenioRDM file API URL (`https://127.0.0.1:5000/api/records/.../files/XXX.hocr`).
+*   **Upload & Discovery:** The manifest is uploaded to the record with the key `manifest.json`. InvenioRDM needs to be configured (likely via `IIIF_VIEWER_CONFIG` in `invenio.cfg` or implicitly) to look for this specific file (`/files/manifest.json`) to display in the viewer.
+*   **Challenge:** This fixed a bug where the manifest was uploaded with a temporary name, breaking internal links.
 
-### 2. Configure Proper CORS Headers
+### 3. CORS Headers (Handled by Services/Proxy)
 
-IIIF servers must send appropriate CORS headers to allow cross-origin requests from InvenioRDM.
+*   **Cantaloupe:** Assumed to have CORS headers configured appropriately (needs verification if cross-origin issues arise with images).
+*   **Annotation/Search Services:** The Flask applications were configured to include basic CORS headers (`Access-Control-Allow-Origin: *` or specific origins via environment variable).
+*   **Nginx:** The Nginx proxy configuration *could* add/modify CORS headers, but typically it's better handled by the upstream service unless Nginx needs to enforce specific policies.
+*   **InvenioRDM:** Also sends CORS headers for its API endpoints.
 
-```python
-class CORSHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
-    def send_response_only(self, code, message=None):
-        super().send_response_only(code, message)
-        
-    def end_headers(self):
-        # CORS headers
-        self.send_header('Access-Control-Allow-Origin', '*')  # Allow requests from any origin
-        self.send_header('Access-Control-Allow-Methods', 'GET, OPTIONS, HEAD')
-        self.send_header('Access-Control-Allow-Headers', 'Content-Type, Origin, Authorization')
-        self.send_header('Cross-Origin-Resource-Policy', 'cross-origin')
-        super().end_headers()
-        
-    def do_OPTIONS(self):
-        self.send_response(200)
-        self.end_headers()
-```
+### 4. Data Sharing via Host Bind Mounts
 
-### 3. Update Manifest URLs to Use HTTPS
+*   To solve **data access for services**:
+    *   **Cantaloupe:** The `upload_book.py` script copies the primary PDF (named `{record_id}_{filename}.pdf`) to a host directory (`./cantaloupe-files`) which is bind-mounted into the Cantaloupe container (`/opt/cantaloupe/images`). Cantaloupe is configured to look for files in this path.
+    *   **Annotation/Search:** The `upload_book.py` script copies HOCR files (if included in the upload) to a structured path within a host directory (`./hocr_mount/books/{book_id}/hocr/`). This directory is bind-mounted into the annotation and search service containers (`/hocr_data`). The services read files from `/hocr_data/books/{book_id}/hocr/`.
+*   **Challenge:** Requires the host directories (`./cantaloupe-files`, `./hocr_mount`) to exist and for the script to have write permissions. The script needs the `--hocr-mount-point` argument for the HOCR copy step.
 
-Ensure all URLs in the IIIF manifest use HTTPS, including image services, canvases, and sequences.
+### 5. Handling HTTP Cantaloupe Link (Mixed Content)
 
-Before:
-```json
-"@id": "http://localhost:9443/public_manifest",
-"service": {
-  "@context": "http://iiif.io/api/image/2/context.json",
-  "@id": "http://localhost:9443/image/p1",
-  "profile": "http://iiif.io/api/image/2/level1.json"
-}
-```
+*   **Problem:** The generated static manifest links images to Cantaloupe using `http://localhost:8182/...`, but InvenioRDM is served over HTTPS (`https://localhost`). This causes a **mixed content** error in the browser, preventing images from loading in the viewer.
+*   **Solution (Not Yet Implemented):** Requires one of the following:
+    1.  **Run Cantaloupe on HTTPS:** Modify the Cantaloupe service (`docker-compose.yml`) and configuration to use HTTPS (requires certificate management for the container).
+    2.  **Proxy Cantaloupe via Nginx:** Add a new `location` block in Nginx (e.g., `/iiif/`) to proxy requests to `http://cantaloupe:8182`. Update the manifest generation in `upload_book.py` to use `https://localhost/iiif/...` URLs.
+    3.  **(Less Ideal)** Configure the browser or InvenioRDM security policy (CSP) to allow mixed content (generally discouraged).
+*   **Current Status:** Image loading in the IIIF viewer within InvenioRDM is likely **broken** due to this mixed content issue.
 
-After:
-```json
-"@id": "https://localhost:8443/public_manifest",
-"service": {
-  "@context": "http://iiif.io/api/image/2/context.json",
-  "@id": "https://localhost:8443/image/p1",
-  "profile": "http://iiif.io/api/image/2/level1.json"
-}
-```
+### 6. Self-Signed Certificates
 
-### 4. Generate Self-Signed Certificates for Testing
-
-For local development, generate self-signed certificates:
-
-```bash
-# Generate private key
-openssl genrsa -out key.pem 2048
-
-# Generate certificate
-openssl req -new -x509 -key key.pem -out cert.pem -days 365 -subj "/CN=localhost"
-```
+*   Local development uses self-signed certificates for InvenioRDM (via `invenio run --https`) and potentially Nginx.
+*   Clients (browsers, `curl`, Python `requests`) need to be configured to trust or ignore these certificates.
+    *   Browser: Manually accept the certificate warning.
+    *   `curl`: Use the `-k` flag.
+    *   `upload_book.py`: Use the `--no-verify-ssl` flag.
 
 ## Common Errors and Their Solutions
 

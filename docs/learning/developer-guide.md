@@ -358,6 +358,28 @@ def generate_manifest(book_id, book_metadata, pages, base_url="https://localhost
     return manifest
 ```
 
+### Manifest Generation within `upload_book.py`
+
+The current workflow utilizes the `scripts/upload_book.py` script to generate a static IIIF manifest *during* the upload process.
+
+*   **Process Summary:**
+    1.  After uploading files (PDF, HOCR), the script queries Cantaloupe for page dimensions.
+    2.  It calculates scale factors if HOCR is present.
+    3.  It constructs the manifest JSON, linking to Cantaloupe images, proxied annotation/search services, and Invenio-hosted HOCR/PDF files.
+    4.  **Crucially:** It saves this generated manifest as `manifest.json` and uploads it with that specific key.
+*   **Key Learnings & Fixes:**
+    *   **Manifest Naming Bug:** A previous version uploaded the manifest with a temporary name, breaking internal `@id` links. This was fixed by ensuring the file is uploaded as `manifest.json`.
+    *   **Dependencies:** This process relies on Cantaloupe being accessible *by the script* during generation.
+    *   **Discovery:** The viewer needs to know to look for `/files/manifest.json` for the record.
+*   **Link Testing:**
+    *   When testing manifest links with `curl` against the Invenio API:
+        *   Use `/api/records/{id}/files/manifest.json/content` to get the manifest content.
+        *   Use `/api/records/{id}/files/{filename}` to check file metadata (like for `manifest.json` or `001.hocr`).
+        *   Use `/api/records/{id}/files/{filename}/content` to download file content (like the PDF).
+        *   Testing the manifest's internal `@id` (`.../files/manifest.json`) or canvas `@id` (`.../files/manifest.json/canvas/...`) against the file metadata API endpoint will likely result in a 404, as the API doesn't parse the JSON content for sub-paths.
+
+For full details, see `docs/learning/manifest_generation_approaches.md` and `docs/learning/book_upload_and_manifest_process.md`.
+
 ## Integrating with InvenioRDM
 
 ### Adding IIIF Manifest URL to Record Metadata
