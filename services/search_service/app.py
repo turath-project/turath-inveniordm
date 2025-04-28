@@ -8,7 +8,7 @@ import logging
 from urllib.parse import urlparse, urlunparse
 
 # Configure logging
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
@@ -165,8 +165,22 @@ def iiif_search(book_id):
 
     logger.info(f"Search request for book '{book_id}', query='{query}', motivation='{motivation}', page='{page_param}'")
 
+    # --- BEGIN MODIFICATION ---
+    # Explicitly decode query parameter assuming potential WSGI encoding issues
+    raw_query = request.args.get('q', '')
+    try:
+        # Assume bytes might come incorrectly decoded (e.g., as latin-1 from WSGI)
+        query_bytes = raw_query.encode('latin-1') 
+        query = query_bytes.decode('utf-8').strip()
+        logger.debug(f"Successfully decoded query param: '{query}'")
+    except Exception as e:
+        logger.warning(f"Could not force UTF-8 decode on query param, using raw. Query: '{raw_query}', Error: {e}")
+        query = raw_query.strip() # Fallback to original if decode fails
+    # --- END MODIFICATION ---
+
     if not query:
         # Return empty list if no query provided
+        logger.debug("Query is empty, returning empty list.")
         return jsonify({
             "@context": "http://iiif.io/api/search/1/context.json",
             "@id": f"{SEARCH_SERVICE_BASE_URL}/search/{book_id}?q={query}&motivation={motivation}",
@@ -195,6 +209,7 @@ def iiif_search(book_id):
         # Filter words by query and optionally by page
         for word in all_word_data:
             # Basic substring matching (case-insensitive)
+            logger.debug(f"Comparing query \'{query_lower}\' with word text \'{word['text'].lower()}\'")
             if query_lower in word['text'].lower():
                 # Apply page filter if provided
                 if page_param and str(word['page_id']) != page_param:

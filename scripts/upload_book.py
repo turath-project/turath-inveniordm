@@ -46,6 +46,7 @@ from PIL import Image
 from bs4 import BeautifulSoup
 import PyPDF2
 import shutil
+import uuid
 
 # Setup logging
 logging.basicConfig(
@@ -367,10 +368,8 @@ class BookUploader:
                             # --- Use full/full like example, remove service block/format --- 
                             "@id": f"{cantaloupe_base_url}/{cantaloupe_pdf_identifier}/full/full/0/default.jpg?page={page_num}",
                             "@type": "dctypes:Image",
-                            # "format": "image/jpeg", # Removed
                             "width": width, # Use canvas width/height for image dims too
                             "height": height
-                            # "service": { ... } # Removed nested service block
                         }
                     }
                 ],
@@ -541,7 +540,7 @@ class BookUploader:
                             book_info["title"] = en_label if en_label else next((v[0] for v in label.values() if v), book_info["title"])
                         elif isinstance(label, str):
                             book_info["title"] = label
-
+                        
                         # Extract from IIIF metadata block if present
                         iiif_metadata = manifest.get("metadata", [])
                         if isinstance(iiif_metadata, list):
@@ -579,8 +578,8 @@ class BookUploader:
 
                 except Exception as e:
                     logger.error(f"Error parsing manifest.json: {str(e)}")
-            else:
-                logger.warning(f"No metadata.json or manifest.json found in {self.book_dir}, using default metadata.")
+        else:
+            logger.warning(f"No metadata.json or manifest.json found in {self.book_dir}, using default metadata.")
 
         # Ensure core fields have defaults if still missing after checks
         # (This is slightly redundant with initial defaults but safe)
@@ -666,12 +665,12 @@ class BookUploader:
                     "role": creator_data.get("role", "author") # Preserve role if provided
                 })
             elif isinstance(creator_data, str): # Handle case where creator is just a string name
-                 logger.debug(f"Processing string creator name: {creator_data}")
-                 full_name = creator_data
-                 name_parts = full_name.split()
-                 family_name = name_parts[-1] if len(name_parts) > 1 else full_name
-                 given_name = " ".join(name_parts[:-1]) if len(name_parts) > 1 else ""
-                 creators.append({
+                logger.debug(f"Processing string creator name: {creator_data}")
+                full_name = creator_data
+                name_parts = full_name.split()
+                family_name = name_parts[-1] if len(name_parts) > 1 else full_name
+                given_name = " ".join(name_parts[:-1]) if len(name_parts) > 1 else ""
+                creators.append({
                     "person_or_org": {
                         "family_name": family_name,
                         "given_name": given_name,
@@ -681,14 +680,14 @@ class BookUploader:
                     "role": "author"
                 })
             else:
-                 logger.warning(f"Skipping unrecognized creator format: {creator_data}")
-
+                logger.warning(f"Skipping unrecognized creator format: {creator_data}")
+        
         # Format publication date (ensure YYYY-MM-DD)
         pub_date = book_info.get("publication_date", datetime.now().strftime("%Y-%m-%d"))
         if isinstance(pub_date, str):
-            if re.match(r'^\d{4}$', pub_date): pub_date = f"{pub_date}-01-01"
-            elif re.match(r'^\d{4}-\d{2}$', pub_date): pub_date = f"{pub_date}-01"
-            elif not re.match(r'^\d{4}-\d{2}-\d{2}$', pub_date):
+            if re.match(r'^\\d{4}$', pub_date): pub_date = f"{pub_date}-01-01"
+            elif re.match(r'^\\d{4}-\\d{2}$', pub_date): pub_date = f"{pub_date}-01"
+            elif not re.match(r'^\\d{4}-\\d{2}-\\d{2}$', pub_date):
                  logger.warning(f"Invalid date format '{pub_date}', using current date.")
                  pub_date = datetime.now().strftime("%Y-%m-%d")
         else:
@@ -772,8 +771,8 @@ class BookUploader:
             for key, value in external_meta.items():
                 # Special handling for creators/subjects?
                 # Currently overwrites if key exists
-                metadata["metadata"][key] = value 
-                
+                metadata["metadata"][key] = value
+            
             # Merge access settings
             metadata["access"].update(self.custom_metadata.get("access", {}))
             
@@ -781,12 +780,12 @@ class BookUploader:
             if "custom_fields" in self.custom_metadata:
                 if "custom_fields" not in metadata: metadata["custom_fields"] = {}
                 metadata["custom_fields"].update(self.custom_metadata.get("custom_fields", {}))
-            
+                
             # Merge other top-level fields like parent community
             for key, value in self.custom_metadata.items():
                 if key not in ["metadata", "access", "custom_fields", "files"]:
                     metadata[key] = value
-
+        
         # Final validation step is crucial before returning
         # return self.validate_metadata(metadata) # Call validation here
         return metadata # Let validate_metadata run just before API call
@@ -976,7 +975,7 @@ class BookUploader:
             }
         
         return cleaned
-    
+
     def create_record(self, metadata: Dict) -> Dict:
         """
         Create a record in InvenioRDM.
@@ -1036,13 +1035,13 @@ class BookUploader:
                 "error": error_msg
             }
     
-    def upload_files_to_record(self, record_id: str, files_to_upload: List[Union[str, Dict]]) -> Dict:
+    def upload_files_to_record(self, record_id: str, files_to_upload: List[str]) -> Dict:
         """
         Upload files to a draft record.
         
         Args:
             record_id: Record ID to upload files to
-            files_to_upload: List of file paths or dicts({"path": ..., "name": ...}) to upload
+            files_to_upload: List of file paths to upload
             
         Returns:
             Dictionary with upload results
@@ -1059,19 +1058,7 @@ class BookUploader:
         
         # Step 1: Initialize all files at once
         try:
-            file_keys = []
-            file_path_map = {}
-            for item in files_to_upload:
-                if isinstance(item, dict):
-                    file_path = item['path']
-                    file_name = item['name']
-                elif isinstance(item, str):
-                    file_path = item
-                    file_name = os.path.basename(file_path)
-                else:
-                    continue # Skip invalid items
-                file_keys.append({"key": file_name})
-                file_path_map[file_name] = file_path
+            file_keys = [{"key": os.path.basename(path)} for path in files_to_upload]
             
             init_response = requests.post(
                 api_endpoint,
@@ -1107,10 +1094,9 @@ class BookUploader:
             }
         
         # Step 2: Upload each file
-        # Use the file_path_map created during initialization
-        for file_name, file_path in file_path_map.items():
-            # file_name = os.path.basename(file_path)
-            logger.info(f"Uploading file: {file_name} (from {file_path})")
+        for file_path in files_to_upload:
+            file_name = os.path.basename(file_path)
+            logger.info(f"Uploading file: {file_name}")
             
             # Retry logic for resilient uploads
             for retry in range(self.max_retries):
@@ -1245,11 +1231,6 @@ class BookUploader:
         Returns:
             Dictionary with processing results
         """
-        temp_manifest_path = None # Keep track of temporary manifest file
-        record_id = None # Initialize record_id
-        final_record_id = None # Initialize final_record_id
-        unique_pdf_filename = None # Initialize unique pdf filename
-
         try:
             # Step 1: Collect files
             files = self.collect_files()
@@ -1270,91 +1251,49 @@ class BookUploader:
             # Step 3: Prepare metadata
             metadata = self.prepare_metadata(book_info)
             
-            # Step 4: Create record (get draft ID)
+            # Step 4: Create record
             create_result = self.create_record(metadata)
             if not create_result["success"]:
                 return create_result
             
             record_id = create_result["record_id"]
-
-            # --- Step 4.5: Copy PDF to Cantaloupe source *before* manifest generation --- 
-            if files['pdf']:
-                source_pdf_path = files['pdf'][0]
-                original_pdf_filename = os.path.basename(source_pdf_path)
-                # Use the draft record ID for the initial unique filename
-                base_name = os.path.splitext(original_pdf_filename)[0]
-                unique_pdf_filename = f"{record_id}_{base_name}.pdf" # Filename used by Cantaloupe
-                
-                dest_dir = os.path.abspath("./test-images") 
-                dest_pdf_path = os.path.join(dest_dir, unique_pdf_filename)
-                
-                try:
-                    os.makedirs(dest_dir, exist_ok=True)
-                    logger.info(f"Copying PDF to Cantaloupe source: {source_pdf_path} -> {dest_pdf_path}")
-                    shutil.copy2(source_pdf_path, dest_pdf_path) 
-                    logger.info(f"Successfully copied PDF for Cantaloupe.")
-                    # --- Add small delay --- 
-                    logger.info("Waiting 2 seconds for Cantaloupe to potentially recognize the file...")
-                    time.sleep(2)
-                except Exception as e:
-                    logger.error(f"Failed to copy PDF to {dest_pdf_path}: {e}")
-                    # If copy fails, manifest gen will likely fail dimension check - proceed but log warning
-                    # Alternatively, could return error here: 
-                    # return {"success": False, "error": f"Failed to copy PDF to Cantaloupe source: {e}", "record_id": record_id}
-            else:
-                 logger.warning("No PDF file found, cannot copy to Cantaloupe source.")
-
-            # Step 5a: Generate IIIF Manifest (now happens *after* PDF copy)
-            manifest_content = self._generate_manifest_content(record_id, book_info, files)
             
-            if manifest_content:
-                try:
-                    # Create a temporary file for the manifest
-                    with tempfile.NamedTemporaryFile(mode='w', suffix=".json", prefix=f"{self.book_id}_", delete=False, encoding='utf-8') as tmp_file:
-                        json.dump(manifest_content, tmp_file, indent=2, ensure_ascii=False)
-                        temp_manifest_path = tmp_file.name
-                    logger.info(f"Generated manifest saved to temporary file: {temp_manifest_path}")
-                    
-                    # Add manifest to the list of files to upload
-                    # Ensure it's named manifest.json in the upload list
-                    files['other'].append({"path": temp_manifest_path, "name": "manifest.json"})
-                    
-                except Exception as e:
-                    logger.error(f"Failed to create or write temporary manifest file: {e}")
-                    # Continue without uploading generated manifest
-            else:
-                 logger.warning("Manifest generation failed, proceeding without generated manifest.")
-
-            # Step 5b: Upload files (including generated manifest if created)
+            # Step 5: Upload files
             all_files_to_upload = []
             all_files_to_upload.extend(files['pdf'])
             all_files_to_upload.extend(files['hocr'])
             all_files_to_upload.extend(files['tiff'])
-            # Handle 'other' files which might be paths or dicts with path/name
-            processed_other_files = []
-            for item in files['other']:
-                if isinstance(item, dict):
-                    processed_other_files.append(item) # Already has path/name
-                elif isinstance(item, str):
-                    processed_other_files.append({"path": item, "name": os.path.basename(item)})
-                else:
-                    logger.warning(f"Skipping unrecognized item in 'other' files list: {item}")
-            all_files_to_upload.extend(processed_other_files)
+            all_files_to_upload.extend(files['other'])
             
             upload_result = self.upload_files_to_record(record_id, all_files_to_upload)
             
+            # --- Start: Copy primary PDF for Cantaloupe FilesystemSource ---
+            if upload_result["success"] and files['pdf']:
+                try:
+                    cantaloupe_dir = "./cantaloupe-files"
+                    os.makedirs(cantaloupe_dir, exist_ok=True)
+                    
+                    source_pdf_path = files['pdf'][0] # Assuming the first PDF is the primary one
+                    pdf_filename = os.path.basename(source_pdf_path)
+                    cantaloupe_identifier = f"{record_id}_{pdf_filename}"
+                    dest_pdf_path = os.path.join(cantaloupe_dir, cantaloupe_identifier)
+                    
+                    logger.info(f"Copying primary PDF to Cantaloupe directory: {dest_pdf_path}")
+                    shutil.copy2(source_pdf_path, dest_pdf_path)
+                    logger.info(f"Successfully copied PDF for Cantaloupe.")
+                    
+                except Exception as pdf_copy_err:
+                    logger.error(f"Failed to copy PDF for Cantaloupe: {pdf_copy_err}")
+                    # Decide if this should be a fatal error or just a warning
+                    # For now, log error and continue
+            # --- End: Copy primary PDF --- 
+            
             if not upload_result["success"]:
-                return {
-                    "success": False,
-                    "error": upload_result.get("error", "Failed to upload files"),
-                    "record_id": record_id,
-                    "partial": True
-                }
-            else:
-                # --- Copy HOCR files to mount point if specified ---
+                # --- Copy HOCR files to mount point if specified, EVEN if upload failed --- 
+                # This allows debugging the manifest generation later
                 if self.hocr_mount_point and files['hocr']:
                     target_hocr_base = os.path.join(self.hocr_mount_point, 'books', self.book_id, 'hocr')
-                    logger.info(f"Copying {len(files['hocr'])} HOCR files to service mount point: {target_hocr_base}")
+                    logger.info(f"Copying {len(files['hocr'])} HOCR files to service mount point (after failed upload): {target_hocr_base}")
                     try:
                         os.makedirs(target_hocr_base, exist_ok=True)
                         copied_count = 0
@@ -1365,52 +1304,69 @@ class BookUploader:
                                 shutil.copy2(hocr_file_path, dest_path)
                                 copied_count += 1
                             except Exception as copy_err:
-                                logger.error(f"Failed to copy HOCR file {hocr_filename} to {dest_path}: {copy_err}")
+                                logger.error(f"Failed to copy {hocr_filename} to {dest_path}: {copy_err}")
                         logger.info(f"Successfully copied {copied_count} HOCR files to {target_hocr_base}")
                     except Exception as e:
                         logger.error(f"Failed to create or copy HOCR files to {target_hocr_base}: {e}")
-                        # Log error but don't necessarily fail the whole process,
-                        # as the primary upload to RDM succeeded.
                 elif self.hocr_mount_point:
-                    logger.info("HOCR mount point specified, but no HOCR files were found or collected to copy.")
-                # --- End HOCR copy ---
+                    logger.info("HOCR mount point specified, but no HOCR files found...")
+                # --- End HOCR copy --- 
+                return {
+                    "success": False,
+                    "error": upload_result.get("error", "Failed to upload files"),
+                    "record_id": record_id,
+                    "partial": True
+                }
+            
+            # Step 5.5: Generate and upload IIIF manifest
+            manifest_content = self._generate_manifest_content(record_id, book_info, files)
+            if manifest_content:
+                with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False, encoding='utf-8') as temp_manifest:
+                    json.dump(manifest_content, temp_manifest, indent=2, ensure_ascii=False)
+                    temp_manifest_path = temp_manifest.name
+                
+                logger.info(f"Uploading generated manifest.json")
+                manifest_upload_result = self.upload_files_to_record(record_id, [temp_manifest_path])
+                os.remove(temp_manifest_path) # Clean up temp file
+                
+                if not manifest_upload_result["success"]:
+                    logger.error("Failed to upload generated manifest.json")
+                    # Proceed anyway, but log the error
+            else:
+                logger.warning("Could not generate IIIF manifest content.")
 
+            # Step 5.6: Copy HOCR files to mount point if specified AFTER successful upload
+            if self.hocr_mount_point and files['hocr']:
+                target_hocr_base = os.path.join(self.hocr_mount_point, 'books', self.book_id, 'hocr')
+                logger.info(f"Copying {len(files['hocr'])} HOCR files to service mount point: {target_hocr_base}")
+                try:
+                    os.makedirs(target_hocr_base, exist_ok=True)
+                    copied_count = 0
+                    for hocr_file_path in files['hocr']:
+                        hocr_filename = os.path.basename(hocr_file_path)
+                        dest_path = os.path.join(target_hocr_base, hocr_filename)
+                        try:
+                            shutil.copy2(hocr_file_path, dest_path)
+                            copied_count += 1
+                        except Exception as copy_err:
+                            logger.error(f"Failed to copy {hocr_filename} to {dest_path}: {copy_err}")
+                    logger.info(f"Successfully copied {copied_count} HOCR files to {target_hocr_base}")
+                except Exception as e:
+                    logger.error(f"Failed to create or copy HOCR files to {target_hocr_base}: {e}")
+            elif self.hocr_mount_point:
+                logger.info("HOCR mount point specified, but no HOCR files found...")
+            
             # Step 6: Publish record if requested
-            published = False
-            publish_data = None
             if self.publish:
                 publish_result = self.publish_record(record_id)
                 if not publish_result["success"]:
-                    # Return error but include record_id for potential cleanup
                     return {
                         "success": False,
                         "error": publish_result.get("error", "Failed to publish record"),
                         "record_id": record_id,
                         "partial": True
                     }
-                published = True
-                publish_data = publish_result.get("data")
-                final_record_id = publish_data.get("id") # Get the final published ID
-            else:
-                logger.info(f"Record {record_id} left as draft.")
-                final_record_id = record_id # Draft ID is the final ID if not publishing
-                
-            # Step 7: (Former PDF Copy Step - Now handled earlier) 
-            # --- Optional: Rename PDF in Cantaloupe source if ID changed upon publish? --- 
-            # This adds complexity. Simpler to just use draft ID for filename always.
-            # If the record ID changed after publishing AND we copied the PDF earlier...
-            if published and final_record_id != record_id and unique_pdf_filename:
-                 old_dest_pdf_path = os.path.join(dest_dir, unique_pdf_filename) # Path used draft ID
-                 new_unique_pdf_filename = f"{final_record_id}_{base_name}.pdf"
-                 new_dest_pdf_path = os.path.join(dest_dir, new_unique_pdf_filename)
-                 if os.path.exists(old_dest_pdf_path):
-                     try:
-                         logger.info(f"Renaming Cantaloupe source PDF due to publication ID change: {old_dest_pdf_path} -> {new_dest_pdf_path}")
-                         os.rename(old_dest_pdf_path, new_dest_pdf_path)
-                     except Exception as e:
-                         logger.error(f"Failed to rename PDF in Cantaloupe source: {e}")
-                         # Log error, but don't fail the overall process
-
+            
             # Success!
             return {
                 "success": True,
@@ -1434,14 +1390,6 @@ class BookUploader:
                 "success": False,
                 "error": error_msg
             }
-        finally:
-            # Clean up temporary manifest file if it was created
-            if temp_manifest_path and os.path.exists(temp_manifest_path):
-                try:
-                    os.remove(temp_manifest_path)
-                    logger.info(f"Cleaned up temporary manifest file: {temp_manifest_path}")
-                except Exception as e:
-                    logger.error(f"Error removing temporary manifest file {temp_manifest_path}: {e}")
 
 
 def main():

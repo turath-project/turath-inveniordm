@@ -13,6 +13,9 @@ uwsgi = ">=2.0"
 uwsgitop = ">=0.11"
 uwsgi-tools = ">=1.1.1"
 invenio-previewer-mirador = {git = "https://github.com/turath-project/invenio-previewer-mirador.git", editable = true, ref = "feature/issue-1-mirador-integration"}
+pypdf2 = "*"
+typing-extensions = "==4.12.2"
+
 [requires]
 python_version = "3.9"
 

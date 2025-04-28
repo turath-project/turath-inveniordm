@@ -70,7 +70,7 @@ services:
       - CANTALOUPE_ENDPOINT_ADMIN_SECRET=your_secret_here
       - CANTALOUPE_FILESYSTEM_RESOLVER_LOOKUP_STRATEGY_PATH_PREFIX=/opt/cantaloupe/images
     volumes:
-      - ./test-images:/opt/cantaloupe/images
+      - ./cantaloupe-files:/opt/cantaloupe/images
 
   # Turath Annotation Service (HOCR-based)
   annotation-service:
@@ -93,7 +93,7 @@ services:
       - IIIF_SERVER_BASE_URL=http://nginx:80 # Assumes nginx proxies the IIIF Presentation API
       - USE_SSL=false
       # Define allowed origins for CORS (adjust as needed)
-      - CORS_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,http://localhost:8000,http://127.0.0.1:5000
+      - CORS_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,http://localhost:8000,http://127.0.0.1:5000,https://127.0.0.1:5000
     expose:
       - 5002 # Expose port internally
 
@@ -118,7 +118,7 @@ services:
       - IIIF_SERVER_BASE_URL=http://nginx:80 # Assumes nginx proxies the IIIF Presentation API
       - USE_SSL=false
       # Define allowed origins for CORS (adjust as needed)
-      - CORS_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,http://localhost:8000,http://127.0.0.1:5000
+      - CORS_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,http://localhost:8000,http://127.0.0.1:5000,https://127.0.0.1:5000
     expose:
       - 5001 # Expose port internally
 

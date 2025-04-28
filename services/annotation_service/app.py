@@ -52,8 +52,9 @@ def get_page_annotations(book_id, page_identifier):
 
     try:
         # Construct the expected HOCR file path using the base directory
-        # Assumes HOCR file is named like '<page_identifier>.hocr' (e.g., 'p005.hocr')
-        hocr_filename = f"{page_identifier}.hocr"
+        # Actual filename is like '001.hocr', but identifier in URL is like 'p001'
+        page_label = page_identifier.lstrip('p') # Remove leading 'p' if present
+        hocr_filename = f"{page_label}.hocr"
         hocr_path = os.path.join(HOCR_BASE_DIR, book_id, 'hocr', hocr_filename)
         logger.info(f"Attempting to read HOCR file from: {hocr_path}")
 
